@@ -63,7 +63,7 @@ test('plus: ("zero", "zero") through ("zero", "nine")', function(){
   expect(plus("zero", "six")).to.equal(6);
   expect(plus("zero", "seven")).to.equal(7);
   expect(plus("zero", "eight")).to.equal(8);
-  expect(plush("zero", "nine")).to.equal(9);
+  expect(plus("zero", "nine")).to.equal(9);
 }); // END test(plus)
 
 /**
@@ -84,6 +84,24 @@ function plus(A, B){
     }
     if (B == "three") {
       return 3;
+    }
+    if (B == "four") {
+      return 4;
+    }
+    if (B == "five") {
+      return 5;
+    }
+    if (B == "six"){
+      return 6;
+    }
+    if (B == "seven") {
+      return 7;
+    }
+    if (B == "eight") {
+      return 8;
+    }
+    if (B == "nine") {
+      return 9;
     }
   }
 } // END plus
