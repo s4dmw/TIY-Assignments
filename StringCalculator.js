@@ -29,7 +29,27 @@ function fromEnglish(word){
     if (word == "two") {
       return 2;
     }
-    
+    if (word == "three"){
+      return 3;
+    }
+    if (word == "four"){
+      return 4;
+    }
+    if (word == "five"){
+      return 5;
+    }
+    if (word == "six"){
+      return 6;
+    }
+    if (word == "seven"){
+      return 7;
+    }
+    if (word == "eight"){
+      return 8;
+    }
+    if (word == "nine") {
+      return 9;
+    }
 } // END fromEnglish
 
 test('plus: ("zero", "zero") through ("zero", "nine")', function(){
