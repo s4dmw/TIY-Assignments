@@ -5,7 +5,9 @@ console.assert(add(0, 3) === 3);
 console.assert(add(0, 4) === 4);
 console.assert(add(0, 5) === 5);
 console.assert(add(0, 6) === 6);
-
+console.assert(add(0, 7) === 7);
+console.assert(add(0, 8) === 8);
+console.assert(add(0, 9) === 9);
 
 
 
