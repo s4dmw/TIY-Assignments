@@ -54,10 +54,16 @@ function fromEnglish(word){
 
 test('plus: ("zero", "zero") through ("zero", "nine")', function(){
   expect(plus).to.exist;
-//  expect(plus("zero", "zero")).to.equal(0);
-//  expect(plus("zero", "one")).to.equal(1); // change just one thing!
-//  expect(plus("zero", "two")).to.equal(2); // ha!
-  // write more tests like those...
+  expect(plus("zero", "zero")).to.equal(0);
+  expect(plus("zero", "one")).to.equal(1); // change just one thing!
+  expect(plus("zero", "two")).to.equal(2); // ha!
+  expect(plus("zero", "three")).to.equal(3);
+  expect(plus("zero", "four")).to.equal(4);
+  expect(plus("zero", "five")).to.equal(5);
+  expect(plus("zero", "six")).to.equal(6);
+  expect(plus("zero", "seven")).to.equal(7);
+  expect(plus("zero", "eight")).to.equal(8);
+  expect(plush("zero", "nine")).to.equal(9);
 }); // END test(plus)
 
 /**
@@ -66,7 +72,20 @@ test('plus: ("zero", "zero") through ("zero", "nine")', function(){
  * @return {Number} the value of `A` added to `B`
  */
 function plus(A, B){
-  // write those tests first, please...
+  if (A == "zero"){
+    if (B == "zero"){
+      return 0;
+    }
+    if (B == "one"){
+      return 1;
+    }
+    if (B == "two") {
+      return 2;
+    }
+    if (B == "three") {
+      return 3;
+    }
+  }
 } // END plus
 
 test('minus: ("zero", "zero") through ("zero", "nine")', function(){
