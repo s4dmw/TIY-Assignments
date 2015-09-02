@@ -23,3 +23,31 @@ console.assert(add(1, 5) === 6);
 function add(A, B){
 return A+B;
 } // END add
+
+
+console.assert(minus(0, 0) === 0);
+console.assert(minus(1, 0) === 1);
+
+function minus(A, B){
+  return A-B;
+}
+
+
+console.assert(times(0, 0) === 0);
+console.assert(times(1, 1) === 1);
+console.assert(times(2, 2) === 4);
+
+function times(A, B){
+  return A*B;
+}
+
+console.assert(divide(0, 1) === 0);
+console.assert(divide(1, 1) === 1);
+console.assert(divide(2, 1) === 2);
+console.assert(divide(1, 0) === Infinity);
+console.assert(divide(2, 0) === Infinity);
+
+
+function divide(A, B){
+  return A/B;
+}
