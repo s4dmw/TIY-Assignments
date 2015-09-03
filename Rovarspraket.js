@@ -36,7 +36,7 @@ console.assert(maxOfThree(10,3,50) === 50);
 console.assert(maxOfThree(-1,-3,-10) === -1);
 
 // Look, that's just mean...
-console.assert(maxOfThree("aaa",0,1) === 1);
+ console.assert(maxOfThree("aaa",0,1) === 1);
 
 // Who's running this picture, anyway?
 console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
@@ -48,5 +48,13 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * @return {Number} greatest of A, B, and C
  */
 function maxOfThree(A, B, C){
-    // YOUR CODE HERE
-}
+  if (A > B && A > C){
+    return A;
+  }
+  if (B > C && B > A){
+    return B;
+  }
+  else {
+    return C;
+  }
+  }
