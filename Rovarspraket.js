@@ -80,14 +80,41 @@ function maxOfThree(A, B, C){
    * @return {Boolean} whether `char` is an English vowel
    */
   function isVowel(char){
-    if (typeof char == 'string'){
-      char = char.toLowerCase();
-      vowels = ["a", "e", "i", "o", "u"];
-      for (count=0; count < 5; count ++) {
-        if (char == vowels[count]) {
-          return true;
-        }
+    vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+    for (count=0; count < 9; count ++) {
+      if (char == vowels[count]) {
+        return true;
       }
     }
     return false;
   }
+
+
+  /**
+   * The `disemvowel` function combats the Internet
+   * Trolls by handily removing all of the vowels from
+   * their angry, hurtful comments. It's Super-Effective!
+   *
+   * @param {String} comment to disemvowel
+   * @return {String} cmmnt dsmvwld
+   */
+
+  function disemvowel(comment){
+    stringlength = comment.length;
+    comment = String(comment);
+    vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+    for (counter = stringlength; counter > 0; counter--) {
+      for (count=0; count < 9; count ++) {
+        if (comment[counter] == vowels[count]) {
+          comment = comment.slice(0,counter)+comment.slice(counter+1,stringlength)
+        }
+      }
+    }
+    return comment;
+  }
+
+  // Shorter test cases might be appreciated...
+  console.assert(disemvowel('LOL') === "LL");
+
+  console.assert(disemvowel("This website is for losers LOL!") === "Ths wbst s fr lsrs LL!"
+  );
