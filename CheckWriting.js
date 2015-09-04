@@ -41,27 +41,35 @@ test('toEnglish: `21` to `30`', function(){
  * @return {String} representing `value` in English
  */
 function toEnglish(value){
-  if (value == 0) {return "zero"};
-  if (value == 1) {return "one"};
-  if (value == 2) {return "two"};
-  if (value == 3) {return "three"};
-  if (value == 4) {return "four"};
-  if (value == 5) {return "five"};
-  if (value == 6) {return "six"};
-  if (value == 7) {return "seven"};
-  if (value == 8) {return "eight"};
-  if (value == 9) {return "nine"};
-  if (value == 10) {return "ten"};
-  if (value == 11) {return "eleven"};
-  if (value == 12) {return "twelve"};
-  if (value == 13) {return "thirteen"};
-  if (value == 14) {return "fourteen"};
-  if (value == 15) {return "fifteen"};
-  if (value == 16) {return "sixteen"};
-  if (value == 17) {return "seventeen"};
-  if (value == 18) {return "eighteen"};
-  if (value == 19) {return "nineteen"};
-  if (value == 20) {return "twenty"}
+//  var word
+  var numArray ={0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
+6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve",
+13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen",
+19: "nineteen", 20: "twenty"};
+
+/*  if (value == 0) {word = "zero"};
+  if (value == 1) {word = "one"};
+  if (value == 2) {word = "two"};
+  if (value == 3) {word = "three"};
+  if (value == 4) {word = "four"};
+  if (value == 5) {word = "five"};
+  if (value == 6) {word = "six"};
+  if (value == 7) {word = "seven"};
+  if (value == 8) {word = "eight"};
+  if (value == 9) {word = "nine"};
+  if (value == 10) {word = "ten"};
+  if (value == 11) {word = "eleven"};
+  if (value == 12) {word = "twelve"};
+  if (value == 13) {word = "thirteen"};
+  if (value == 14) {word = "fourteen"};
+  if (value == 15) {word = "fifteen"};
+  if (value == 16) {word = "sixteen"};
+  if (value == 17) {word = "seventeen"};
+  if (value == 18) {word = "eighteen"};
+  if (value == 19) {word = "nineteen"};
+  if (value == 20) {word = "twenty"}
+*/
+return numArray[value];
 } // END toEnglish
 
 test('BEAST MODE: toCheck', function(){
