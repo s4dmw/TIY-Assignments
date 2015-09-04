@@ -7,6 +7,14 @@ test('toEnglish: `0` to `9`', function(){
   assert.equal(toEnglish(0), "zero");
   assert.equal(toEnglish(1), "one");
   assert.equal(toEnglish(2), "two");
+  assert.equal(toEnglish(3), "three");
+  assert.equal(toEnglish(4), "four");
+  assert.equal(toEnglish(5), "five");
+  assert.equal(toEnglish(6), "six");
+  assert.equal(toEnglish(7), "seven");
+  assert.equal(toEnglish(8), "eight");
+  assert.equal(toEnglish(9), "nine");
+
   // et cetera, et cetera, et cetera...
 }); // END test(toEnglish)
 
@@ -23,7 +31,16 @@ test('toEnglish: `21` to `30`', function(){
  * @return {String} representing `value` in English
  */
 function toEnglish(value){
-  // start simply and refactor...
+  if (value == 0) {return "zero"};
+  if (value == 1) {return "one"};
+  if (value == 2) {return "two"};
+  if (value == 3) {return "three"};
+  if (value == 4) {return "four"};
+  if (value == 5) {return "five"};
+  if (value == 6) {return "six"};
+  if (value == 7) {return "seven"};
+  if (value == 8) {return "eight"};
+  if (value == 9) {return "nine"};
 } // END toEnglish
 
 test('BEAST MODE: toCheck', function(){
