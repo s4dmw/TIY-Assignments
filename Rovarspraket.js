@@ -112,9 +112,49 @@ function maxOfThree(A, B, C){
     }
     return comment;
   }
-
   // Shorter test cases might be appreciated...
   console.assert(disemvowel('LOL') === "LL");
 
   console.assert(disemvowel("This website is for losers LOL!") === "Ths wbst s fr lsrs LL!"
   );
+
+  /**
+   * The function `rovarspraket` will translate text into
+   * a "rövarspråket", i.e. double every consonant and
+   * place an occurrence of "o" in between them.
+   *
+   * For example, `rovarspraket("this is fun")` should
+   * return `"tothohisos isos fofunon"`
+   *
+   * @see https://en.wikipedia.org/wiki/R%C3%B6varspr%C3%A5ket
+   *
+   * @param {String} text to translate into "rövarspråket"
+   * @return {String} translation
+   */
+  function rovarspraket(input){
+    stringlength = input.length;
+    newStringLength = stringlength
+    input = String(input);
+    vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+    for (counter = stringlength-1; counter >= 0; counter--) {
+      var vowelCount=0;
+      for (count=0; count < 9; count ++) {
+        if (input[counter] == vowels[count]) {
+          vowelCount ++;
+        }
+      }
+      if (vowelCount==0) {
+          newStringLength=newStringLength+2;
+          input=input.slice(0,counter+1)+"o"+input.slice(counter,newStringLength);
+      }
+    }
+    return input;
+  }
+
+  // Feel free to provide additional examples...
+  console.assert(rovarspraket("a") === "a")
+  console.assert(rovarspraket("b") === "bob")
+  console.assert(rovarspraket("cat") === "cocatot")
+  console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
+  console.assert(rovarspraket(0) === "0")
+  console.assert(rovarspraket("holycrapitworks")  === "hohololyoycocrorapopitotwowororkoksos")
