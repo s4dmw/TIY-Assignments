@@ -19,7 +19,17 @@ test('toEnglish: `0` to `9`', function(){
 }); // END test(toEnglish)
 
 test('toEnglish: `10` to `20`', function(){
-  // use `assert` again...
+  assert.equal(toEnglish(10), "ten");
+  assert.equal(toEnglish(11), "eleven");
+  assert.equal(toEnglish(12), "twelve");
+  assert.equal(toEnglish(13), "thirteen");
+  assert.equal(toEnglish(14), "fourteen");
+  assert.equal(toEnglish(15), "fifteen");
+  assert.equal(toEnglish(16), "sixteen");
+  assert.equal(toEnglish(17), "seventeen");
+  assert.equal(toEnglish(18), "eighteen");
+  assert.equal(toEnglish(19), "nineteen");
+  assert.equal(toEnglish(20), "twenty");
 }); // END test(toEnglish)
 
 test('toEnglish: `21` to `30`', function(){
@@ -41,6 +51,17 @@ function toEnglish(value){
   if (value == 7) {return "seven"};
   if (value == 8) {return "eight"};
   if (value == 9) {return "nine"};
+  if (value == 10) {return "ten"};
+  if (value == 11) {return "eleven"};
+  if (value == 12) {return "twelve"};
+  if (value == 13) {return "thirteen"};
+  if (value == 14) {return "fourteen"};
+  if (value == 15) {return "fifteen"};
+  if (value == 16) {return "sixteen"};
+  if (value == 17) {return "seventeen"};
+  if (value == 18) {return "eighteen"};
+  if (value == 19) {return "nineteen"};
+  if (value == 20) {return "twenty"}
 } // END toEnglish
 
 test('BEAST MODE: toCheck', function(){
