@@ -33,7 +33,17 @@ test('toEnglish: `10` to `20`', function(){
 }); // END test(toEnglish)
 
 test('toEnglish: `21` to `30`', function(){
-  // this is where `toEnglish` starts to get interesting...
+  assert.equal(toEnglish(21), "twenty one");
+  assert.equal(toEnglish(22), "twenty two");
+  assert.equal(toEnglish(23), "twenty three");
+  assert.equal(toEnglish(24), "twenty four");
+  assert.equal(toEnglish(25), "twenty five");
+  assert.equal(toEnglish(26), "twenty six");
+  assert.equal(toEnglish(27), "twenty seven");
+  assert.equal(toEnglish(28), "twenty eight");
+  assert.equal(toEnglish(29), "twenty nine");
+  assert.equal(toEnglish(30), "thirty");
+  assert.equal(toEnglish(99), "ninety nine");
 }); // END test(toEnglish)
 
 /**
@@ -41,13 +51,48 @@ test('toEnglish: `21` to `30`', function(){
  * @return {String} representing `value` in English
  */
 function toEnglish(value){
-//  var word
+
   var numArray ={0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve",
 13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen",
-19: "nineteen", 20: "twenty"};
+19: "nineteen", 20: "twenty", 30: "thirty", 40: "forty", 50: "fifty", 60: "sixty", 70: "seventy",
+80: "eighty", 90: "ninety"};
 
-/*  if (value == 0) {word = "zero"};
+  if (value <= 20) {
+    return numArray[value];
+  }
+  if (value % 10 == 0) {
+    return numArray[value];
+  }
+  if (value > 20 && value < 100){
+    tens = Math.trunc(value/10) * 10;
+    ones = value - tens;
+    return numArray[tens] + " " + numArray[ones];
+  }
+
+} // END toEnglish
+
+
+
+
+
+
+
+
+test('BEAST MODE: toCheck', function(){
+  assert.isFunction(toCheck);
+  assert.equal(toCheck(1.23), "one & 23/100s");
+  assert.equal(toCheck(12.34), "twelve & 34/100s");
+  assert.equal(toCheck(123.45), "one hundred twenty three & 45/100s");
+  assert.equal(toCheck(1234.56), "one thousand, two hundred thirty four & 56/100s");
+  // you might need to try some values in between...
+}); // END test(BEAST MODE)
+
+
+
+/*
+saving this just incase....it would suck if i have to type it all again!
+  if (value == 0) {word = "zero"};
   if (value == 1) {word = "one"};
   if (value == 2) {word = "two"};
   if (value == 3) {word = "three"};
@@ -69,14 +114,3 @@ function toEnglish(value){
   if (value == 19) {word = "nineteen"};
   if (value == 20) {word = "twenty"}
 */
-return numArray[value];
-} // END toEnglish
-
-test('BEAST MODE: toCheck', function(){
-  assert.isFunction(toCheck);
-  assert.equal(toCheck(1.23), "one & 23/100s");
-  assert.equal(toCheck(12.34), "twelve & 34/100s");
-  assert.equal(toCheck(123.45), "one hundred twenty three & 45/100s");
-  assert.equal(toCheck(1234.56), "one thousand, two hundred thirty four & 56/100s");
-  // you might need to try some values in between...
-}); // END test(BEAST MODE)
