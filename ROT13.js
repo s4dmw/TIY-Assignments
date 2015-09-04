@@ -6,10 +6,29 @@
  * @return {String}
  */
 function reverse(S){
-    // YOUR CODE HERE: NO INTERNET COPY-PASTA!
+  S = String(S);
+  var newstring=[];
+  var newstringcounter = 0;
+  var resultstring = "";
+  for (count = S.length-1; count >= 0; count --) {
+      newstring[newstringcounter]=S[count];
+      newstringcounter ++;
+  }
+  for (count =0; count < S.length; count ++){
+    resultstring=resultstring.concat(newstring[count]);
+  }
+
+//  console.log(resultstring); //want to see result as the function runs
+  return resultstring;
 }
 
-console.assert(reverse("") === ""); // Really?
+//debuging caese
+//reverse("A");
+//reverse("cat");
+//reverse("ward");
+//reverse("books");
+
+ console.assert(reverse("") === ""); // Really?
 
 console.assert(reverse("A") === "A"); // Jerk.
 
