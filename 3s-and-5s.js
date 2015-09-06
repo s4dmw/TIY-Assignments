@@ -34,15 +34,41 @@ test('getting a list of multiples of 5', function(){
   expect(fives(20)).to.eql([5, 10, 15]);
   expect(fives(30)).to.eql([5, 10, 15, 20, 25]);
   expect(fives(50)).to.eql([5, 10, 15, 20, 25, 30, 35, 40, 45]);
-}); // END test 3s
+}); // END test 5s
 
 
 function fives(N) {//return a list of muliples of 5 below N.
-  var multiplesOfThree = []
+  var multiplesOfFive = []
   for (count = 1; count < N; count ++) {
     if (count % 5 === 0){
-      multiplesOfThree.push(count);
+      multiplesOfFive.push(count);
     }
   }
-  return multiplesOfThree;
+  return multiplesOfFive;
+}
+
+/* now we want to make a function that returns a list of numbers that multiples of 3's
+and/or 5's below N.
+*/
+
+test('merging the threes and fives', function(){
+  assert.isDefined(threesAndFives);
+  assert.isFunction(threesAndFives);
+  expect(threesAndFives(0)).to.eql([]);
+  expect(threesAndFives(5)).to.eql([3]);
+  expect(threesAndFives(10)).to.eql([3, 5, 6, 9]);
+  expect(threesAndFives(20)).to.eql([3, 5, 6, 9, 10, 12, 15, 18]);
+  expect(threesAndFives(30)).to.eql([3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27]);
+  expect(threesAndFives(50)).to.eql([3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27,
+    30, 33, 35, 36, 39, 40, 42, 45, 48]);
+ }); // END test threesAndFives
+
+function threesAndFives(N) {
+  var multiplesOfThreeAndFive = [];
+  for (count = 1; count < N; count ++) {
+    if (count % 3 === 0 || count % 5 === 0) {
+      multiplesOfThreeAndFive.push(count);
+    }
+  }
+  return multiplesOfThreeAndFive;
 }
