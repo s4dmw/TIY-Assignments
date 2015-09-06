@@ -56,37 +56,22 @@ function encode(phrase){
   phrase=String(phrase);
   var phraselength = phrase.length;
   var newphrase=[];
-  var newphrasecounter = 0;
-  var resultphrase = "";
+// leaving this for now in case i need it
 //  var alphabet = {0: "a", 1: "b", 2: "c", 3: "d", 4: "e", 5: "f", 6: "g", 7: "h",
 //8: "i", 9: "j", 10: "k", 11: "l", 12: "m", 13: "n", 14: "o", 15: "p", 16: "q", 17: "r",
 //18: "s", 19: "t", 20: "u", 21: "v", 22: "w", 23: "x", 24: "y", 25: "z"};
-
-var alphabet = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
+  var alphabet = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
  "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y" ,"z"];
-
-console.log("input phrase = "+phrase);
 
   for (count = 0; count < phrase.length; count ++){
     letterposition = alphabet.indexOf(phrase[count]);
-    console.log(phrase[count]);
     if (letterposition > 12) {
-        console.log("count = " + count);
-        console.log("letter = " + phrase[count]);
-        console.log("letter position = " + alphabet.indexOf(phrase[count]));
         newphrase = newphrase.slice(0,count)+alphabet[letterposition - 13]+newphrase.slice(count,phraselength-1);
-        console.log(newphrase);
     }
     else {
-      console.log("count = " + count);
-      console.log("letter = " + phrase[count]);
-      console.log("letter position = " + alphabet.indexOf(phrase[count]));
       newphrase = newphrase.slice(0,count)+alphabet[letterposition + 13]+newphrase.slice(count,phraselength-1);
-      console.log(newphrase);
     }
-//    console.log(newphrase);
   }
-//  console.log(newphrase);
   return newphrase;
 
 }
@@ -105,10 +90,13 @@ function decode(phrase, N){
 }
 
 // Produce more examples, please...
-console.log(encode("uryyb"));
-//console.log(encode("uryyb"));
-//console.assert(encode("hello") === "uryyb");
-//console.assert(encode("uryyb") === "hello");
+console.assert(encode("a") === "n");
+console.assert(encode("n") === "a");
+console.assert(encode("it") === "vg");
+console.assert(encode("cat") === "png");
+console.assert(encode("poop") === "cbbc")
+console.assert(encode("hello") === "uryyb");
+console.assert(encode("uryyb") === "hello");
 
 //console.assert(encode("hello", 2) === "jgnnq")
 //console.assert(decode("jgnnq", 2) === "hello")
