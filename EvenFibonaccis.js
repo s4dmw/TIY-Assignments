@@ -16,7 +16,7 @@ test('generating the Fibonacci sequence', function(){
   // ...ad nauseum.
 }); // END test(fibonacci)
 
-function fibonacci(N) {
+function fibonacci(N) {  //returns the fibonacci sequence for "N"
   sequence = [];
   if (N >= 1) {
     sequence.push(1);
@@ -30,16 +30,29 @@ function fibonacci(N) {
   return sequence;
 }
 
-/*
+
 test('just even numbers?', function(){
-  expect(evens([ ]).to.deep.equal([ ]);
-  expect(evens([ 1 ]).to.deep.equal([ ]);
-  expect(evens([ 1, 1, 1 ]).to.deep.equal([ ]);
-  expect(evens([ 2 ]).to.deep.equal([ 2 ]);
-  expect(evens([ 1, 2 ]).to.deep.equal([ 2 ]);
-  // More tests, perhaps?
+  expect(evens([ ])).to.deep.equal([ ]);
+  expect(evens([ 1 ])).to.deep.equal([  ]);
+  expect(evens([ 1, 1, 1 ])).to.deep.equal([ ]);
+  expect(evens([ 2 ])).to.deep.equal([ 2 ]);
+  expect(evens([ 1, 2 ])).to.deep.equal([ 2 ]);  // More tests, perhaps?
 }); // END test(evens)
 
+function evens(N) {  //returns the even numbers of a given array N
+  var evens = [];
+    var length = N.length;
+  for (count = 0; count < length; count ++){
+    if (N[count] % 2 == 0) {
+      evens.push(N[count]);
+    }
+  }
+  return evens;
+}
+
+
+
+/*
 test('summing lists of Number', function(){
   assert.equal(sum([ ]), 0);
   assert.equal(sum([ 1 ]), 1);
