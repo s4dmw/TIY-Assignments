@@ -72,3 +72,30 @@ function threesAndFives(N) {
   }
   return multiplesOfThreeAndFive;
 }
+
+
+test('summing up the numbers in the arrays', function(){
+  assert.isDefined(threesAndFives);
+  assert.isFunction(threesAndFives);
+  expect(sum(0)).to.eql(0);
+  expect(sum(5)).to.eql(3);
+  expect(sum(10)).to.eql(23);
+  expect(sum(20)).to.eql(78);
+  expect(sum(50)).to.eql(543);
+  expect(sum(100)).to.eql(2318);
+  expect(sum(1000)).to.eql(233168);
+}); // END test sum
+
+function sum(N) {
+  var multiplesOfThreeAndFive = [];
+  for (count = 1; count < N; count ++) {
+    if (count % 3 === 0 || count % 5 === 0) {
+      multiplesOfThreeAndFive.push(count);
+    }
+  }
+  var sum = 0
+  for (count = 0; count < multiplesOfThreeAndFive.length; count ++) {
+    sum = sum + multiplesOfThreeAndFive[count];
+  }
+  return sum;
+}
