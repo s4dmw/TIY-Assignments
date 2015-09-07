@@ -160,5 +160,20 @@ else { //if neither conditions are met, this statement is performed
 }
 ```
 
+##Loops and Iteration
+#####- while statement 
+-executes its statements while its condition is true. 
+-example:
+```
+while (x = 3) { //while the conidtion is true, the commands in the statement will be performed
+ y ++;
+}
+```
 
- while, do-while
+#####- do...while statment
+-executes its statements until the the while condition is false.
+-example:
+```
+do {
+  y ++;
+} while (x = 3);
