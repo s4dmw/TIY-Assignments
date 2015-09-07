@@ -160,6 +160,26 @@ else { //if neither conditions are met, this statement is performed
 }
 ```
 
+#####- switch and case
+A switch statement allows a program to evaluate an expression and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement.
+-example:
+```
+switch (name) { //
+  case "David":
+    console.log("Intersting, that's my name too");
+    break;
+  case "Shelley":
+    console.log(It's always a pleasure to see you Shelley");
+    break;
+  case "Andrew":
+    console.log("Hi Andrew, long time no see");
+    break;
+  default:
+    console.log("Hi " + name + " it's nice to meet you");
+    break;
+}
+```
+
 ##Loops and Iteration
 #####- while statement 
 -executes its statements while its condition is true. 
@@ -177,3 +197,5 @@ while (x = 3) { //while the conidtion is true, the commands in the statement wil
 do {
   y ++;
 } while (x = 3);
+```
+
