@@ -144,21 +144,39 @@ An Array is a collection of literal types.
 -example: `var x = [1, 2, 3, 4];` creates an array with those number in it
 -example: `var y = [];` creates an empty array
 
-#####- length
-- the length function returns the number of elements in an array
-- example: `console.log(x.length);` will return 4 when used with the array example above
-
 #####- Accessing the array
 -example: `console.log(x);` will return [1, 2, 3, 4] when used with the array example above
 -example: `console.log(x[0]);` will return the number in the 0 postion, which is 1
 
-#####- push
--adds elements to the end of an array
--example: `x.push(5);` adds the number 5 to the array. x now equals [1, 2, 3, 4, 5]
+### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
 
-#####- pop
--removes an element from the end of an array
--example: `x.pop();` removes the last element, the number 5 from the array. x now equals [1, 2, 3, 4]
+#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+* _params:_ none
+* _returns:_ the last element
+* _side-effects_: removes the element returned
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+x.pop();  // removes the last element of the array
+console.log(x); // returns [1, 2, 3, 4]
+
+#### [`Array.prototype.push`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+
+* _params:_ the elements to add to the end of the array
+* _returns:_ the number of elements in the array
+* _side-effects_: adds the parameters to the end of the array
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+x.push(6, 7); //adds 6 and 7 to the end of the array and returns the length of the array - 7
+console.log(x); // returns [1, 2, 3, 4, 5, 6, 7]
+
+
+
+#####- length
+- the length function returns the number of elements in an array
+- example: `console.log(x.length);` will return 4 when used with the array example above
 
 #####- shift
 -removes the first element from an array
