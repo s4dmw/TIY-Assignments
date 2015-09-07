@@ -77,16 +77,6 @@ Unary operators have only one operand.
 - example: `typeof 3` returns 'number'
 - example: `typeof "text"` returns 'string'
 
-#### Block Operators
-A block statement is used to group zero or more statements. The block is delimited by a pair of curly brackets `{}`.
-
--example: 
-```
-if (x == y) { //this curly bracket starts the block
- z = x + y;
- a = x / y;
-} //this curly bracket closes the block
-```
 
 ## Built-in Constants
 #####- undefined 
@@ -144,8 +134,31 @@ A function must be invoked, with the arguments in parantheses, in order to run.
 
 //the above example invokes the addition function from the previous example with the arguments 4 and 3. The function returns a value of 7 which is printed to the screen with console.log.
 
+## Statements
+#### Block Statements
+A block statement is used to group zero or more statements. The block is delimited by a pair of curly brackets `{}`.
+
+-example: 
+```
+if (x == y) { //this curly bracket starts the block
+ z = x + y;
+ a = x / y;
+} //this curly bracket closes the block
+```
+
+#### Conditional Statements
+#####- if...else
+-example:
+```
+if (x == 1) {  // if first condition is met, the first statement is performed, then the loop is broken
+  y = 2;
+  }
+else if (x == 2) { //first condition not met, if this one is, the statement is performed and loop broken
+  y = 3;
+else { //if neither conditions are met, this statement is performed
+  y = 4;
+}
+```
 
 
-
-  if, else
  while, do-while
