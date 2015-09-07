@@ -148,7 +148,11 @@ An Array is a collection of literal types.
 -example: `console.log(x);` will return [1, 2, 3, 4] when used with the array example above
 -example: `console.log(x[0]);` will return the number in the 0 postion, which is 1
 
-### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
+#####- length
+- the length function returns the number of elements in an array
+- example: `console.log(x.length);` will return 4 when used with the array example above
+
+### [Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
 
 #### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
@@ -172,30 +176,56 @@ console.log(x); // returns [1, 2, 3, 4]
 x.push(6, 7); //adds 6 and 7 to the end of the array and returns the length of the array - 7
 console.log(x); // returns [1, 2, 3, 4, 5, 6, 7]
 
-
-
-#####- length
-- the length function returns the number of elements in an array
-- example: `console.log(x.length);` will return 4 when used with the array example above
-
-#####- shift
--removes the first element from an array
--example: `x.shift();` removes the first element, the number 1 from the array. x now equals [2, 3, 4]
-
-#####- unshift
--adds an element to the front of an array
--example: `x.unshift(1);` adds the number 1 to the front of the array. x now equals [1, 2, 3, 4]
-
-#####- indexOf
--returns the index(location) of an item in an array
--example: `console.log(x.indexOf(3));` prints out the index of the number 5 in the array which is 2.
-
-### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
-
-#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+#### [`Array.prototype.shift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 
 * _params:_ none
-* _returns:_ the last element
-* _side-effects_: removes the element returned
+* _returns:_ the first element of the array
+* _side-effects_: removes the first element of the array
 
-##### Examples
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+x.shift(); //removes the first elment (1), and returns that element
+console.log(x); // returns [2, 3, 4, 5]
+
+#### [`Array.prototype.unshift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
+
+* _params:_ elements to add to the front of the array
+* _returns:_ the new length of the array
+* _side-effects_: adds elements to the front of the array
+
+##### Example
+```var x = [3, 4, 5]; //creates an array
+x.unshift(1, 2); //adds (1, 2) to the array and returns the new length (5)
+console.log(x); // returns [1, 2, 3, 4, 5]
+
+#### [`Array.prototype.indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+
+* _params:_ element to locate in the array
+* _returns:_ index of the element you want to locate
+* _side-effects_: none
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+console.log(x.indexOf(2)); //returns the index/location (1) of the element 2
+
+#### [`Array.prototype.reverse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
+
+* _params:_ none
+* _returns:_ returns the array with reversed order
+* _side-effects_: reverses the order of the elements in the array
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+x.reverse(); //reverses the array and returns [5, 4, 3, 2, 1]
+console.log(x); // returns [5, 4, 3, 2, 1]
+
+#### [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+* _params:_ Optional. Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+* _returns:_ returns the array with the sorted order
+* _side-effects_: sorts the elements in the array
+
+##### Example
+```var x = [5, 4, 3, 2, 1]; //creates an array
+x.sort(); //sors the order of the array and returns [1, 2, 3, 4, 5]
+console.log(x); // returns [1, 2, 3, 4, 5]
