@@ -133,7 +133,17 @@ A function must be invoked, with the arguments in parantheses, in order to run.
 //the above example invokes the addition function from the previous example with the arguments 4 and 3. The function returns a value of 7 which is printed to the screen with console.log.
 
 
+#### Blocks
+A block statement is used to group zero or more statements. The block is delimited by a pair of curly brackets `{}`.
 
-{ } as block operator
+-example: 
+```
+if (x == y) { //this curly bracket starts the block
+ z = x + y;
+ a = x / y;
+} //this curly bracket closes the block
+```
+
+
   if, else
  while, do-while
