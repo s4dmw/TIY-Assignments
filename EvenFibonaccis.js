@@ -37,6 +37,9 @@ test('just even numbers?', function(){
   expect(evens([ 1, 1, 1 ])).to.deep.equal([ ]);
   expect(evens([ 2 ])).to.deep.equal([ 2 ]);
   expect(evens([ 1, 2 ])).to.deep.equal([ 2 ]);  // More tests, perhaps?
+  expect(evens([ 1, 2, 3, 5, 8 ])).to.deep.equal([ 2, 8 ]);
+  expect(evens([ 1, 2, 3, 5, 8, 13, 21, 34])).to.deep.equal([ 2, 8, 34 ]);
+  expect(evens(fibonacci(8))).to.deep.equal([ 2, 8, 34 ]);
 }); // END test(evens)
 
 function evens(N) {  //returns the even numbers of a given array N
