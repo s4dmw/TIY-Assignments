@@ -108,7 +108,8 @@ test('2nd try - summing even Fibonacci numbers?', function(){
   expect(evenFibSum(3)).to.equal(2);
   expect(evenFibSum(10)).to.equal(44);
   expect(evenFibSum(20)).to.equal(14328);
-  expect(evenFibSum(10000)).to.equal(Infinity);
+  expect(evenFibSum(10000)).to.equal(Infinity); // created a new file to try to handle
+  //the larger numbers
 
 }); //END them tests...
 
