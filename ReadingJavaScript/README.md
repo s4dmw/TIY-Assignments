@@ -131,3 +131,53 @@ A function must be invoked, with the arguments in parantheses, in order to run.
 -example: `console.log(addition(4, 3));` will return 7
 
 //the above example invokes the addition function from the previous example with the arguments 4 and 3. The function returns a value of 7 which is printed to the screen with console.log.
+
+##all of the entries from the 03 assignment are in the 03 branch...guessing i'll have to resolve that later...
+
+
+##Arrays
+An Array is a collection of literal types.
+-array indexes start with zero
+-example: [1, 2, true, null, "text"]
+
+#####- creating an array
+-example: `var x = [1, 2, 3, 4];` creates an array with those number in it
+-example: `var y = [];` creates an empty array
+
+#####- length
+- the length function returns the number of elements in an array
+- example: `console.log(x.length);` will return 4 when used with the array example above
+
+#####- Accessing the array
+-example: `console.log(x);` will return [1, 2, 3, 4] when used with the array example above
+-example: `console.log(x[0]);` will return the number in the 0 postion, which is 1
+
+#####- push
+-adds elements to the end of an array
+-example: `x.push(5);` adds the number 5 to the array. x now equals [1, 2, 3, 4, 5]
+
+#####- pop
+-removes an element from the end of an array
+-example: `x.pop();` removes the last element, the number 5 from the array. x now equals [1, 2, 3, 4]
+
+#####- shift
+-removes the first element from an array
+-example: `x.shift();` removes the first element, the number 1 from the array. x now equals [2, 3, 4]
+
+#####- unshift
+-adds an element to the front of an array
+-example: `x.unshift(1);` adds the number 1 to the front of the array. x now equals [1, 2, 3, 4]
+
+#####- indexOf
+-returns the index(location) of an item in an array
+-example: `console.log(x.indexOf(3));` prints out the index of the number 5 in the array which is 2.
+
+### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
+
+#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+* _params:_ none
+* _returns:_ the last element
+* _side-effects_: removes the element returned
+
+##### Examples
