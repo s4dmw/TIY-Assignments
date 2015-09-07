@@ -24,15 +24,6 @@ JavaScript uses the following Primitive (Basic Literal Types):
 #### Arithmetic Operators
 Arithmetic operators take numbererical operands, perform operations on them, and return a single numberical value. Multiple operands and operators can be used (eg. `5+5-3` will return 7).
 
-{ } as block operator
- 
- 
- 
- 
- 
- if, else
- while, do-while
-
 #####- addition `+`
 - example: `2 + 2` returns a value of 4
 
@@ -140,3 +131,9 @@ A function must be invoked, with the arguments in parantheses, in order to run.
 -example: `console.log(addition(4, 3));` will return 7
 
 //the above example invokes the addition function from the previous example with the arguments 4 and 3. The function returns a value of 7 which is printed to the screen with console.log.
+
+
+
+{ } as block operator
+  if, else
+ while, do-while
