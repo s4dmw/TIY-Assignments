@@ -332,3 +332,9 @@ Start investigating [the DOM on MDN](https://developer.mozilla.org/en-US/docs/We
   * how they can be used _like_ an `Array`
   * the `item` method
  
+* **Reading JavaScript: DOM EDITION**
+   * [ ] the `Window` object
+   * [ ] the `Location` object
+   * [ ] the `Document` object
+   * [ ] the `HTMLElement` type
+   * [ ] the `HTMLCollection` and `NodeList` types
