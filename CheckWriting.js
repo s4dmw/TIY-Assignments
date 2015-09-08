@@ -56,7 +56,9 @@ function toEnglish(value){
 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve",
 13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen",
 19: "nineteen", 20: "twenty", 30: "thirty", 40: "forty", 50: "fifty", 60: "sixty", 70: "seventy",
-80: "eighty", 90: "ninety"};
+80: "eighty", 90: "ninety", 100: "one hundred", 200: "two hundred", 300: "three hundred",
+400: "four hundred", 500: "five hundred"};
+
 
   if (value <= 20) {
     return numArray[value];
@@ -81,10 +83,34 @@ function toEnglish(value){
 
 test('BEAST MODE: toCheck', function(){
   assert.isFunction(toCheck);
+  assert.equal(toCheck(0.00), "zero & 00/100s")
+  assert.equal(toCheck(0.45), "zero & 45/100s")
   assert.equal(toCheck(1.23), "one & 23/100s");
   assert.equal(toCheck(12.34), "twelve & 34/100s");
+  assert.equal(toCheck(20.30), "twenty & 30/100s");
+  assert.equal(toCheck(55.05), "fifty five & 05/100s");
+  // you might need to try some values in between...
+}); // END test(BEAST MODE)
+
+function toCheck(value) {
+  var cents = Math.round((value - Math.trunc(value)) * 100);
+  if (cents < 10) {
+    cents = "0"+cents;
+  }
+  var dollars = toEnglish(Math.trunc(value));
+
+
+  return dollars + " & " + cents + "/100s";
+
+}
+
+test('NIGHTMARE MODE: toCheck', function(){
+  assert.isFunction(toCheck);
   assert.equal(toCheck(123.45), "one hundred twenty three & 45/100s");
   assert.equal(toCheck(1234.56), "one thousand, two hundred thirty four & 56/100s");
+
+
+
   // you might need to try some values in between...
 }); // END test(BEAST MODE)
 

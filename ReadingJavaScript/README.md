@@ -1,7 +1,7 @@
 # About JavaScript
 
-## Basic Literal Types 
-JavaScript uses the following Primitive (Basic Literal Types): 
+## Basic Literal Types
+JavaScript uses the following Primitive (Basic Literal Types):
 #####- null
 - `null` has only one value which is empty(or no) value.
 
@@ -10,10 +10,10 @@ JavaScript uses the following Primitive (Basic Literal Types):
 
 #####- Boolean
 - `Boolean` has two values, true or false. These values can be the result of logial comparisons.
-- example: `7 < 3` returns `false` 
+- example: `7 < 3` returns `false`
 
 #####- Number
-- A `Number` can have any numerical value (integers, fractional numbers, ratios). 
+- A `Number` can have any numerical value (integers, fractional numbers, ratios).
 - examples: `0, 1.2, 55, -12`
 
 #####- String
@@ -22,7 +22,7 @@ JavaScript uses the following Primitive (Basic Literal Types):
 
 ## Operators
 #### Arithmetic Operators
-Arithmetic operators take numbererical operands, perform operations on them, and return a single numberical value. Multiple operands and operators can be used (eg. `5+5-3` will return 7).
+Arithmetic operators take numerical operands, perform operations on them, and return a single numerical value. Multiple operands and operators can be used (eg. `5+5-3` will return 7).
 
 #####- addition `+`
 - example: `2 + 2` returns a value of 4
@@ -30,7 +30,7 @@ Arithmetic operators take numbererical operands, perform operations on them, and
 #####- subtraction `-`
 - example: `5-3` returns a value of 2
 
-#####- mulitplication `*`
+#####- multiplication `*`
 - example: `12*3` returns a value of 36
 
 #####- division `/`
@@ -61,7 +61,7 @@ Comparison operators compare two operands and return a Boolean value (true or fa
 - example: `3>7` returns true
 
 #####- less than or equal `<=`
-- exmple: `7<=3` returns false
+- example: `7<=3` returns false
 
 
 #### Assignment Operators
@@ -73,30 +73,34 @@ Assignment operators assign a value to the left operand based on the value of th
 #### Unary Operators
 Unary operators have only one operand.
 
-#####- the `typeof` oeperator returns a string indicating the type of the operand
+
+#####- the `typeof` operator returns a string indicating the type of the operand
 - example: `typeof 3` returns 'number'
 - example: `typeof "text"` returns 'string'
 
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 ## Built-in Constants
-#####- undefined 
+#####- undefined
 - a value of undefined
 
-#####- NaN 
+#####- NaN
 - Not a Number
 - example: `3/"text"` returns NaN
 
 #####- Infinity
-- numberic value representing Infinity
+- numeric value representing Infinity
 - example: `3/0` returns Infinity
 
+
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 ## Special Characters
 #####- backspace `\b`
 - example: `console.log("This line has a backspace\b in it")` returns "This line has a backspac in it"
 
 #####- new line `\n`
-- example: `console.log("This line has a newline \n in it")` 
-
-returns "This line has a newline 
+- example: `console.log("This line has a newline \n in it")`
+returns "This line has a newline
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 
  in it"
 
@@ -116,21 +120,24 @@ Functions are sets of statements that perform tasks or calculate values. To use 
 #### Function Definition
 A function must be defined with a function name and the arguments are passed to the function during invocation. Once invoked, that function will complete the commands inside of it.
 
--example: 
+
+-example:
 ```
-function addition (A, B) { 
+function addition (A, B) {
       return A+B;
-      
+
     }
 ```
 //when invoked, function takes the arguments A and B and returns their sum
-    
+
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 #### Function Invocation
 A function must be invoked, with the arguments in parantheses, in order to run.
 
 -example: `console.log(addition(4, 3));` will return 7
 
 //the above example invokes the addition function from the previous example with the arguments 4 and 3. The function returns a value of 7 which is printed to the screen with console.log.
+
 
 ##all of the entries from the 03 assignment are in the 03 branch...guessing i'll have to resolve that later...
 
@@ -229,3 +236,69 @@ console.log(x); // returns [5, 4, 3, 2, 1]
 ```var x = [5, 4, 3, 2, 1]; //creates an array
 x.sort(); //sors the order of the array and returns [1, 2, 3, 4, 5]
 console.log(x); // returns [1, 2, 3, 4, 5]
+
+
+## Statements
+#### Block Statements
+A block statement is used to group zero or more statements. The block is delimited by a pair of curly brackets `{}`.
+
+-example:
+```
+if (x == y) { //this curly bracket starts the block
+ z = x + y;
+ a = x / y;
+} //this curly bracket closes the block
+```
+
+#### Conditional Statements
+#####- if...else
+-example:
+```
+if (x == 1) {  // if first condition is met, the first statement is performed, then the loop is broken
+  y = 2;
+  }
+else if (x == 2) { //first condition not met, if this one is, the statement is performed and loop broken
+  y = 3;
+else { //if neither conditions are met, this statement is performed
+  y = 4;
+}
+```
+
+#####- switch and case
+A switch statement allows a program to evaluate an expression and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement.
+-example:
+```
+switch (name) { //
+  case "David":
+    console.log("Interesting, that's my name too");
+    break;
+  case "Shelley":
+    console.log(It's always a pleasure to see you Shelley");
+    break;
+  case "Andrew":
+    console.log("Hi Andrew, long time no see");
+    break;
+  default:
+    console.log("Hi " + name + " it's nice to meet you");
+    break;
+}
+```
+
+##Loops and Iteration
+#####- while statement
+-executes its statements while its condition is true.
+-example:
+```
+while (x = 3) { //while the condition is true, the commands in the statement will be performed
+ y ++;
+}
+```
+
+#####- do...while statement
+-executes its statements until the the while condition is false.
+-example:
+```
+do {
+  y ++;
+} while (x = 3);
+```
