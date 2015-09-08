@@ -303,7 +303,7 @@ do {
 ## Document Object Model (DOM)
 a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document  and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Nodes can also have event handlers attached to them, and once that event is triggered the event handlers get executed. Essentially, it connects web pages to scripts or programming languages.
 
-#### The Window object
+### The Window object
 epresents a window containing a DOM document; the document property points to the DOM document loaded in that window. 
 
 #####- location 
