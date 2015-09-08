@@ -197,7 +197,7 @@ while (x = 3) { //while the condition is true, the commands in the statement wil
 ```
 
 #####- do...while statement
--executes its statements until the the while condition is false.
+-executes its statements until the while condition is false.
 -example:
 ```
 do {

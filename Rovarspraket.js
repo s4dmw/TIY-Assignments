@@ -152,9 +152,10 @@ function maxOfThree(A, B, C){
   }
 
   // Feel free to provide additional examples...
-  console.assert(rovarspraket("a") === "a")
-  console.assert(rovarspraket("b") === "bob")
-  console.assert(rovarspraket("cat") === "cocatot")
-  console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
-  console.assert(rovarspraket(0) === "0")
-  console.assert(rovarspraket("holycrapitworks")  === "hohololyoycocrorapopitotwowororkoksos")
+  console.assert(rovarspraket("a") === "a");
+  console.assert(rovarspraket("b") === "bob");
+  console.assert(rovarspraket("dog") === "dodogog");
+  console.assert(rovarspraket("cat") === "cocatot");
+  console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot");
+  console.assert(rovarspraket(0) === "0");
+  console.assert(rovarspraket("holycrapitworks")  === "hohololyoycocrorapopitotwowororkoksos");
