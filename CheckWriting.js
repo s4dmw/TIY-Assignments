@@ -88,8 +88,6 @@ test('BEAST MODE: toCheck', function(){
   assert.equal(toCheck(12.34), "twelve & 34/100s");
   assert.equal(toCheck(20.30), "twenty & 30/100s");
   assert.equal(toCheck(55.05), "fifty five & 05/100s");
-  assert.equal(toCheck(123.45), "one hundred twenty three & 45/100s");
-  assert.equal(toCheck(1234.56), "one thousand, two hundred thirty four & 56/100s");
   // you might need to try some values in between...
 }); // END test(BEAST MODE)
 
@@ -105,6 +103,11 @@ function toCheck(value) {
 
 }
 
+test('NIGHTMARE MODE: toCheck', function(){
+  assert.isFunction(toCheck);
+  assert.equal(toCheck(123.45), "one hundred twenty three & 45/100s");
+  assert.equal(toCheck(1234.56), "one thousand, two hundred thirty four & 56/100s");
+});
 
 
 
