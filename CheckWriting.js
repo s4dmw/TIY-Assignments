@@ -87,6 +87,7 @@ test('BEAST MODE: toCheck', function(){
   assert.equal(toCheck(1.23), "one & 23/100s");
   assert.equal(toCheck(12.34), "twelve & 34/100s");
   assert.equal(toCheck(20.30), "twenty & 30/100s");
+  assert.equal(toCheck(30.32), "thirty & 32/100s")
   assert.equal(toCheck(55.05), "fifty five & 05/100s");
   // you might need to try some values in between...
 }); // END test(BEAST MODE)
