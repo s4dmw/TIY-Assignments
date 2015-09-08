@@ -73,13 +73,8 @@ Assignment operators assign a value to the left operand based on the value of th
 #### Unary Operators
 Unary operators have only one operand.
 
-<<<<<<< HEAD
+
 #####- the `typeof` operator returns a string indicating the type of the operand
-- example: `typeof 3` returns 'number'
-- example: `typeof "text"` returns 'string'
-
-
-#####- the `typeof` oeperator returns a string indicating the type of the operand
 - example: `typeof 3` returns 'number'
 - example: `typeof "text"` returns 'string'
 
@@ -101,8 +96,7 @@ Unary operators have only one operand.
 - example: `console.log("This line has a backspace\b in it")` returns "This line has a backspac in it"
 
 #####- new line `\n`
-- example: `console.log("This line has a newline \n in it")` 
-
+- example: `console.log("This line has a newline \n in it")`
 returns "This line has a newline
 
  in it"
@@ -123,15 +117,15 @@ Functions are sets of statements that perform tasks or calculate values. To use 
 #### Function Definition
 A function must be defined with a function name and the arguments are passed to the function during invocation. Once invoked, that function will complete the commands inside of it.
 
--example: 
+
+-example:
 ```
-function addition (A, B) { 
+function addition (A, B) {
       return A+B;
-      
+
     }
 ```
 //when invoked, function takes the arguments A and B and returns their sum
-    
 
 #### Function Invocation
 A function must be invoked, with the arguments in parantheses, in order to run.
@@ -139,6 +133,106 @@ A function must be invoked, with the arguments in parantheses, in order to run.
 -example: `console.log(addition(4, 3));` will return 7
 
 //the above example invokes the addition function from the previous example with the arguments 4 and 3. The function returns a value of 7 which is printed to the screen with console.log.
+
+
+##all of the entries from the 03 assignment are in the 03 branch...guessing i'll have to resolve that later...
+
+
+##Arrays
+An Array is a collection of literal types.
+-array indexes start with zero
+-example: [1, 2, true, null, "text"]
+
+#####- creating an array
+-example: `var x = [1, 2, 3, 4];` creates an array with those number in it
+-example: `var y = [];` creates an empty array
+
+#####- Accessing the array
+-example: `console.log(x);` will return [1, 2, 3, 4] when used with the array example above
+-example: `console.log(x[0]);` will return the number in the 0 postion, which is 1
+
+#####- length
+- the length function returns the number of elements in an array
+- example: `console.log(x.length);` will return 4 when used with the array example above
+
+### [Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
+
+#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+* _params:_ none
+* _returns:_ the last element
+* _side-effects_: removes the element returned
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+x.pop();  // removes the last element of the array
+console.log(x); // returns [1, 2, 3, 4]
+
+#### [`Array.prototype.push`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+
+* _params:_ the elements to add to the end of the array
+* _returns:_ the number of elements in the array
+* _side-effects_: adds the parameters to the end of the array
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+x.push(6, 7); //adds 6 and 7 to the end of the array and returns the length of the array - 7
+console.log(x); // returns [1, 2, 3, 4, 5, 6, 7]
+
+#### [`Array.prototype.shift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+
+* _params:_ none
+* _returns:_ the first element of the array
+* _side-effects_: removes the first element of the array
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+x.shift(); //removes the first elment (1), and returns that element
+console.log(x); // returns [2, 3, 4, 5]
+
+#### [`Array.prototype.unshift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
+
+* _params:_ elements to add to the front of the array
+* _returns:_ the new length of the array
+* _side-effects_: adds elements to the front of the array
+
+##### Example
+```var x = [3, 4, 5]; //creates an array
+x.unshift(1, 2); //adds (1, 2) to the array and returns the new length (5)
+console.log(x); // returns [1, 2, 3, 4, 5]
+
+#### [`Array.prototype.indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+
+* _params:_ element to locate in the array
+* _returns:_ index of the element you want to locate
+* _side-effects_: none
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+console.log(x.indexOf(2)); //returns the index/location (1) of the element 2
+
+#### [`Array.prototype.reverse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
+
+* _params:_ none
+* _returns:_ returns the array with reversed order
+* _side-effects_: reverses the order of the elements in the array
+
+##### Example
+```var x = [1, 2, 3, 4, 5]; //creates an array
+x.reverse(); //reverses the array and returns [5, 4, 3, 2, 1]
+console.log(x); // returns [5, 4, 3, 2, 1]
+
+#### [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+* _params:_ Optional. Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+* _returns:_ returns the array with the sorted order
+* _side-effects_: sorts the elements in the array
+
+##### Example
+```var x = [5, 4, 3, 2, 1]; //creates an array
+x.sort(); //sors the order of the array and returns [1, 2, 3, 4, 5]
+console.log(x); // returns [1, 2, 3, 4, 5]
+
 
 ## Statements
 #### Block Statements
@@ -197,11 +291,10 @@ while (x = 3) { //while the condition is true, the commands in the statement wil
 ```
 
 #####- do...while statement
--executes its statements until the while condition is false.
+-executes its statements until the the while condition is false.
 -example:
 ```
 do {
   y ++;
 } while (x = 3);
 ```
-
