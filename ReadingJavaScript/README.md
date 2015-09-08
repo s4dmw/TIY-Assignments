@@ -73,11 +73,18 @@ Assignment operators assign a value to the left operand based on the value of th
 #### Unary Operators
 Unary operators have only one operand.
 
+<<<<<<< HEAD
 #####- the `typeof` operator returns a string indicating the type of the operand
 - example: `typeof 3` returns 'number'
 - example: `typeof "text"` returns 'string'
 
 
+=======
+#####- the `typeof` oeperator returns a string indicating the type of the operand
+- example: `typeof 3` returns 'number'
+- example: `typeof "text"` returns 'string'
+
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 ## Built-in Constants
 #####- undefined
 - a value of undefined
@@ -90,7 +97,10 @@ Unary operators have only one operand.
 - numeric value representing Infinity
 - example: `3/0` returns Infinity
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 ## Special Characters
 #####- backspace `\b`
 - example: `console.log("This line has a backspace\b in it")` returns "This line has a backspac in it"
@@ -98,7 +108,11 @@ Unary operators have only one operand.
 #####- new line `\n`
 - example: `console.log("This line has a newline \n in it")` 
 
+<<<<<<< HEAD
 returns "This line has a newline
+=======
+returns "This line has a newline 
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 
  in it"
 
@@ -118,6 +132,7 @@ Functions are sets of statements that perform tasks or calculate values. To use 
 #### Function Definition
 A function must be defined with a function name and the arguments are passed to the function during invocation. Once invoked, that function will complete the commands inside of it.
 
+<<<<<<< HEAD
 -example:
 ```
 function addition (A, B) {
@@ -127,12 +142,24 @@ function addition (A, B) {
 ```
 //when invoked, function takes the arguments A and B and returns their sum
 
+=======
+-example: 
+```
+function addition (A, B) { 
+      return A+B;
+      
+    }
+```
+//when invoked, function takes the arguments A and B and returns their sum
+    
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 #### Function Invocation
 A function must be invoked, with the arguments in parantheses, in order to run.
 
 -example: `console.log(addition(4, 3));` will return 7
 
 //the above example invokes the addition function from the previous example with the arguments 4 and 3. The function returns a value of 7 which is printed to the screen with console.log.
+<<<<<<< HEAD
 
 ## Statements
 #### Block Statements
@@ -198,3 +225,5 @@ do {
   y ++;
 } while (x = 3);
 ```
+=======
+>>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
