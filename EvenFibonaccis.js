@@ -132,3 +132,5 @@ function evenFibSum(N) { //going to try this all in one function now
   }
   return evenSum;
 }
+
+//adding a comment so i can get the files to merge

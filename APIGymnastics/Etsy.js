@@ -52,3 +52,5 @@ test('this is just SEO bait, I know it...', function(){
 test('true craftsmen... women... people. Birds?', function(){
   expect(makerSellers(items)).to.equal(18);
 });
+
+//adding a comment to get the files to merge

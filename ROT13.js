@@ -31,6 +31,7 @@ function reverse(S){
  console.assert(reverse("") === ""); // Really
 console.assert(reverse("A") === "A"); // Jerk.
 console.assert(reverse("cat") === "tac");
+console.assert(reverse("dog") === "god");
 console.assert(reverse("ward") === "draw");
 console.assert(reverse("books") === "skoob"); // Rokey, dokey...
 console.assert(
