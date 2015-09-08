@@ -78,7 +78,6 @@ Unary operators have only one operand.
 - example: `typeof 3` returns 'number'
 - example: `typeof "text"` returns 'string'
 
->>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 ## Built-in Constants
 #####- undefined
 - a value of undefined
@@ -92,7 +91,6 @@ Unary operators have only one operand.
 - example: `3/0` returns Infinity
 
 
->>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 ## Special Characters
 #####- backspace `\b`
 - example: `console.log("This line has a backspace\b in it")` returns "This line has a backspac in it"
@@ -100,7 +98,6 @@ Unary operators have only one operand.
 #####- new line `\n`
 - example: `console.log("This line has a newline \n in it")`
 returns "This line has a newline
->>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 
  in it"
 
@@ -130,7 +127,6 @@ function addition (A, B) {
 ```
 //when invoked, function takes the arguments A and B and returns their sum
 
->>>>>>> 5893d43450e34dd5f95848d5773a35dbb2d70a3d
 #### Function Invocation
 A function must be invoked, with the arguments in parantheses, in order to run.
 
