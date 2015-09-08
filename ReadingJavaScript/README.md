@@ -298,3 +298,37 @@ do {
   y ++;
 } while (x = 3);
 ```
+
+
+
+#### Reading JavaScript 
+
+Start investigating [the DOM on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) and add some documentation to your "Reading JavaScript" file. Pay particular attention to the following:
+
+* the `Window` object
+  * properties like `location`, `document`, `history`
+  * what kind of things are stored in those properties (warning: rabbit holes)
+  * methods like `alert`, `confirm`, `reload`, `open` and `close`
+* the `Location` object
+  * all the properties here are important
+  * what happens when you mess around with them?
+* the `Document` object
+  * properties like `head` and `body`
+  * methods like
+    * `getElementById` and `getElementsByClassName`
+    * `querySelector` and `querySelectorAll`
+    * `appendChild` and the `create*` family
+    * `write` and `writeln`
+* the `HTMLElement` type
+  * properties like
+    * `id` and `className`
+    * `innerHTML` and `outerHTML`
+    * `children`, `parent`, `nextSibling`, and `firstChild`
+  * methods like
+    * `addEventListener` and `dispatchEvent`
+    * the `*Attribute` family
+* the `HTMLCollection` and `NodeList` types
+  * how they differ from `Array`
+  * how they can be used _like_ an `Array`
+  * the `item` method
+ 
