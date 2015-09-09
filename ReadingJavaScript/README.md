@@ -420,24 +420,24 @@ The HTMLElement interface represents any HTML element. Some elements directly im
 - syntax: `var childNode = elementNodeReference.firstElementChild;`
 
 
+## HTMLCollection
+The HTMLCollection interface represents a generic collection (array-like object) of elements (in document order) and offers methods and properties for selecting from the list.
 
+### Methods
+#####- item 
+- HTMLCollection.item( ) gets an element by position.
+- example:
+```
+var c = document.images;  
+var img0 = c.item(0);     
+var img1 = c[1]; 
+```
 
-* the `HTMLElement` type
-  * properties like
-    * `id` and `className`
-    * `innerHTML` and `outerHTML`
-    * `children`, `parent`, `nextSibling`, and `firstChild`
-  * methods like
-    * `addEventListener` and `dispatchEvent`
-    * the `*Attribute` family
-* the `HTMLCollection` and `NodeList` types
-  * how they differ from `Array`
-  * how they can be used _like_ an `Array`
-  * the `item` method
- 
-* **Reading JavaScript: DOM EDITION**
-   * [x] the `Window` object
-   * [x] the `Location` object
-   * [x] the `Document` object
-   * [x] the `HTMLElement` type
-   * [ ] the `HTMLCollection` and `NodeList` types
+## NodeList
+collections of nodes such as those returned by Node.childNodes and the document.querySelectorAll method.
+
+### Methods
+#####- item
+- Returns a node from a NodeList by index. 
+- syntax: `nodeItem = nodeList.item(index)`
+
