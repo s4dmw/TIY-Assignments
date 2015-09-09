@@ -328,8 +328,6 @@ epresents a window containing a DOM document; the document property points to th
 - displays a modal dialog with an optional message and two buttons, OK (returns true) and Cancel (false)
 - example: `answer = window.confirm("Are you SURE you want to do that?");
 
-#####- reload - // couldnt find this one yet...
-
 #####- open
 - Loads a resource into either a new browsing context (such as a window) or one that already exists, depending on the specified parameters.
 - syntax: `var windowObjectReference = window.open(strUrl, strWindowName, [strWindowFeatures]);`
@@ -339,6 +337,19 @@ epresents a window containing a DOM document; the document property points to th
 - syntax: `window.close();`
 
 ## The Location object
+The Location interface represents the location of the object it is linked to. Changes done on it are reflected on the object it relates to.
+
+#####- assign
+- causes the window to load and display the document at the URL specified.
+- syntax: `object.assign(url);`
+
+#####- reload
+- reloads the resource from the current URL. Its optional unique parameter is a Boolean, which, when it is true, causes the page to always be reloaded from the server. If it is false or not specified, the browser may reload the page from its cache.
+- syntax: `object.reload(forcedReload);`
+
+#####- replace
+- replaces the current resource with the one at the provided URL. The difference from the assign() method is that after using replace() the current page will not be saved in session History, meaning the user won't be able to use the back button to navigate to it.
+- syntax: object.replace(url);
 
 ## The Document object
 Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content and provides functionality which is global to the document
@@ -379,17 +390,11 @@ Each web page loaded in the browser has its own document object. The Document in
 - Writes a string of text followed by a newline character to a document.
 - sytax: `document.writeln(line);`
 
+## The HTML Type
 
-* the `Location` object
-  * all the properties here are important
-  * what happens when you mess around with them?
-* the `Document` object
-  * properties like `head` and `body`
-  * methods like
-    * `getElementById` and `getElementsByClassName`
-    * `querySelector` and `querySelectorAll`
-    * `appendChild` and the `create*` family
-    * `write` and `writeln`
+
+
+
 * the `HTMLElement` type
   * properties like
     * `id` and `className`
@@ -405,7 +410,7 @@ Each web page loaded in the browser has its own document object. The Document in
  
 * **Reading JavaScript: DOM EDITION**
    * [x] the `Window` object
-   * [ ] the `Location` object
+   * [x ] the `Location` object
    * [x] the `Document` object
    * [ ] the `HTMLElement` type
    * [ ] the `HTMLCollection` and `NodeList` types
