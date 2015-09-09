@@ -355,28 +355,29 @@ Each web page loaded in the browser has its own document object. The Document in
 
 ### Methods
 #####- getElementByID
-
+- Returns a reference to the element by its ID
+- syntax: `element = document.getElementById(id);`
 
 #####- getElementByClassName
-
+- Returns an array-like object of all child elements which have all of the given class names. When called on the document object, the complete document is searched, including the root node. You may also call getElementsByClassName() on any element; it will return only elements which are descendants of the specified root element with the given class names.
+- syntax: `var elements = document.getElementsByClassName(names);`
+- syntax: `var elements = rootElement.getElementsByClassName(names);`
 
 #####- querySelector
-
+- Returns the first element within the document that matches the specified group of selectors.
+- syntax: `element = document.querySelector(selectors);`
 
 #####- querySelectorAll
-
-
-#####- appendChild
-
-
-#####- create
-
+- Returns a list of the elements within the document that match the specified group of selectors. 
+- syntax: `elementList = document.querySelectorAll(selectors)`
 
 #####- write
-
+- Writes a string of text to a document stream opened by document.open().
+- syntax: `document.write(markup);`
 
 #####- writeIn
-
+- Writes a string of text followed by a newline character to a document.
+- sytax: `document.writeln(line);`
 
 
 * the `Location` object
@@ -405,6 +406,6 @@ Each web page loaded in the browser has its own document object. The Document in
 * **Reading JavaScript: DOM EDITION**
    * [x] the `Window` object
    * [ ] the `Location` object
-   * [ ] the `Document` object
+   * [x] the `Document` object
    * [ ] the `HTMLElement` type
    * [ ] the `HTMLCollection` and `NodeList` types
