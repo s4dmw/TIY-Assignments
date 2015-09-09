@@ -306,6 +306,7 @@ a programming interface for HTML, XML and SVG documents. It provides a structure
 ### The Window object
 epresents a window containing a DOM document; the document property points to the DOM document loaded in that window. 
 
+### Properties
 #####- location 
 - read-only property returns a Location object with information about the current location of the document
 - example: `location = "http://www.google.com";`
@@ -318,21 +319,30 @@ epresents a window containing a DOM document; the document property points to th
 - returns a reference to the History object, which provides an interface for manipulating the browser session history
 - example: `history.back();     // same as clicking the browser's back button`
 
+### Methods
 #####- alert
+- displays an alert dialog with the optional specified content and an OK button
+- example: `window.alert("ERROR!!!");`
+
 #####- confirm
-#####- reload
+- displays a modal dialog with an optional message and two buttons, OK (returns true) and Cancel (false)
+- example: `answer = window.confirm("Are you SURE you want to do that?");
+
+#####- reload - // couldnt find this one yet...
+
 #####- open
+- Loads a resource into either a new browsing context (such as a window) or one that already exists, depending on the specified parameters.
+- syntax: `var windowObjectReference = window.open(strUrl, strWindowName, [strWindowFeatures]);`
+
 #####- close
+- Closes the current window, or the window on which it was called.
+- syntax: `window.close();`
 
 
 #### Reading JavaScript 
 
-Start investigating [the DOM on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) and add some documentation to your "Reading JavaScript" file. Pay particular attention to the following:
 
-* the `Window` object
-  * properties like `location`, `document`, `history`
-  * what kind of things are stored in those properties (warning: rabbit holes)
-  * methods like `alert`, `confirm`, `reload`, `open` and `close`
+
 * the `Location` object
   * all the properties here are important
   * what happens when you mess around with them?
@@ -357,7 +367,7 @@ Start investigating [the DOM on MDN](https://developer.mozilla.org/en-US/docs/We
   * the `item` method
  
 * **Reading JavaScript: DOM EDITION**
-   * [ ] the `Window` object
+   * [x] the `Window` object
    * [ ] the `Location` object
    * [ ] the `Document` object
    * [ ] the `HTMLElement` type
