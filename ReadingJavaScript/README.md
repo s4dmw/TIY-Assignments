@@ -298,3 +298,144 @@ do {
   y ++;
 } while (x = 3);
 ```
+
+## Document Object Model (DOM)
+a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document  and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Nodes can also have event handlers attached to them, and once that event is triggered the event handlers get executed. Essentially, it connects web pages to scripts or programming languages.
+
+## The Window object
+epresents a window containing a DOM document; the document property points to the DOM document loaded in that window.
+
+### Properties
+#####- location
+- read-only property returns a Location object with information about the current location of the document
+- example: `location = "http://www.google.com";`
+
+#####- document
+- returns a reference to the document contained in the window
+- syntax: `doc = window.document`
+
+#####- history
+- returns a reference to the History object, which provides an interface for manipulating the browser session history
+- example: `history.back();     // same as clicking the browser's back button`
+
+### Methods
+#####- alert
+- displays an alert dialog with the optional specified content and an OK button
+- example: `window.alert("ERROR!!!");`
+
+#####- confirm
+- displays a modal dialog with an optional message and two buttons, OK (returns true) and Cancel (false)
+- example: `answer = window.confirm("Are you SURE you want to do that?");
+
+#####- open
+- Loads a resource into either a new browsing context (such as a window) or one that already exists, depending on the specified parameters.
+- syntax: `var windowObjectReference = window.open(strUrl, strWindowName, [strWindowFeatures]);`
+
+#####- close
+- Closes the current window, or the window on which it was called.
+- syntax: `window.close();`
+
+## The Location object
+The Location interface represents the location of the object it is linked to. Changes done on it are reflected on the object it relates to.
+
+#####- assign
+- causes the window to load and display the document at the URL specified.
+- syntax: `object.assign(url);`
+
+#####- reload
+- reloads the resource from the current URL. Its optional unique parameter is a Boolean, which, when it is true, causes the page to always be reloaded from the server. If it is false or not specified, the browser may reload the page from its cache.
+- syntax: `object.reload(forcedReload);`
+
+#####- replace
+- replaces the current resource with the one at the provided URL. The difference from the assign() method is that after using replace() the current page will not be saved in session History, meaning the user won't be able to use the back button to navigate to it.
+- syntax: object.replace(url);
+
+## The Document object
+Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content and provides functionality which is global to the document
+
+### Properties
+#####- head
+- Returns the <head> element of the current document. If there are more than one <head> elements, the first one is returned.
+- syntax: `var objRef = document.head;`
+
+#####- body
+- Returns the <body> or <frameset> node of the current document, or null if no such element exists.
+- syntax: `var objRef = document.body;`
+- syntax: `document.body = objRef;`
+
+### Methods
+#####- getElementByID
+- Returns a reference to the element by its ID
+- syntax: `element = document.getElementById(id);`
+
+#####- getElementByClassName
+- Returns an array-like object of all child elements which have all of the given class names. When called on the document object, the complete document is searched, including the root node. You may also call getElementsByClassName() on any element; it will return only elements which are descendants of the specified root element with the given class names.
+- syntax: `var elements = document.getElementsByClassName(names);`
+- syntax: `var elements = rootElement.getElementsByClassName(names);`
+
+#####- querySelector
+- Returns the first element within the document that matches the specified group of selectors.
+- syntax: `element = document.querySelector(selectors);`
+
+#####- querySelectorAll
+- Returns a list of the elements within the document that match the specified group of selectors.
+- syntax: `elementList = document.querySelectorAll(selectors)`
+
+#####- write
+- Writes a string of text to a document stream opened by document.open().
+- syntax: `document.write(markup);`
+
+#####- writeIn
+- Writes a string of text followed by a newline character to a document.
+- sytax: `document.writeln(line);`
+
+## The HTMLElement Type
+The HTMLElement interface represents any HTML element. Some elements directly implement this interface, others implement it via an interface that inherits it.
+
+### Properties
+#####- id
+- represents the element's identifier, reflecting the id global attribute.
+- syntax: `var idStr = elt.id;`
+
+#####- className
+- gets and sets the value of the class attribute of the specified element.
+- syntax: `var cName = elementNodeReference.className;`
+- syntax: `elementNodeReference.className = cName;`
+
+#####- innerHTML
+- sets or gets the HTML syntax describing the element's descendants.
+- syntax: `var content = element.innerHTML;`
+
+#####- outerHTML
+- gets the serialized HTML fragment describing the element including its descendants. It can be set to replace the element with nodes parsed from the given string.
+- syntax: `var content = element.outerHTML;`
+
+#####- children
+- read-only property that returns a live HTMLCollection of the child elements of Node.
+- syntax: `var elList = elementNodeReference.children;`
+
+#####- firstChild
+-read-only property returns the object's first child Element, or null if there are no child elements.
+- syntax: `var childNode = elementNodeReference.firstElementChild;`
+
+
+## HTMLCollection
+The HTMLCollection interface represents a generic collection (array-like object) of elements (in document order) and offers methods and properties for selecting from the list.
+
+### Methods
+#####- item
+- HTMLCollection.item( ) gets an element by position.
+- example:
+```
+var c = document.images;  
+var img0 = c.item(0);     
+var img1 = c[1];
+```
+
+## NodeList
+collections of nodes such as those returned by Node.childNodes and the document.querySelectorAll method.
+
+### Methods
+#####- item
+- Returns a node from a NodeList by index.
+- syntax: `nodeItem = nodeList.item(index)`
