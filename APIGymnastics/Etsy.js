@@ -59,11 +59,25 @@ function pricedBetween(items, min, max){
 });
 
 test('pond hopping', function(){
-  expect( /* your answer */ ).to.deep.equal({
+  expect(currencyType("GBP")).to.deep.equal({
     name: "1970s Schlitz Malt Liquor Glass Beer Pitcher",
     price: 18.00
   });
 });
+
+function currencyType(type) { //returns list of items with specified currency type in
+  // an object with name and price of items
+  var itemList = []; //creates an empty array but it needs to be an object
+  for (count = 0; count < items.length; count ++) { //iterates through each element
+    if (items[count].currency_code === type){ //looks for currency type in each element
+      // to match the function input paramater
+      itemList.push(items[count].title); //if we have a match, the title is added to
+      //the arrayl...which needs to be an object
+    }
+  }
+  return itemList;
+}
+
 
 test('just wood or _reclaimed_ wood?', function(){
   var actual = wooden(items); // Who defined `wooden`...? Oh.
