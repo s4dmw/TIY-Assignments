@@ -21,12 +21,14 @@ test('finding the average price', function(){
 });
 
 function avgPrice(items) {
-  var totalPrice = 0;
+  var totalPrice = 0; // starts the totalPrice sum out at 0
   for (count = 0; count < items.length; count ++) {
+    //iterates through the items array and adds each price to totalPrice
     totalPrice = totalPrice + items[count].price;
   //  console.log(totalPrice); tracer bullet
   }
   var avgPrice = Math.round(totalPrice / items.length * 100)/100;
+  //avg = total / # of entries - had to play with Math.round to get the decimal places right
   return avgPrice;
 }
 
@@ -35,12 +37,24 @@ test('finding that perfect $15 item', function(){
    * @param {Array} items to search through
    * @return {Array} of `items` with `price` between `min` and `max` USD
    */
-  function pricedBetween(items, min, max){
-    // Just a suggestion, really...
+function pricedBetween(items, min, max){
+  var itemList = []; // creates new, empty array
+  for (count = 0; count < items.length; count ++) { //iterates through each element
+    if (items[count].price >= min && items[count].price <= max ) {
+      // looks at the price of each item, if the price falls between the min and max,
+      // the "title" of that item is pushed to the itemList array
+      itemList.push(items[count].title);
+    }
   }
+  return itemList;
+}
 
   expect( pricedBetween(items, 14, 18) ).to.deep.equal([
-    // Can you find their names _without_ code first?
+    '1970s Coors Banquet Glass Beer Pitcher',
+    '1970s Schlitz Malt Liquor Glass Beer Pitcher',
+    'The Three Broomsticks Customizable Beer Stein Mug, Harry Potter Inspired, hogsmeade village, harry potter gift, three broomsticks mug',
+    'Hand Painted Colorful Feather Glass',
+    'Groomsman Gifts - Bottle Opener Credit Card Sized PERSONALIZED - FREE SHIPPING'
   ]);
 });
 
