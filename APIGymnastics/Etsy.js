@@ -1,5 +1,5 @@
 // Put `items.json` in your `APIGymnastics` directory...
-var items = require('./items.json');
+var items = require('items.json');
 
 var test = require('mocha').it,
     expect = require('chai').expect, // Use `expect(X).to.be` et al
@@ -10,14 +10,25 @@ test('this is the easy one', function(){
   expect(Array.isArray(items)).to.be.true; // What.
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
 
-  expect(items.length).to.equal(FILL_ME_IN); // It's haunting me now...
-});
+  expect(items.length).to.equal(25);
+   // It's haunting me now...
+ });
 
 test('finding the average price', function(){
   var yourAnswer = "start with `items`; use `Array` methods";
-
-  expect(yourAnswer).to.be.closeTo(23.63, 0.01);
+  expect(avgPrice(items)).to.equal(23.63);
+//  expect(yourAnswer).to.be.closeTo(23.63, 0.01);
 });
+
+function avgPrice(items) {
+  var totalPrice = 0;
+  for (count = 0; count < items.length; count ++) {
+    totalPrice = totalPrice + items[count].price;
+  //  console.log(totalPrice); tracer bullet
+  }
+  var avgPrice = Math.round(totalPrice / items.length * 100)/100;
+  return avgPrice;
+}
 
 test('finding that perfect $15 item', function(){
   /**
