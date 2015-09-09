@@ -298,6 +298,8 @@ do {
   y ++;
 } while (x = 3);
 ```
+<<<<<<< HEAD
+=======
 
 <<<<<<< HEAD
 =======
@@ -478,3 +480,4 @@ collections of nodes such as those returned by Node.childNodes and the document.
 - Returns a node from a NodeList by index. 
 >>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - syntax: `nodeItem = nodeList.item(index)`
+>>>>>>> master

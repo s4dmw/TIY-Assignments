@@ -56,12 +56,9 @@ function toEnglish(value){
 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve",
 13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen",
 19: "nineteen", 20: "twenty", 30: "thirty", 40: "forty", 50: "fifty", 60: "sixty", 70: "seventy",
-<<<<<<< .merge_file_SxBwJ5
 80: "eighty", 90: "ninety", 100: "one hundred", 200: "two hundred", 300: "three hundred",
 400: "four hundred", 500: "five hundred"};
-=======
-80: "eighty", 90: "ninety"};
->>>>>>> .merge_file_E9T4K3
+
 
   if (value <= 20) {
     return numArray[value];
@@ -112,13 +109,11 @@ test('NIGHTMARE MODE: toCheck', function(){
   assert.isFunction(toCheck);
   assert.equal(toCheck(123.45), "one hundred twenty three & 45/100s");
   assert.equal(toCheck(1234.56), "one thousand, two hundred thirty four & 56/100s");
-<<<<<<< .merge_file_SxBwJ5
-});
 
-=======
+
+
   // you might need to try some values in between...
 }); // END test(BEAST MODE)
->>>>>>> .merge_file_E9T4K3
 
 
 
