@@ -303,7 +303,7 @@ do {
 ## Document Object Model (DOM)
 a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document  and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Nodes can also have event handlers attached to them, and once that event is triggered the event handlers get executed. Essentially, it connects web pages to scripts or programming languages.
 
-### The Window object
+## The Window object
 epresents a window containing a DOM document; the document property points to the DOM document loaded in that window. 
 
 ### Properties
@@ -338,8 +338,44 @@ epresents a window containing a DOM document; the document property points to th
 - Closes the current window, or the window on which it was called.
 - syntax: `window.close();`
 
+## The Location object
 
-#### Reading JavaScript 
+## The Document object
+Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content and provides functionality which is global to the document
+
+### Properties
+#####- head
+- Returns the <head> element of the current document. If there are more than one <head> elements, the first one is returned.
+- syntax: `var objRef = document.head;`
+
+#####- body
+- Returns the <body> or <frameset> node of the current document, or null if no such element exists.
+- syntax: `var objRef = document.body;`
+- syntax: `document.body = objRef;`
+
+### Methods
+#####- getElementByID
+
+
+#####- getElementByClassName
+
+
+#####- querySelector
+
+
+#####- querySelectorAll
+
+
+#####- appendChild
+
+
+#####- create
+
+
+#####- write
+
+
+#####- writeIn
 
 
 
