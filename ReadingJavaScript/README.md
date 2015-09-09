@@ -390,7 +390,34 @@ Each web page loaded in the browser has its own document object. The Document in
 - Writes a string of text followed by a newline character to a document.
 - sytax: `document.writeln(line);`
 
-## The HTML Type
+## The HTMLElement Type
+The HTMLElement interface represents any HTML element. Some elements directly implement this interface, others implement it via an interface that inherits it.
+
+### Properties
+#####- id
+- represents the element's identifier, reflecting the id global attribute.
+- syntax: `var idStr = elt.id;`
+
+#####- className
+- gets and sets the value of the class attribute of the specified element.
+- syntax: `var cName = elementNodeReference.className;`
+- syntax: `elementNodeReference.className = cName;`
+
+#####- innerHTML 
+- sets or gets the HTML syntax describing the element's descendants.
+- syntax: `var content = element.innerHTML;`
+
+#####- outerHTML
+- gets the serialized HTML fragment describing the element including its descendants. It can be set to replace the element with nodes parsed from the given string.
+- syntax: `var content = element.outerHTML;`
+
+#####- children
+- read-only property that returns a live HTMLCollection of the child elements of Node.
+- syntax: `var elList = elementNodeReference.children;`
+
+#####- firstChild
+-read-only property returns the object's first child Element, or null if there are no child elements.
+- syntax: `var childNode = elementNodeReference.firstElementChild;`
 
 
 
@@ -410,7 +437,7 @@ Each web page loaded in the browser has its own document object. The Document in
  
 * **Reading JavaScript: DOM EDITION**
    * [x] the `Window` object
-   * [x ] the `Location` object
+   * [x] the `Location` object
    * [x] the `Document` object
-   * [ ] the `HTMLElement` type
+   * [x] the `HTMLElement` type
    * [ ] the `HTMLCollection` and `NodeList` types
