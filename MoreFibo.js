@@ -41,6 +41,10 @@ function evenFibSum(N) { //going to try this all in one function now
   return evenSum;
 }
 
+<<<<<<< HEAD
 // giconsole.log(evenFibSum(20));
 
 //adding a comment to get the files to merge
+=======
+// console.log(evenFibSum(20));
+>>>>>>> master
