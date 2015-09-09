@@ -17,7 +17,7 @@ test('this is the easy one', function(){
 test('finding the average price', function(){
   var yourAnswer = "start with `items`; use `Array` methods";
   expect(avgPrice(items)).to.equal(23.63);
-//  expect(yourAnswer).to.be.closeTo(23.63, 0.01);
+  expect(avgPrice(items)).to.be.closeTo(23.63, 0.01);
 });
 
 function avgPrice(items) {
