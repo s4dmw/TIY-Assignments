@@ -440,6 +440,17 @@ collections of nodes such as those returned by Node.childNodes and the document.
 - syntax: `nodeItem = nodeList.item(index)`
 
 
+## Events
+
+* How does an `Event` "bubble"? Can I make it stop?
+
+* What does the `target` property of an `Event` refer to?
+
+* Besides `click`, what _other_ event types can I trigger with my mouse?
+
+* What types of events can be triggered on a `<form>` element?
+
+
 
 ### Reading JavaScript: Events
 
