@@ -11,3 +11,24 @@
 // maybe addEventListener and dispatchEvent?
 //
 // also need to hightlight the icons in the top right corner when hovered over
+
+
+
+// What does it do?
+// when i clicked
+//    on a heading...
+var heading = document.querySelector('.cbp-nttrigger');
+
+function tracer() {
+  console.log('tracer bullet!');
+}
+
+heading.addEventListener('click', tracer);
+heading.addEventListener('click', function(){
+  // the text below hides and shows.
+  // Add the class "ntopen" (something) to some element
+  console.log('another tracer bullet')
+});
+//
+// the text below hides and shows.
+// Add the class "ntopen" (something) to some element
