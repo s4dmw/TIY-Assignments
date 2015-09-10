@@ -298,32 +298,11 @@ do {
   y ++;
 } while (x = 3);
 ```
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 ## Document Object Model (DOM)
 a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document  and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Nodes can also have event handlers attached to them, and once that event is triggered the event handlers get executed. Essentially, it connects web pages to scripts or programming languages.
 
 ## The Window object
-<<<<<<< HEAD
-epresents a window containing a DOM document; the document property points to the DOM document loaded in that window.
-
-### Properties
-#####- location
-- read-only property returns a Location object with information about the current location of the document
-- example: `location = "http://www.google.com";`
-
-#####- document
-- returns a reference to the document contained in the window
-- syntax: `doc = window.document`
-
-#####- history
-=======
-epresents a window containing a DOM document; the document property points to the DOM document loaded in that window. 
 
 ### Properties
 #####- location 
@@ -335,7 +314,6 @@ epresents a window containing a DOM document; the document property points to th
 - syntax: `doc = window.document`
 
 #####- history 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - returns a reference to the History object, which provides an interface for manipulating the browser session history
 - example: `history.back();     // same as clicking the browser's back button`
 
@@ -399,11 +377,7 @@ Each web page loaded in the browser has its own document object. The Document in
 - syntax: `element = document.querySelector(selectors);`
 
 #####- querySelectorAll
-<<<<<<< HEAD
 - Returns a list of the elements within the document that match the specified group of selectors.
-=======
-- Returns a list of the elements within the document that match the specified group of selectors. 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - syntax: `elementList = document.querySelectorAll(selectors)`
 
 #####- write
@@ -427,11 +401,7 @@ The HTMLElement interface represents any HTML element. Some elements directly im
 - syntax: `var cName = elementNodeReference.className;`
 - syntax: `elementNodeReference.className = cName;`
 
-<<<<<<< HEAD
 #####- innerHTML
-=======
-#####- innerHTML 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - sets or gets the HTML syntax describing the element's descendants.
 - syntax: `var content = element.innerHTML;`
 
@@ -452,21 +422,13 @@ The HTMLElement interface represents any HTML element. Some elements directly im
 The HTMLCollection interface represents a generic collection (array-like object) of elements (in document order) and offers methods and properties for selecting from the list.
 
 ### Methods
-<<<<<<< HEAD
-#####- item
-=======
 #####- item 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - HTMLCollection.item( ) gets an element by position.
 - example:
 ```
 var c = document.images;  
 var img0 = c.item(0);     
-<<<<<<< HEAD
-var img1 = c[1];
-=======
 var img1 = c[1]; 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 ```
 
 ## NodeList
@@ -474,10 +436,5 @@ collections of nodes such as those returned by Node.childNodes and the document.
 
 ### Methods
 #####- item
-<<<<<<< HEAD
 - Returns a node from a NodeList by index.
-=======
-- Returns a node from a NodeList by index. 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - syntax: `nodeItem = nodeList.item(index)`
->>>>>>> master
