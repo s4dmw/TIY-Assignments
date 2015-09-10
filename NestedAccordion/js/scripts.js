@@ -11,7 +11,7 @@
 // maybe addEventListener and dispatchEvent?
 //
 // also need to hightlight the icons in the top right corner when hovered over
-
+//---------------------------------------------------------------------------
 
 
 // What does it do?

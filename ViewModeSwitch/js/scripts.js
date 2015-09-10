@@ -12,3 +12,4 @@
 // change the layout of the page when the selction is clicked on
 //
 // add item to cart when button is clicked
+//-----------------------------------------------------------------------------------------
