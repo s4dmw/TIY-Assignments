@@ -440,13 +440,30 @@ collections of nodes such as those returned by Node.childNodes and the document.
 - syntax: `nodeItem = nodeList.item(index)`
 
 
-## Events
+## DOM Events
+DOM Events are sent to notify code of interesting things that have taken place. Each event is represented by an object which is based on the Event interface, and may have additional custom fields and/or functions used to get additional information about what happened. Events can represent everything from basic user interactions to automated notifications of things happening in the rendering model.
 
 * How does an `Event` "bubble"? Can I make it stop?
+  - Events bubble (propagate) upward/outward from the target <tag> through the parents up to the <html> level.
+  - Bubbling can be stopped with event.stopPropagation()
 
 * What does the `target` property of an `Event` refer to?
+  - The deepest element which triggered the event is called the target or, the originating element.
 
 * Besides `click`, what _other_ event types can I trigger with my mouse?
+  - contextmenu - The right button of the mouse is clicked (before the context menu is displayed).
+  - dblclick - A pointing device button is clicked twice on an element.
+  - mousedown - A pointing device button (usually a mouse) is pressed on an element.
+  - mouseenter - A pointing device is moved onto the element that has the listener attached.
+  - mouseleave - A pointing device is moved off the element that has the listener attached.
+  - mousemove - A pointing device is moved over an element.
+  - mouseout - A pointing device is moved off the element that has the listener attached or off one of its children.
+  - mouseover - A pointing device is moved onto the element that has the listener attached or onto one of its children.
+  - mouseup - A pointing device button is released over an element.
+  - show - A contextmenu event was fired on/bubbled to an element that has a contextmenu attribute
+  - dragEvents can also be triggered with a mouse
+    - drag, dragdrop, dragend, dragenter, dragexit, draggesture, dragleave, dragover, dragstart, drop
+   
 
 * What types of events can be triggered on a `<form>` element?
 
