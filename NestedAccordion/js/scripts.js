@@ -84,17 +84,21 @@
 
 
 
-  //
+
   // // *** this section SHOULD accordion any <h3> element that i click on ***
   // // with a loop...but it's not working
+  //
+  // // need to figure out which <h3> is being clicked on and use that as the index
+  // // for the liList toggle
   //
   //   var  header3All = document.querySelectorAll("h3.cbp-nttrigger");
   //     // gets all h3's with 'nttrigger' class
   //   var liList = document.querySelectorAll("ul.cbp-ntaccordion > li");
   //     // gets all li's within ul's with cbp-ntaccordion class
   //
-  //   for (counter =0; counter < header3All.length; counter ++) {
+  //   for (var counter = 0; counter < header3All.length; counter ++) {
   //     header3All[counter].addEventListener('click', function(){
-  //       liList[counter].classList.toggle("cbp-ntopen");
+  //       console.log(liList, liList[0]);
+  //       liList[0].classList.toggle("cbp-ntopen");
   //     });
   //   };
