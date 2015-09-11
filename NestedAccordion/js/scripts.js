@@ -19,15 +19,16 @@
 //    on a heading...
 var heading = document.querySelector('.cbp-nttrigger');
 
+
 function tracer() {
   console.log('tracer bullet!');
 }
 
-heading.addEventListener('click', tracer);
+// heading.addEventListener('click', tracer);
 heading.addEventListener('click', function(){
   // the text below hides and shows.
   // Add the class "ntopen" (something) to some element
-  console.log('another tracer bullet')
+  console.log("another tracer " + heading)
 });
 //
 // the text below hides and shows.
