@@ -298,32 +298,11 @@ do {
   y ++;
 } while (x = 3);
 ```
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 ## Document Object Model (DOM)
 a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document  and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. Nodes can also have event handlers attached to them, and once that event is triggered the event handlers get executed. Essentially, it connects web pages to scripts or programming languages.
 
 ## The Window object
-<<<<<<< HEAD
-epresents a window containing a DOM document; the document property points to the DOM document loaded in that window.
-
-### Properties
-#####- location
-- read-only property returns a Location object with information about the current location of the document
-- example: `location = "http://www.google.com";`
-
-#####- document
-- returns a reference to the document contained in the window
-- syntax: `doc = window.document`
-
-#####- history
-=======
-epresents a window containing a DOM document; the document property points to the DOM document loaded in that window. 
 
 ### Properties
 #####- location 
@@ -335,7 +314,6 @@ epresents a window containing a DOM document; the document property points to th
 - syntax: `doc = window.document`
 
 #####- history 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - returns a reference to the History object, which provides an interface for manipulating the browser session history
 - example: `history.back();     // same as clicking the browser's back button`
 
@@ -399,11 +377,7 @@ Each web page loaded in the browser has its own document object. The Document in
 - syntax: `element = document.querySelector(selectors);`
 
 #####- querySelectorAll
-<<<<<<< HEAD
 - Returns a list of the elements within the document that match the specified group of selectors.
-=======
-- Returns a list of the elements within the document that match the specified group of selectors. 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - syntax: `elementList = document.querySelectorAll(selectors)`
 
 #####- write
@@ -427,11 +401,7 @@ The HTMLElement interface represents any HTML element. Some elements directly im
 - syntax: `var cName = elementNodeReference.className;`
 - syntax: `elementNodeReference.className = cName;`
 
-<<<<<<< HEAD
 #####- innerHTML
-=======
-#####- innerHTML 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - sets or gets the HTML syntax describing the element's descendants.
 - syntax: `var content = element.innerHTML;`
 
@@ -452,21 +422,13 @@ The HTMLElement interface represents any HTML element. Some elements directly im
 The HTMLCollection interface represents a generic collection (array-like object) of elements (in document order) and offers methods and properties for selecting from the list.
 
 ### Methods
-<<<<<<< HEAD
-#####- item
-=======
 #####- item 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - HTMLCollection.item( ) gets an element by position.
 - example:
 ```
 var c = document.images;  
 var img0 = c.item(0);     
-<<<<<<< HEAD
-var img1 = c[1];
-=======
 var img1 = c[1]; 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 ```
 
 ## NodeList
@@ -474,10 +436,73 @@ collections of nodes such as those returned by Node.childNodes and the document.
 
 ### Methods
 #####- item
-<<<<<<< HEAD
 - Returns a node from a NodeList by index.
-=======
-- Returns a node from a NodeList by index. 
->>>>>>> dbaa6a0edf74e148836c6c4a7080211d94ecce0e
 - syntax: `nodeItem = nodeList.item(index)`
->>>>>>> master
+
+
+## DOM Events
+DOM Events are sent to notify code of interesting things that have taken place. Each event is represented by an object which is based on the Event interface, and may have additional custom fields and/or functions used to get additional information about what happened. Events can represent everything from basic user interactions to automated notifications of things happening in the rendering model.
+
+* How does an `Event` "bubble"? Can I make it stop?
+  - Events bubble (propagate) upward/outward from the target <tag> through the parents up to the <html> level.
+  - Bubbling can be stopped with event.stopPropagation()
+
+* What does the `target` property of an `Event` refer to?
+  - The deepest element which triggered the event is called the target or, the originating element.
+
+* Besides `click`, what _other_ event types can I trigger with my mouse?
+  - contextmenu - The right button of the mouse is clicked (before the context menu is displayed).
+  - dblclick - A pointing device button is clicked twice on an element.
+  - mousedown - A pointing device button (usually a mouse) is pressed on an element.
+  - mouseenter - A pointing device is moved onto the element that has the listener attached.
+  - mouseleave - A pointing device is moved off the element that has the listener attached.
+  - mousemove - A pointing device is moved over an element.
+  - mouseout - A pointing device is moved off the element that has the listener attached or off one of its children.
+  - mouseover - A pointing device is moved onto the element that has the listener attached or onto one of its children.
+  - mouseup - A pointing device button is released over an element.
+  - show - A contextmenu event was fired on/bubbled to an element that has a contextmenu attribute
+  - dragEvents can also be triggered with a mouse
+    - drag, dragdrop, dragend, dragenter, dragexit, draggesture, dragleave, dragover, dragstart, drop
+
+* What types of events can be triggered on a `<form>` element?
+ - reset - a form is rest
+ - submit - a form is submitted
+
+#####- click
+- The click event is fired when a pointing device button (usually a mouse button) is pressed and released on a single element.
+- applies to: 
+- example:
+
+#####- scroll
+- The scroll event is fired when the document view or an element has been scrolled.
+- applies to:
+- example:
+
+#####- change
+- The change event is fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
+- applies to:
+- example:
+
+#####- submit
+- The submit event is fired when a form is submitted.
+- only fired on the form element
+- applies to:
+- example:
+
+#####- load
+- The load event is fired when a resource and its dependent resources have finished loading.
+- applies to:
+- example:
+
+#####- unload
+- The unload event is fired when the document or a child resource is being unloaded.
+- applies to:
+- example:
+
+
+Next document some of the common event types that we'll encounter: `click`, `scroll`, `change`, `submit`, `load`, and `unload`. Not all HTML elements can listen to all events, so make special note of which HTML elements those event types apply to. Give an example of each in use, selecting an element from the document and attaching an event listener to it.
+
+#### BEAST MODE
+
+There are a bunch of keyboard-related events in the DOM specification, too. I bet they'll come in handy soon enough. Document those as well, and explain how I might listen to a _specific_ key combination. For example, how do I make JavaScript listen for _just_ an `Enter` key or maybe `Command` and `+` together?
+
