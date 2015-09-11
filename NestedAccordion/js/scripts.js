@@ -50,3 +50,51 @@
 //     });
 //   };
 //
+
+
+
+// *** this section will accordion any <h3> element that i click on ***
+// need to refactor it with a for loop
+
+  var  header3All = document.querySelectorAll("h3.cbp-nttrigger");
+    // gets all h3's with 'nttrigger' class
+  var liList = document.querySelectorAll("ul.cbp-ntaccordion > li");
+    // gets all li's within ul's with cbp-ntaccordion class
+
+  header3All[0].addEventListener('click', function(){
+    liList[0].classList.toggle("cbp-ntopen");
+  });
+    // adds event listener for 'click' on the first <h3> and accorions that section
+  header3All[1].addEventListener('click', function(){
+    liList[1].classList.toggle("cbp-ntopen");
+  });
+    // adds event listener for 'click' on the second <h3> and accorions that section
+  header3All[2].addEventListener('click', function(){
+    liList[2].classList.toggle("cbp-ntopen");
+  });
+    // adds event listener for 'click' on the third <h3> and accorions that section
+  header3All[3].addEventListener('click', function(){
+    liList[3].classList.toggle("cbp-ntopen");
+  });
+    // adds event listener for 'click' on the fourth <h3> and accorions that section
+  header3All[4].addEventListener('click', function(){
+    liList[4].classList.toggle("cbp-ntopen");
+  });
+    // adds event listener for 'click' on the fifth <h3> and accorions that section
+
+
+
+  //
+  // // *** this section SHOULD accordion any <h3> element that i click on ***
+  // // with a loop...but it's not working
+  //
+  //   var  header3All = document.querySelectorAll("h3.cbp-nttrigger");
+  //     // gets all h3's with 'nttrigger' class
+  //   var liList = document.querySelectorAll("ul.cbp-ntaccordion > li");
+  //     // gets all li's within ul's with cbp-ntaccordion class
+  //
+  //   for (counter =0; counter < header3All.length; counter ++) {
+  //     header3All[counter].addEventListener('click', function(){
+  //       liList[counter].classList.toggle("cbp-ntopen");
+  //     });
+  //   };
