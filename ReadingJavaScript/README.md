@@ -468,6 +468,35 @@ DOM Events are sent to notify code of interesting things that have taken place. 
  - reset - a form is rest
  - submit - a form is submitted
 
+#####- click
+- The click event is fired when a pointing device button (usually a mouse button) is pressed and released on a single element.
+- applies to: 
+- example:
+
+#####- scroll
+-
+- applies to:
+- example:
+
+#####- change
+-
+- applies to:
+- example:
+
+#####- submit
+- 
+- applies to:
+- example:
+
+#####- load
+- 
+- applies to:
+- example:
+
+#####- unload
+-
+- applies to:
+- example:
 
 
 Next document some of the common event types that we'll encounter: `click`, `scroll`, `change`, `submit`, `load`, and `unload`. Not all HTML elements can listen to all events, so make special note of which HTML elements those event types apply to. Give an example of each in use, selecting an element from the document and attaching an event listener to it.
