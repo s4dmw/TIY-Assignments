@@ -474,27 +474,28 @@ DOM Events are sent to notify code of interesting things that have taken place. 
 - example:
 
 #####- scroll
--
+- The scroll event is fired when the document view or an element has been scrolled.
 - applies to:
 - example:
 
 #####- change
--
+- The change event is fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
 - applies to:
 - example:
 
 #####- submit
-- 
+- The submit event is fired when a form is submitted.
+- only fired on the form element
 - applies to:
 - example:
 
 #####- load
-- 
+- The load event is fired when a resource and its dependent resources have finished loading.
 - applies to:
 - example:
 
 #####- unload
--
+- The unload event is fired when the document or a child resource is being unloaded.
 - applies to:
 - example:
 
