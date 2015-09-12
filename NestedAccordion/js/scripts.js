@@ -51,40 +51,40 @@
 //   };
 //
 
+//
+//
+// // *** this section will accordion any <h3> element that i click on ***
+// // need to refactor it with a for loop
+//
+//   var  header3All = document.querySelectorAll("h3.cbp-nttrigger");
+//     // gets all h3's with 'nttrigger' class
+//   var liList = document.querySelectorAll("ul.cbp-ntaccordion > li");
+//     // gets all li's within ul's with cbp-ntaccordion class
+//
+//   header3All[0].addEventListener('click', function(){
+//     liList[0].classList.toggle("cbp-ntopen");
+//   });
+//     // adds event listener for 'click' on the first <h3> and accorions that section
+//   header3All[1].addEventListener('click', function(){
+//     liList[1].classList.toggle("cbp-ntopen");
+//   });
+//     // adds event listener for 'click' on the second <h3> and accorions that section
+//   header3All[2].addEventListener('click', function(){
+//     liList[2].classList.toggle("cbp-ntopen");
+//   });
+//     // adds event listener for 'click' on the third <h3> and accorions that section
+//   header3All[3].addEventListener('click', function(){
+//     liList[3].classList.toggle("cbp-ntopen");
+//   });
+//     // adds event listener for 'click' on the fourth <h3> and accorions that section
+//   header3All[4].addEventListener('click', function(){
+//     liList[4].classList.toggle("cbp-ntopen");
+//   });
+//     // adds event listener for 'click' on the fifth <h3> and accorions that section
+//
+//
 
-
-// *** this section will accordion any <h3> element that i click on ***
-// need to refactor it with a for loop
-
-  var  header3All = document.querySelectorAll("h3.cbp-nttrigger");
-    // gets all h3's with 'nttrigger' class
-  var liList = document.querySelectorAll("ul.cbp-ntaccordion > li");
-    // gets all li's within ul's with cbp-ntaccordion class
-
-  header3All[0].addEventListener('click', function(){
-    liList[0].classList.toggle("cbp-ntopen");
-  });
-    // adds event listener for 'click' on the first <h3> and accorions that section
-  header3All[1].addEventListener('click', function(){
-    liList[1].classList.toggle("cbp-ntopen");
-  });
-    // adds event listener for 'click' on the second <h3> and accorions that section
-  header3All[2].addEventListener('click', function(){
-    liList[2].classList.toggle("cbp-ntopen");
-  });
-    // adds event listener for 'click' on the third <h3> and accorions that section
-  header3All[3].addEventListener('click', function(){
-    liList[3].classList.toggle("cbp-ntopen");
-  });
-    // adds event listener for 'click' on the fourth <h3> and accorions that section
-  header3All[4].addEventListener('click', function(){
-    liList[4].classList.toggle("cbp-ntopen");
-  });
-    // adds event listener for 'click' on the fifth <h3> and accorions that section
-
-
-
-
+  //
   // // *** this section SHOULD accordion any <h3> element that i click on ***
   // // with a loop...but it's not working
   //
@@ -98,7 +98,116 @@
   //
   //   for (var counter = 0; counter < header3All.length; counter ++) {
   //     header3All[counter].addEventListener('click', function(){
-  //       console.log(liList, liList[0]);
+  //       console.log(liList, liList[0], counter);
   //       liList[0].classList.toggle("cbp-ntopen");
   //     });
   //   };
+  //
+  //
+
+
+
+
+  // *** this section will accordion any <h3> element that i click on ***
+  // need to refactor it with a for loop
+
+    var  header3All = document.querySelectorAll("h3.cbp-nttrigger");
+      // gets all h3's with 'nttrigger' class
+    var liList = document.querySelectorAll("ul.cbp-ntaccordion > li");
+      // gets all li's within ul's with cbp-ntaccordion class
+    var header4All = document.querySelectorAll("h4.cbp-nttrigger");
+      // gets all h4 elements (sub list headers)
+    var subLiList = document.querySelectorAll("ul.cbp-ntsubaccordion > li");
+      // gets the li's with "subaccordion" class
+
+    header3All[0].addEventListener('click', function(){
+      liList[0].classList.toggle("cbp-ntopen");
+    });
+      // adds event listener for 'click' on the first <h3> and accorions that section
+    header3All[1].addEventListener('click', function(){
+      liList[1].classList.toggle("cbp-ntopen");
+    });
+      // adds event listener for 'click' on the second <h3> and accorions that section
+    header3All[2].addEventListener('click', function(){
+      liList[2].classList.toggle("cbp-ntopen");
+    });
+      // adds event listener for 'click' on the third <h3> and accorions that section
+    header3All[3].addEventListener('click', function(){
+      liList[3].classList.toggle("cbp-ntopen");
+    });
+      // adds event listener for 'click' on the fourth <h3> and accorions that section
+    header3All[4].addEventListener('click', function(){
+      liList[4].classList.toggle("cbp-ntopen");
+    });
+      // adds event listener for 'click' on the fifth <h3> and accorions that section
+
+      // adding event listeners <h4> elements (sub elements of the main headings)
+      // that will accoridon the sections when clicked
+      // this is a bit verbose so refactoring it to a loop would be ideal
+    header4All[0].addEventListener('click', function(){
+      subLiList[0].classList.toggle("cbp-ntopen");
+    });
+      //each on of these event listers "listens" for a click on an h4 heading then
+      //toggles the class of the corresponding sub list li element between "no class"
+      // and "cbp-ntopen"
+    header4All[1].addEventListener('click', function(){
+      subLiList[1].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[2].addEventListener('click', function(){
+      subLiList[2].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[3].addEventListener('click', function(){
+      subLiList[3].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[4].addEventListener('click', function(){
+      subLiList[4].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[5].addEventListener('click', function(){
+      subLiList[5].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[6].addEventListener('click', function(){
+      subLiList[6].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[7].addEventListener('click', function(){
+      subLiList[7].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[8].addEventListener('click', function(){
+      subLiList[8].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[9].addEventListener('click', function(){
+      subLiList[9].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[10].addEventListener('click', function(){
+      subLiList[10].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[11].addEventListener('click', function(){
+      subLiList[11].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[12].addEventListener('click', function(){
+      subLiList[12].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[13].addEventListener('click', function(){
+      subLiList[13].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[14].addEventListener('click', function(){
+      subLiList[14].classList.toggle("cbp-ntopen");
+    });
+
+    header4All[15].addEventListener('click', function(){
+      subLiList[15].classList.toggle("cbp-ntopen");
+    });
+
+  // this method fall apart on the last sub heading where there are h5's
