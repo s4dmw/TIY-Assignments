@@ -479,7 +479,7 @@ DOM Events are sent to notify code of interesting things that have taken place. 
 - example:
 
 #####- change
-- The change event is fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
+- The change event is fired for '<input>', '<select>', and '<textarea>' elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
 - applies to:
 - example:
 
@@ -499,7 +499,7 @@ DOM Events are sent to notify code of interesting things that have taken place. 
 - applies to:
 - example:
 
-
+--------
 Next document some of the common event types that we'll encounter: `click`, `scroll`, `change`, `submit`, `load`, and `unload`. Not all HTML elements can listen to all events, so make special note of which HTML elements those event types apply to. Give an example of each in use, selecting an element from the document and attaching an event listener to it.
 
 #### BEAST MODE
