@@ -479,7 +479,7 @@ DOM Events are sent to notify code of interesting things that have taken place. 
 - example:
 
 #####- change
-- The change event is fired for 'input', 'select', and 'textarea' elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
+- The change event is fired for `<input>`, `<select>`, and `<textarea>` elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
 - applies to:
 - example:
 
