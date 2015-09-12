@@ -483,6 +483,12 @@ headers[0].addEventListener('click', function(){
 - The scroll event is fired when the document view or an element has been scrolled.
 - applies to: any html element
 - example:
+```
+var headers = document.querySelectorAll(".cbp-nttrigger");
+headers[0].addEventListener('scroll', function(){
+    console.log("scrolling!");
+  });
+```
 
 #####- change
 - The change event is fired for `<input>`, `<select>`, and `<textarea>` elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
