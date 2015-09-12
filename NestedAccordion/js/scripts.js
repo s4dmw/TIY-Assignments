@@ -220,104 +220,124 @@
   // this works for all elements but seems way too inefficient and would not work for
   //any new sections added
 
-  var headers = document.querySelectorAll(".cbp-nttrigger");
-    //get all of the header elements with "nttrigger" class and puts them
-    //into an object called headers
-  var liList = document.getElementsByTagName("li");
-    // gets all of the li elements and puts them in an object called liList
+  // var headers = document.querySelectorAll(".cbp-nttrigger");
+  //   //get all of the header elements with "nttrigger" class and puts them
+  //   //into an object called headers
+  // var liList = document.getElementsByTagName("li");
+  //   // gets all of the li elements and puts them in an object called liList
+  //
+  //   //lines below add an event listenter to each header with a class of
+  //   //"cbp-nttrigger" that toggles the class of the corresponding <li> element
+  //   //between no/empty class and "cbp-ntopen"
+  //
+  // headers[0].addEventListener('click', function(){
+  //   liList[0].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[1].addEventListener('click', function(){
+  //   liList[1].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[2].addEventListener('click', function(){
+  //   liList[2].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[3].addEventListener('click', function(){
+  //   liList[3].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[4].addEventListener('click', function(){
+  //   liList[4].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[5].addEventListener('click', function(){
+  //   liList[5].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[6].addEventListener('click', function(){
+  //   liList[6].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[7].addEventListener('click', function(){
+  //   liList[7].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[8].addEventListener('click', function(){
+  //   liList[8].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[9].addEventListener('click', function(){
+  //   liList[9].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[10].addEventListener('click', function(){
+  //   liList[10].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[11].addEventListener('click', function(){
+  //   liList[11].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[12].addEventListener('click', function(){
+  //   liList[12].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[13].addEventListener('click', function(){
+  //   liList[13].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[14].addEventListener('click', function(){
+  //   liList[14].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[15].addEventListener('click', function(){
+  //   liList[15].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[16].addEventListener('click', function(){
+  //   liList[16].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[17].addEventListener('click', function(){
+  //   liList[17].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[18].addEventListener('click', function(){
+  //   liList[18].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[19].addEventListener('click', function(){
+  //   liList[19].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[20].addEventListener('click', function(){
+  //   liList[20].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[21].addEventListener('click', function(){
+  //   liList[21].classList.toggle("cbp-ntopen");
+  // });
+  //
+  // headers[22].addEventListener('click', function(){
+  //   liList[22].classList.toggle("cbp-ntopen");
+  // });
 
-    //lines below add an event listenter to each header with a class of
-    //"cbp-nttrigger" that toggles the class of the corresponding <li> element
-    //between no/empty class and "cbp-ntopen"
+
+  // *** going to try this with a loop
+
+   var headers = document.querySelectorAll(".cbp-nttrigger");
+   var liList = document.getElementsByTagName("li");
+
+  //  for (var counter = 0; counter < headers.length; counter ++){
+  //    headers[counter].addEventListener('click', function(){
+  //      console.log("clicking on header # ", );
+  //      liList[counter].classList.toggle("cbp-ntopen");
+  //    });
+  //  };
 
   headers[0].addEventListener('click', function(){
-    liList[0].classList.toggle("cbp-ntopen");
-  });
-
-  headers[1].addEventListener('click', function(){
-    liList[1].classList.toggle("cbp-ntopen");
-  });
-
-  headers[2].addEventListener('click', function(){
-    liList[2].classList.toggle("cbp-ntopen");
-  });
-
-  headers[3].addEventListener('click', function(){
-    liList[3].classList.toggle("cbp-ntopen");
-  });
-
-  headers[4].addEventListener('click', function(){
-    liList[4].classList.toggle("cbp-ntopen");
-  });
-
-  headers[5].addEventListener('click', function(){
-    liList[5].classList.toggle("cbp-ntopen");
-  });
-
-  headers[6].addEventListener('click', function(){
-    liList[6].classList.toggle("cbp-ntopen");
-  });
-
-  headers[7].addEventListener('click', function(){
-    liList[7].classList.toggle("cbp-ntopen");
-  });
-
-  headers[8].addEventListener('click', function(){
-    liList[8].classList.toggle("cbp-ntopen");
-  });
-
-  headers[9].addEventListener('click', function(){
-    liList[9].classList.toggle("cbp-ntopen");
-  });
-
-  headers[10].addEventListener('click', function(){
-    liList[10].classList.toggle("cbp-ntopen");
-  });
-
-  headers[11].addEventListener('click', function(){
-    liList[11].classList.toggle("cbp-ntopen");
-  });
-
-  headers[12].addEventListener('click', function(){
-    liList[12].classList.toggle("cbp-ntopen");
-  });
-
-  headers[13].addEventListener('click', function(){
-    liList[13].classList.toggle("cbp-ntopen");
-  });
-
-  headers[14].addEventListener('click', function(){
-    liList[14].classList.toggle("cbp-ntopen");
-  });
-
-  headers[15].addEventListener('click', function(){
-    liList[15].classList.toggle("cbp-ntopen");
-  });
-
-  headers[16].addEventListener('click', function(){
-    liList[16].classList.toggle("cbp-ntopen");
-  });
-
-  headers[17].addEventListener('click', function(){
-    liList[17].classList.toggle("cbp-ntopen");
-  });
-
-  headers[18].addEventListener('click', function(){
-    liList[18].classList.toggle("cbp-ntopen");
-  });
-
-  headers[19].addEventListener('click', function(){
-    liList[19].classList.toggle("cbp-ntopen");
-  });
-
-  headers[20].addEventListener('click', function(){
-    liList[20].classList.toggle("cbp-ntopen");
-  });
-
-  headers[21].addEventListener('click', function(){
-    liList[21].classList.toggle("cbp-ntopen");
-  });
-
-  headers[22].addEventListener('click', function(){
-    liList[22].classList.toggle("cbp-ntopen");
-  });
+    console.log("clicking");
+    console.log("hey",headers[0].addEventListener('click', function(){
+       true;
+    }));
+  })
