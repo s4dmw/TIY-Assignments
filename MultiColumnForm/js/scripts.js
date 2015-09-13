@@ -144,6 +144,14 @@ submitButton.addEventListener('click', function(){
   console.log("Email Address: ", emailInput);
   console.log("Country: ", countryInput);
   console.log("Biography: ", bioInput);
-
-  console.log(gadgetInput);
+  console.log("Phone Number: ", phoneInput);
+  console.log("Affiliations: ", affiliationsInput);
+  console.log("Occupation: ", occupationInput);
+  console.log("Cat's Name: ", catNameInput);
+  console.log("Favorite Gadget: ", gadgetInput);
+  console.log("Type of Talent: ", talentInput);
+  console.log("Favorite Drink: ", drinkInput);
+  console.log("Special Power: ", powerInput);
+  console.log("Weapon of Choice: ", weaponInput);
+  console.log("Comments: ", commentsInput);
 });
