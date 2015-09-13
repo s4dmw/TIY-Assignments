@@ -21,19 +21,29 @@
 // to the console.
 var firstName = document.getElementById("first_name"); // gets the first name input box
 var lastName = document.getElementById("last_name"); //gets the last name input box
+var email = document.getElementById("email"); //gets the email input box
+var country = document.getElementById("country"); //yep...gets the counrty input box
 
-//setup event listeners for the input boxex to grab text
+//setup event listeners for the input boxes to grab the inputs
 firstName.addEventListener('change', function(){
   console.log("changed the first name");  //tracer bullet yo
-  console.log(firstName.value); //tracer bullet...thank you Google
+  console.log("first name: ",firstName.value); //tracer bullet...thank you Google
 });
 
 lastName.addEventListener('change', function(){
-  console.log("changed the last name");  //tracer bullet yo
-  console.log(lastName.value); //tracer bullet...thank you Google
+  console.log("changed the last name");  //tracer bullet
+  console.log("last name: ",lastName.value); //tracer bullet
 });
 
+email.addEventListener('change', function(){
+  console.log("changed the email box"); // pew pew
+  console.log("email address: ",email.value); //more tracers
+});
 
+country.addEventListener('change', function(){
+  console.log("selected the country");
+  console.log("country: ", country.value);
+})
 
 // var submitButton = document.querySelector(".cbp-mc-submit");
 //
