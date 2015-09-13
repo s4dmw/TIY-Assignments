@@ -494,6 +494,13 @@ headers[0].addEventListener('scroll', function(){
 - The change event is fired for `<input>`, `<select>`, and `<textarea>` elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
 - applies to: input, select, and textarea elements
 - example:
+```
+var firstName = document.getElementById("first_name"); // gets the first name input box
+var firstNameInput = "not provided"; //place holder for firs name value
+firstName.addEventListener('change', function(){
+    firstNameInput = firstName.value; //captures input of first name box
+};
+```
 
 #####- submit
 - The submit event is fired when a form is submitted.
