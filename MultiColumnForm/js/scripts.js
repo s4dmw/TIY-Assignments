@@ -20,11 +20,17 @@
 // setup an even listener that grabs the input from the "first name" box and log it
 // to the console.
 var firstName = document.getElementById("first_name"); // gets the first name input box
+var lastName = document.getElementById("last_name"); //gets the last name input box
 
-//setup event listener for the input box to grab text
+//setup event listeners for the input boxex to grab text
 firstName.addEventListener('change', function(){
-  console.log("changed the firstName");  //tracer bullet yo
+  console.log("changed the first name");  //tracer bullet yo
   console.log(firstName.value); //tracer bullet...thank you Google
+});
+
+lastName.addEventListener('change', function(){
+  console.log("changed the last name");  //tracer bullet yo
+  console.log(lastName.value); //tracer bullet...thank you Google
 });
 
 
