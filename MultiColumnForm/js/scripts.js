@@ -23,6 +23,7 @@ var firstName = document.getElementById("first_name"); // gets the first name in
 var lastName = document.getElementById("last_name"); //gets the last name input box
 var email = document.getElementById("email"); //gets the email input box
 var country = document.getElementById("country"); //yep...gets the counrty input box
+var bio = document.getElementById("bio");//i'm seeing a pattern here
 
 //setup event listeners for the input boxes to grab the inputs
 firstName.addEventListener('change', function(){
@@ -44,6 +45,11 @@ country.addEventListener('change', function(){
   console.log("selected the country");
   console.log("country: ", country.value);
 })
+
+bio.addEventListener('change', function(){
+  console.log("changed the bio box");
+  console.log("biography: ", bio.value);
+});
 
 // var submitButton = document.querySelector(".cbp-mc-submit");
 //
