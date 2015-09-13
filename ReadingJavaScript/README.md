@@ -506,6 +506,11 @@ firstName.addEventListener('change', function(){
 - The submit event is fired when a form is submitted.
 - applies to: form elements only
 - example:
+```
+document.getElementById("form").addEventListener("submit", function(){
+  alert("form was submitted")
+};
+```
 
 #####- load
 - The load event is fired when a resource and its dependent resources have finished loading.
