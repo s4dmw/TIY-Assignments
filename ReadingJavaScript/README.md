@@ -517,7 +517,7 @@ document.getElementById("form").addEventListener("submit", function(){
 - applies to: any html element
 - example:
 ```
-document.addEventListener("load", function(){
+window.addEventListener("load", function(){
   alert("page was loaded")
 };
 ```
@@ -526,11 +526,8 @@ document.addEventListener("load", function(){
 - The unload event is fired when the document or a child resource is being unloaded.
 - applies to: any html element
 - example:
-
---------
-Next document some of the common event types that we'll encounter: `click`, `scroll`, `change`, `submit`, `load`, and `unload`. Not all HTML elements can listen to all events, so make special note of which HTML elements those event types apply to. Give an example of each in use, selecting an element from the document and attaching an event listener to it.
-
-#### BEAST MODE
-
-There are a bunch of keyboard-related events in the DOM specification, too. I bet they'll come in handy soon enough. Document those as well, and explain how I might listen to a _specific_ key combination. For example, how do I make JavaScript listen for _just_ an `Enter` key or maybe `Command` and `+` together?
-
+```
+window.addEventListener("unload", function(){
+  alert("page was unloaded")
+};
+```
