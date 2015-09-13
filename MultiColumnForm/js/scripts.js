@@ -28,7 +28,8 @@ var phone = document.getElementById("phone"); //gets phone number input box
 var affiliations = document.getElementById("affiliations"); //affiliations input box
 var occupation = document.getElementById("occupation"); //occupation selection box
 var catName = document.getElementById("cat_name"); //cat name input box
-var gadget = document.getElementById("gadget"); //favorite gadget input box
+var gadget = document.getElementById("gagdet"); //favorite gadget input box
+  //html code has an annoying typo...gadget box label, gagdet element id...lamo
 var talent = document.getElementById("talent"); //type of talent selction box
 var drink = document.getElementById("drink"); //favorite drink input box
 var power = document.getElementById("power"); //special power input box
@@ -56,8 +57,8 @@ var gadgetInput = "not provided";
 var talentInput = "not selected";
 var drinkInput = "not provided";
 var powerInput = "not provided";
-var weapon = "not provided";
-var comments = "not provided";
+var weaponInput = "not provided";
+var commentsInput = "not provided";
 
 //setup event listeners for the input boxes to grab the inputs
 firstName.addEventListener('change', function(){
@@ -91,7 +92,48 @@ bio.addEventListener('change', function(){
   bioInput = bio.value //captures biography input
 });
 
+phone.addEventListener('change', function(){
+  phoneInput = phone.value; // captures the phone number input
+});
 
+affiliations.addEventListener('change', function(){
+  affiliationsInput = affiliations.value; // captures the affiliations input
+});
+
+occupation.addEventListener('change', function(){
+  occupationInput = occupation.value; //captures the occupation selection
+});
+
+catName.addEventListener('change', function(){
+  catNameInput = catName.value; //captures the cat name selection
+});
+
+gadget.addEventListener('change', function(){
+  gadgetInput = gadget.value; //captures the favorie gadget input
+ });
+
+talent.addEventListener('change', function(){
+  talentInput = talent.value; //captures the talent selection
+});
+
+drink.addEventListener('change', function(){
+  drinkInput = drink.value; //captures favorite drink input
+});
+
+power.addEventListener('change', function(){
+  powerInput = power.value; //captures special power input
+});
+
+weapon.addEventListener('change', function(){
+  weaponInput = weaon.value; //captures weapon of choice input
+});
+
+comments.addEventListener('change', function(){
+  commentsInput = comments.value; //catpures the comment box input
+});
+
+//need to creat an eventlister for clicking the send your data button that
+//logs all of the inputs to the console
 submitButton.addEventListener('click', function(){
   //console.log("clicking the submit button") // tracer bullet for clicking submit
   //console.log(firstNameInput); //testing
@@ -102,4 +144,6 @@ submitButton.addEventListener('click', function(){
   console.log("Email Address: ", emailInput);
   console.log("Country: ", countryInput);
   console.log("Biography: ", bioInput);
+
+  console.log(gadgetInput);
 });
