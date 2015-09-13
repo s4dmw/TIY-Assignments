@@ -25,34 +25,47 @@ var email = document.getElementById("email"); //gets the email input box
 var country = document.getElementById("country"); //yep...gets the counrty input box
 var bio = document.getElementById("bio");//i'm seeing a pattern here
 
+//this pattern seems to be working but i want dump the inputs to the console when
+//i click submit, not after each input -- my evil plan is to write the value of each
+//input to a variable when that box/selection is changed. when the submit button is clicked
+//i'll console.log all of the input and try to make it look pretty
+
+//variables to capture the input of each field.
+//i'll make them default to "no input given" or something similiar
+var firstNameInput = "no input given"; //place holder for firs name value
+
 //setup event listeners for the input boxes to grab the inputs
 firstName.addEventListener('change', function(){
-  console.log("changed the first name");  //tracer bullet yo
-  console.log("first name: ",firstName.value); //tracer bullet...thank you Google
+  //console.log("changed the first name");  //tracer bullet, yo!
+  //console.log("first name: ",firstName.value); //tracer bullet...thank you Google
+  firstNameInput = firstName.value;
+  console.log("tracer", firstNameInput); //tracer bullet
 });
 
-lastName.addEventListener('change', function(){
-  console.log("changed the last name");  //tracer bullet
-  console.log("last name: ",lastName.value); //tracer bullet
-});
-
-email.addEventListener('change', function(){
-  console.log("changed the email box"); // pew pew
-  console.log("email address: ",email.value); //more tracers
-});
-
-country.addEventListener('change', function(){
-  console.log("selected the country");
-  console.log("country: ", country.value);
-})
-
-bio.addEventListener('change', function(){
-  console.log("changed the bio box");
-  console.log("biography: ", bio.value);
-});
-
-// var submitButton = document.querySelector(".cbp-mc-submit");
-//
-// submitButton.addEventListener('click', function(){
-//   console.log("clicking the submit button")
+// lastName.addEventListener('change', function(){
+//   console.log("changed the last name");  //tracer bullet
+//   console.log("last name: ",lastName.value); //tracer bullet
 // });
+//
+// email.addEventListener('change', function(){
+//   console.log("changed the email box"); // pew pew
+//   console.log("email address: ",email.value); //more tracers
+// });
+//
+// country.addEventListener('change', function(){
+//   console.log("selected the country");
+//   console.log("country: ", country.value);
+// })
+//
+// bio.addEventListener('change', function(){
+//   console.log("changed the bio box");
+//   console.log("biography: ", bio.value);
+// });
+
+var submitButton = document.querySelector(".cbp-mc-submit");
+
+submitButton.addEventListener('click', function(){
+  console.log("clicking the submit button") // tracerbullet
+  console.log(firstNameInput);
+  console.log(firstName.value);
+});
