@@ -516,6 +516,11 @@ document.getElementById("form").addEventListener("submit", function(){
 - The load event is fired when a resource and its dependent resources have finished loading.
 - applies to: any html element
 - example:
+```
+document.addEventListener("load", function(){
+  alert("page was loaded")
+};
+```
 
 #####- unload
 - The unload event is fired when the document or a child resource is being unloaded.
