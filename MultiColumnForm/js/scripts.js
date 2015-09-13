@@ -24,7 +24,16 @@ var lastName = document.getElementById("last_name"); //gets the last name input 
 var email = document.getElementById("email"); //gets the email input box
 var country = document.getElementById("country"); //yep...gets the counrty input box
 var bio = document.getElementById("bio");//i'm seeing a pattern here
-
+var phone = document.getElementById("phone"); //gets phone number input box
+var affiliations = document.getElementById("affiliations"); //affiliations input box
+var occupation = document.getElementById("occupation"); //occupation selection box
+var catName = document.getElementById("cat_name"); //cat name input box
+var gadget = document.getElementById("gadget"); //favorite gadget input box
+var talent = document.getElementById("talent"); //type of talent selction box
+var drink = document.getElementById("drink"); //favorite drink input box
+var power = document.getElementById("power"); //special power input box
+var weapon = document.getElementById("weapon"); //weapon of choice input box
+var comments = document.getElementById("comments"); //comments input box
 var submitButton = document.querySelector(".cbp-mc-submit"); //and last but not least...submit
 
 
