@@ -125,7 +125,7 @@ power.addEventListener('change', function(){
 });
 
 weapon.addEventListener('change', function(){
-  weaponInput = weaon.value; //captures weapon of choice input
+  weaponInput = weapon.value; //captures weapon of choice input
 });
 
 comments.addEventListener('change', function(){
