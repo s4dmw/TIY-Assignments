@@ -36,7 +36,6 @@ var weapon = document.getElementById("weapon"); //weapon of choice input box
 var comments = document.getElementById("comments"); //comments input box
 var submitButton = document.querySelector(".cbp-mc-submit"); //and last but not least...submit
 
-
 //this pattern seems to be working but i want dump the inputs to the console when
 //i click submit, not after each input -- my evil plan is to write the value of each
 //input to a variable when that box/selection is changed. when the submit button is clicked
@@ -49,6 +48,16 @@ var lastNameInput = "not provided";
 var emailInput = "not provided";
 var countryInput = "not selected"; //altered this one since its a selection vs inputs
 var bioInput = "not provided";
+var phoneInput = "not provided";
+var affiliationsInput = "not provided";
+var occupationInput = "not selected";
+var catNameInput = "not provided";
+var gadgetInput = "not provided";
+var talentInput = "not selected";
+var drinkInput = "not provided";
+var powerInput = "not provided";
+var weapon = "not provided";
+var comments = "not provided";
 
 //setup event listeners for the input boxes to grab the inputs
 firstName.addEventListener('change', function(){
