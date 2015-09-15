@@ -53,19 +53,72 @@ alters the default CSS box model used to calculate widths and heights of element
 * border-box: width and height properties include the padding and border, but not the margin 
 
 ### [`position`] (https://developer.mozilla.org/en-US/docs/Web/CSS/position)
-
+chooses alternative rules for positioning elements
 ##### Possible values:
+* static: the element uses the normal behavior
+* relative: lays out all elements as though the element were not positioned, and then adjust the element's position, without changing layout
+* absolute: leaves no space for the element - positions it at a specified position relative to its closest positioned ancestor or to the containing block
+* fixed: leaves no space for the element - positions it at a specified position relative to the screen's viewport and does not move it when scrolled
 
 ### [`top`] (https://developer.mozilla.org/en-US/docs/Web/CSS/top)
+- absolutely positioned elements - distance between the top margin edge of the element and the top edge of its containing block
+- relatively positioned elements - amount the element is moved below its normal position
+
+##### Possible values:
+* length: can be postive, negative or null 
+    * absolutely positioned elements - distance to top edge of containing block
+    * relatively positioned elements - offset that the element is moved below its position in the normal flow if it wasn't positioned.
+* percentage: percentage of the containing block's height
+* auto:
+    * absolutely positioned elements - position based on the bottom property and treat height
+    * relatively positioned elements - offset the element from its original position based on the bottom property, or if bottom is also auto, do not offset it at all.
+* inherit: value is the same as the computed value from its parent element
 
 ### [`right`] (https://developer.mozilla.org/en-US/docs/Web/CSS/right)
+- absolutely positioned elements -  distance between the right margin edge of the element and the right edge of its containing block.
+- non-positioned elements: no effect
+
+##### Possible values:
+* length: can be postive, negative or null
+    * absolutely positioned elements - distance to the right edge of the containing block
+    * relatively positioned elements - offset that the element is moved right from its position in the normal flow if it wasn't positioned.
+* percentage: percentage of the containing block's width
+* auto:
+    * absolutely positioned elements - position based on the left property and treat width
+    * relatively positioned elements - right offset the element from its original position based on the left property - if left is also auto, does not offset it at all.
+* inherit: value is the same than the computed value from its parent element
 
 ### [`bottom`] (https://developer.mozilla.org/en-US/docs/Web/CSS/bottom)
+- absolutely positioned elements - distance between the bottom margin edge of the element and the bottom edge of the block containing the element
+- relatively positioned elements - distance from element's bottom edge above its normal position
+
+##### Possible values:
+* length: can be positive, negative or null
+    * absolutely positioned elements -  distance from the bottom edge of the containing block
+    * relatively positioned elements - offset that the element is moved above its position in the normal flow if it wasn't positioned.
+* percentage: percentage of the containing block's height
+* auto:
+    * absolutely positioned elements - position based on the top property, and height
+    * relatively positioned elements - offset the element from its original position is based on the top property - if top is also auto, the element is not moved vertically
+* inherit: value is the same as the computed value from its parent element
 
 ### [`left`] (https://developer.mozilla.org/en-US/docs/Web/CSS/left)
+- absolutely positioned elements - distance between the left margin edge of the element and the left edge of its containing block.
+
+##### Possible values:
+* length: can be positive, negative or null
+    * absolutely positioned elements - distance from the left edge of the containing block
+    * relatively positioned elements - offset that the element is moved left from its position in the normal flow if it wasn't positioned.
+* percentage: percentage of the containing block's width
+* auto:
+    * absolutely positioned elements - position based on the right property and treat width
+    * relatively positioned elements - left offset of the element from its original position based on the right property - if right is also auto, does not offset it at all
+* inherit: value is the same as the computed value from its parent element 
 
 
 -----------------------------
+### Future property entries
+
 ### [`margin-left`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)
 
 ### [`margin-top`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top)
