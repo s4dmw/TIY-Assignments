@@ -21,17 +21,6 @@ specifies the type of rendering box used for an element
 * block: The element generates a block element box.
 * list-item: The element generates a block box for the content and a separate list-item inline box.
 
-### [`margin`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
-sets the margin for all four sides
-##### Accepts one, two, three or four values of the following:
-* length: Specifies a fixed width. Negative Values are allowed.
-* percentage: relative to the width of the containing block. Negative values are allowed.
-* auto: auto is replaced by some suitable value
-    - One single value applies to all four sides.
-    - Two values apply first to top and bottom, the second one to left and right.
-    - Three values apply first to top, second to left and right and third to bottom.
-    - Four values apply to top, right, bottom and left in that order (clockwise).
-
 ### [`width`] (https://developer.mozilla.org/en-US/docs/Web/CSS/width)
 specifies the width of the content area of an element
 ##### Possible values:
@@ -101,6 +90,17 @@ chooses alternative rules for positioning elements
     * absolutely positioned elements - position based on the right property
     * relatively positioned elements - left offset of the element from its original position based on the right property - if right is also auto, does not offset it at all
 * inherit: value is the same as the computed value from its parent element 
+
+### [`margin`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
+sets the margin for all four sides
+##### Accepts one, two, three or four values of the following:
+* length: Specifies a fixed width. Negative Values are allowed.
+* percentage: relative to the width of the containing block. Negative values are allowed.
+* auto: auto is replaced by some suitable value
+    - One single value applies to all four sides.
+    - Two values apply first to top and bottom, the second one to left and right.
+    - Three values apply first to top, second to left and right and third to bottom.
+    - Four values apply to top, right, bottom and left in that order (clockwise).
 
 ### [`margin-left`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)
 
