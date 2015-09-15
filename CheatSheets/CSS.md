@@ -70,7 +70,7 @@ chooses alternative rules for positioning elements
     * relatively positioned elements - offset that the element is moved below its position in the normal flow if it wasn't positioned.
 * percentage: percentage of the containing block's height
 * auto:
-    * absolutely positioned elements - position based on the bottom property and treat height
+    * absolutely positioned elements - position based on the bottom property
     * relatively positioned elements - offset the element from its original position based on the bottom property, or if bottom is also auto, do not offset it at all.
 * inherit: value is the same as the computed value from its parent element
 
@@ -84,7 +84,7 @@ chooses alternative rules for positioning elements
     * relatively positioned elements - offset that the element is moved right from its position in the normal flow if it wasn't positioned.
 * percentage: percentage of the containing block's width
 * auto:
-    * absolutely positioned elements - position based on the left property and treat width
+    * absolutely positioned elements - position based on the left property
     * relatively positioned elements - right offset the element from its original position based on the left property - if left is also auto, does not offset it at all.
 * inherit: value is the same than the computed value from its parent element
 
@@ -111,7 +111,7 @@ chooses alternative rules for positioning elements
     * relatively positioned elements - offset that the element is moved left from its position in the normal flow if it wasn't positioned.
 * percentage: percentage of the containing block's width
 * auto:
-    * absolutely positioned elements - position based on the right property and treat width
+    * absolutely positioned elements - position based on the right property
     * relatively positioned elements - left offset of the element from its original position based on the right property - if right is also auto, does not offset it at all
 * inherit: value is the same as the computed value from its parent element 
 
