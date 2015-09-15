@@ -46,12 +46,6 @@ sets the maximum width of an element and prevents the width value from getting l
 * length: distance for width
 * percentage: percentage of containing block's width
 
-### [`box-sizing`] (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
-alters the default CSS box model used to calculate widths and heights of elements
-##### Possible values:
-* content-box: default style - width and height properties are measured including only the content, but not the padding, border or margin
-* border-box: width and height properties include the padding and border, but not the margin 
-
 ### [`position`] (https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 chooses alternative rules for positioning elements
 ##### Possible values:
@@ -115,25 +109,6 @@ chooses alternative rules for positioning elements
     * relatively positioned elements - left offset of the element from its original position based on the right property - if right is also auto, does not offset it at all
 * inherit: value is the same as the computed value from its parent element 
 
-
-### Reading CSS
-
-Tonight, focus on the [Box Model properties](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model) as we saw them used in class today. Pay careful attention to `box-sizing` and how it changes the math of the rendering model. You should cover the `margin-*`, `padding-*` and `border-*` properties, the `max-*` and `min-*` properties, and `box-sizing` property, at a minimum. All of these properties accept [a numeric length value](https://developer.mozilla.org/en-US/docs/Web/CSS/length) in [various units](https://developer.mozilla.org/en-US/docs/Web/CSS/length#Units) that you should know about. Also pay special attention to [the caveat about inches and DPI](https://developer.mozilla.org/en-US/docs/Web/CSS/length#CSS_units_and_dots-per-inch). Computers are hard.
-
-* **Reading CSS**
-  * [ ] `margin-*`
-  * [ ] `padding-*` 
-  * [ ] `border-*` 
-  * [ ] `max-*` 
-  * [ ] `min-*` 
-  * [ ] `box-sizing`
-  * **BEAST MODE** -- pseudo-elements and pseudo-classes, too!
-
-
-
------------------------------
-### Future property entries
-
 ### [`margin-left`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)
 
 ### [`margin-top`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top)
@@ -141,6 +116,43 @@ Tonight, focus on the [Box Model properties](https://developer.mozilla.org/en-US
 ### [`margin-right`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)
 
 ### [`margin-bottom`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)
+
+### [`padding`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+
+### [`padding-bottom`] ()
+
+### [`padding-left`] ()
+
+### [`padding-right`] ()
+
+### [`padding-top`] ()
+
+### [`box-sizing`] (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+alters the default CSS box model used to calculate widths and heights of elements
+##### Possible values:
+* content-box: default style - width and height properties are measured including only the content, but not the padding, border or margin
+* border-box: width and height properties include the padding and border, but not the margin 
+
+
+### Reading CSS
+
+Tonight, focus on the [Box Model properties](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model) as we saw them used in class today. Pay careful attention to `box-sizing` and how it changes the math of the rendering model. You should cover the `margin-*`, `padding-*` and `border-*` properties, the `max-*` and `min-*` properties, and `box-sizing` property, at a minimum. All of these properties accept [a numeric length value](https://developer.mozilla.org/en-US/docs/Web/CSS/length) in [various units](https://developer.mozilla.org/en-US/docs/Web/CSS/length#Units) that you should know about. Also pay special attention to [the caveat about inches and DPI](https://developer.mozilla.org/en-US/docs/Web/CSS/length#CSS_units_and_dots-per-inch). Computers are hard.
+
+* **Reading CSS**
+* [ ] `margin-*`
+* [ ] `padding-*` 
+* [ ] `border-*` 
+* [ ] `max-*` 
+* [ ] `min-*` 
+* [ ] `box-sizing`
+* **BEAST MODE** -- pseudo-elements and pseudo-classes, too!
+
+
+
+-----------------------------
+### Future property entries
+
+
 
 ### [`float`] (https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 
@@ -154,7 +166,7 @@ Tonight, focus on the [Box Model properties](https://developer.mozilla.org/en-US
 
 ### [`vertical-align`] (https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
 
-### [`padding`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+
 
 ### [`column-count`] (https://developer.mozilla.org/en-US/docs/Web/CSS/column-count)
 
