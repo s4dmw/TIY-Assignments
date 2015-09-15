@@ -39,13 +39,6 @@ specifies the width of the content area of an element
 * percentage: percentage of containing block's width
 * auto: the browser will calculate and select a width
 
-### [`max-width`] (https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
-sets the maximum width of an element and prevents the width value from getting larger than the mzx-width
-##### Possible values:
-* none: no max
-* length: distance for width
-* percentage: percentage of containing block's width
-
 ### [`position`] (https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 chooses alternative rules for positioning elements
 ##### Possible values:
@@ -127,6 +120,22 @@ chooses alternative rules for positioning elements
 
 ### [`padding-top`] ()
 
+### [`border`] ()
+expand on the border-* properties
+
+### [`max-height`] ()
+
+### [`min-height`] ()
+
+### [`max-width`] (https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
+sets the maximum width of an element and prevents the width value from getting larger than the mzx-width
+##### Possible values:
+* none: no max
+* length: distance for width
+* percentage: percentage of containing block's width
+
+### [`min-width`] ()
+
 ### [`box-sizing`] (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 alters the default CSS box model used to calculate widths and heights of elements
 ##### Possible values:
@@ -158,15 +167,7 @@ Tonight, focus on the [Box Model properties](https://developer.mozilla.org/en-US
 
 ### [`clear`] (https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
 
-### [`min-width`] (https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
-
-### [`max-width`] (https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
-
-### [`clear`] (https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
-
 ### [`vertical-align`] (https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
-
-
 
 ### [`column-count`] (https://developer.mozilla.org/en-US/docs/Web/CSS/column-count)
 
