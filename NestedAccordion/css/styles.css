@@ -68,3 +68,15 @@ ul
 .cbp-ntsubaccordion .cbp-ntopen .cbp-ntcontent {
   height: auto;
 }
+
+/*closes the subaccordion within the last subaccordion*/
+.cbp-ntaccordion .cbp-ntsubaccordion .cbp-ntcontent .cbp-ntsubaccordion .cbp-ntcontent {
+  height: 0;
+  overflow: hidden;
+}
+
+/*opens the subaccordion within the last subaccordion when clicked on*/
+
+.cbp-ntaccordion .cbp-ntsubaccordion .cbp-ntcontent .cbp-ntsubaccordion .cbp-ntopen .cbp-ntcontent {
+  height: auto;
+}
