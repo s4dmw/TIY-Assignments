@@ -142,13 +142,17 @@ sets the padding space on all sides of an element. The padding area is the space
       - Four values apply to 1. top, 2. right, 3. bottom and 4. to the left side
 
 ##### Related properties:
-[`padding-bottom`] ()
+[`padding-bottom`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom)
+height of the padding area at the bottom of an element
 
-[`padding-left`] ()
+[`padding-left`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left)
+padding space required on the left side of an element
 
-[`padding-right`] ()
+[`padding-right`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right)
+padding space required on the right side of an element
 
-[`padding-top`] ()
+[`padding-top`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top)
+padding space required on the top of an element
 
 
 ### [`border`] ()
