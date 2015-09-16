@@ -22,3 +22,14 @@ h5 {
     font-size: 18px;
     color: grey;
 }
+
+/*added the east pointing arrows next to the headers*/
+.cbp-nttrigger::before {
+  content: "\2192  ";
+}
+
+/*need to turn off the standard bullets for the lists...thanks google */
+ul
+{
+list-style-type: none;
+}
