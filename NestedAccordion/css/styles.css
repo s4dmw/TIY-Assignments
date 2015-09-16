@@ -1,0 +1,7 @@
+ /* import the fonts from google fonts */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+/*set the font of the body*/
+body {
+    font-family: 'Lato', sans-serif;
+  }
