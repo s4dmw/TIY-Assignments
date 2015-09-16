@@ -155,8 +155,26 @@ padding space required on the right side of an element
 padding space required on the top of an element
 
 
-### [`border`] ()
-expand on the border-* properties
+### [`border`] (https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+sets the individual border property values in a single place in the style sheet
+##### Posible Values:
+* br-width: sets border width. default value is medium
+* br-style: sets border style. default value is none
+* color: color of the border. default value is set to elements value
+##### Related Properties:
+[`border-bottom`] (https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom)
+These properties describe the bottom border of elements
+
+[`border-left`] (https://developer.mozilla.org/en-US/docs/Web/CSS/border-left)
+These properties describe the left border of elements
+
+[`border-right`] (https://developer.mozilla.org/en-US/docs/Web/CSS/border-right)
+These properties describe the right border of elements
+
+[`border-top`] (https://developer.mozilla.org/en-US/docs/Web/CSS/border-top)
+These properties describe the top border of elements
+
+
 
 ### [`max-height`] ()
 
