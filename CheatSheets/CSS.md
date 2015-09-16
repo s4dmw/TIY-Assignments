@@ -206,21 +206,65 @@ alters the default CSS box model used to calculate widths and heights of element
 * content-box: default style - width and height properties are measured including only the content, but not the padding, border or margin
 * border-box: width and height properties include the padding and border, but not the margin 
 
+### [font] ()
 
-### Reading CSS
+##### Possible Values:
+*
 
-Tonight, focus on the typographic elements of CSS: `font-*`, `text-*`, `line-*`, and don't forget `color`! Pay special attention to the units that you can employ when defining rules for `font-size` or `line-height` and document what the percentage values are relative to.
+### [font-style] ()
 
-As you encounter CSS properties in the assignments that you _haven't_ documented yet, add them to your documentation file... even if it's just a flag in the sand. If you're running into them, though, chances are you'll need to know what they do soon enough.
+##### Possible Values:
+*
 
-* [ ] **Reading CSS**
-  * [ ] Flag in the sand: `font-*` properties
-  * [ ] Flag in the sand: `text-*` properties
-  * [ ] Flag in the sand: `line-*` properties
-  * [ ] 2 new properties fully documented!
-  * [ ] 5 new properties!
-  * [ ] 8 new properties!
-  * [ ] 10 new properties!
+### [font-variant] ()
+
+##### Possible Values:
+*
+
+### [font-weight] ()
+
+##### Possible Values:
+*
+
+### [font-size] ()
+
+##### Possible Values:
+*
+
+### [font-family] ()
+
+##### Possible Values:
+*
+
+### [text-align] ()
+
+##### Possible Values:
+*
+
+### [text-decoration] ()
+
+##### Possible Values:
+*
+
+### [text-indent] ()
+
+##### Possible Values:
+*
+
+### [text-rendering] ()
+
+##### Possible Values:
+*
+
+### [line-break] ()
+
+##### Possible Values:
+*
+
+### [line-height] ()
+
+##### Possible Values:
+*
 
 
 -----------------------------
