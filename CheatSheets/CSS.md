@@ -207,6 +207,21 @@ alters the default CSS box model used to calculate widths and heights of element
 * border-box: width and height properties include the padding and border, but not the margin 
 
 
+### Reading CSS
+
+Tonight, focus on the typographic elements of CSS: `font-*`, `text-*`, `line-*`, and don't forget `color`! Pay special attention to the units that you can employ when defining rules for `font-size` or `line-height` and document what the percentage values are relative to.
+
+As you encounter CSS properties in the assignments that you _haven't_ documented yet, add them to your documentation file... even if it's just a flag in the sand. If you're running into them, though, chances are you'll need to know what they do soon enough.
+
+* [ ] **Reading CSS**
+  * [ ] Flag in the sand: `font-*` properties
+  * [ ] Flag in the sand: `text-*` properties
+  * [ ] Flag in the sand: `line-*` properties
+  * [ ] 2 new properties fully documented!
+  * [ ] 5 new properties!
+  * [ ] 8 new properties!
+  * [ ] 10 new properties!
+
 
 -----------------------------
 ## Future property entries
