@@ -10,10 +10,11 @@ body {
 
 label {
   display: block;
+  font-size: 18px;
 }
 
 input, select, textarea {
-  border: 1px solid white;
+  border: 2px solid white;
   background: inherit;
   color: white;
 }
