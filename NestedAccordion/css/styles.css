@@ -54,7 +54,17 @@ ul
 
 /*got the higher order elements to open/close */
 /* now i need to get the sub elements to open/close */
-.cbp-ntopen .cbp-ntcontent {
+.cbp-ntaccordion .cbp-ntopen .cbp-ntcontent {
   height: auto;
+}
 
+/*closes the sub-accordions when the top level accordion is intially opened*/
+.cbp-ntaccordion .cbp-ntsubaccordion .cbp-ntcontent {
+  height: 0;
+  overflow: hidden;
+}
+
+/*opens the subaccordion when clicked on*/
+.cbp-ntsubaccordion .cbp-ntopen .cbp-ntcontent {
+  height: auto;
 }
