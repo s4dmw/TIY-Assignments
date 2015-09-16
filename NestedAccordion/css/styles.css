@@ -40,6 +40,11 @@ h5 {
   content: "\21B4  ";
 }
 
+/*change the arrow the mickey mouse hand when hovering over the nttriggers*/
+.cbp-nttrigger:hover {
+  cursor: pointer;
+}
+
 /*need to turn off the standard bullets for the lists...thanks google */
 ul
 {
