@@ -131,14 +131,25 @@ sets the margin for the bottom of the box associated with an element
 * auto: receives a share of the remaining space
 
 ### [`padding`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+sets the padding space on all sides of an element. The padding area is the space between the content of the element and its border. Negative values are not allowed.
+##### Possible Values:
+* Specifies one, two, three or four of the following values: 
+   * length: non-negative fixed width
+   * percentage: relative to the width of the containing block
+      - One value applies to all 4 sides
+      - Two values apply to 1. top and bottom and 2. to the left and right side
+      - Three values apply to 1. top, 2. right and left and 3. to the bottom side
+      - Four values apply to 1. top, 2. right, 3. bottom and 4. to the left side
 
-### [`padding-bottom`] ()
+##### Related properties:
+[`padding-bottom`] ()
 
-### [`padding-left`] ()
+[`padding-left`] ()
 
-### [`padding-right`] ()
+[`padding-right`] ()
 
-### [`padding-top`] ()
+[`padding-top`] ()
+
 
 ### [`border`] ()
 expand on the border-* properties
@@ -163,25 +174,11 @@ alters the default CSS box model used to calculate widths and heights of element
 * border-box: width and height properties include the padding and border, but not the margin 
 
 
-### Reading CSS
-
-Tonight, focus on the [Box Model properties](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model) as we saw them used in class today. Pay careful attention to `box-sizing` and how it changes the math of the rendering model. You should cover the `margin-*`, `padding-*` and `border-*` properties, the `max-*` and `min-*` properties, and `box-sizing` property, at a minimum. All of these properties accept [a numeric length value](https://developer.mozilla.org/en-US/docs/Web/CSS/length) in [various units](https://developer.mozilla.org/en-US/docs/Web/CSS/length#Units) that you should know about. Also pay special attention to [the caveat about inches and DPI](https://developer.mozilla.org/en-US/docs/Web/CSS/length#CSS_units_and_dots-per-inch). Computers are hard.
-
-* **Reading CSS**
-* [ ] `margin-*`
-* [ ] `padding-*` 
-* [ ] `border-*` 
-* [ ] `max-*` 
-* [ ] `min-*` 
-* [ ] `box-sizing`
-* **BEAST MODE** -- pseudo-elements and pseudo-classes, too!
 
 
 
 -----------------------------
 ### Future property entries
-
-
 
 ### [`float`] (https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 
