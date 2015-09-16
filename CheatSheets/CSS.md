@@ -103,12 +103,32 @@ sets the margin for all four sides
     - Four values apply to top, right, bottom and left in that order (clockwise).
 
 ### [`margin-left`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)
+sets the margin for the left side of the box associated with an element
+##### Possible Values:
+* length: Specifies a fixed width. Negative Values are allowed.
+* percentage: relative to the width of the containing block.
+* auto: receives a share of the remaining space
 
 ### [`margin-top`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top)
+sets the margin for the top of the box associated with an element
+##### Possible Values:
+* length: Specifies a fixed width.
+* percentage: relative to the width of the containing block.
+* auto: receives a share of the remaining space
 
 ### [`margin-right`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)
+sets the margin for the right side of the box associated with an element
+##### Possible Values:
+* length: Specifies a fixed width. Negative Values are allowed.
+* percentage: relative to the width of the containing block.
+* auto: receives a share of the remaining space
 
 ### [`margin-bottom`] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)
+sets the margin for the bottom of the box associated with an element
+##### Possible Values:
+* length: Specifies a fixed width.
+* percentage: relative to the width of the containing block.
+* auto: receives a share of the remaining space
 
 ### [`padding`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
 
