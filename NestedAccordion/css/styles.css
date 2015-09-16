@@ -1,6 +1,13 @@
  /* import the fonts from google fonts */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 
+.clearfix span { /*change the color of the very top "blueprint" header */
+  color: cornflowerblue;
+}
+.clearfix h1 { /*change the color of the "Nested Accordion" header */
+  color: cornflowerblue;
+}
+
 /*set the font and font color of the body*/
 body {
     font-family: 'Lato', sans-serif;
@@ -23,13 +30,31 @@ h5 {
     color: grey;
 }
 
-/*added the east pointing arrows next to the headers*/
+/*added the arrow*/
 .cbp-nttrigger::before {
-  content: "\2192  ";
+  content: "\21B1  ";
+}
+
+/*changed the arrow when hovered over*/
+.cbp-nttrigger:hover::before {
+  content: "\21B4  ";
 }
 
 /*need to turn off the standard bullets for the lists...thanks google */
 ul
 {
-list-style-type: none;
+  list-style-type: none;
+}
+
+/* closes the accordion*/
+.cbp-ntaccordion .cbp-ntcontent {
+  height: 0;
+  overflow: hidden
+}
+
+/*got the higher order elements to open/close */
+/* now i need to get the sub elements to open/close */
+.cbp-ntopen .cbp-ntcontent {
+  height: auto;
+
 }
