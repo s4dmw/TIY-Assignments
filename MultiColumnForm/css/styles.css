@@ -12,20 +12,20 @@ label {
   display: block;
 }
 
-input {
-  border: 3px;
+input, select, textarea {
+  border: 1px solid white;
   background: inherit;
   color: white;
 }
 
-select {
+/*select {
   border: 3px;
   background: inherit;
   color: white;
-}
+}*/
 
-textarea {
+/*textarea {
   border: 3px;
   background: inherit;
   color: white;
-}
+}*/
