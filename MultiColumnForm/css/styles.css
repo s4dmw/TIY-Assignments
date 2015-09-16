@@ -1,4 +1,8 @@
-/*set the background color to blue*/
+/* import the fonts from google fonts */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+/*set the background color to blue and font to lato*/
 body {
   background-color: #47a3da;
+  font-family: 'Lato', sans-serif;
 }

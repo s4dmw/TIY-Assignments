@@ -1,12 +1,13 @@
  /* import the fonts from google fonts */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 
-/*set the font of the body*/
+/*set the font and font color of the body*/
 body {
     font-family: 'Lato', sans-serif;
     color: grey;
   }
 
+/*the the sizes and font colors for the headers*/
 h3 {
     font-size: 36px;
     color: cornFlowerBlue;
