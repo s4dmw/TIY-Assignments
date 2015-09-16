@@ -11,3 +11,21 @@ body {
 label {
   display: block;
 }
+
+input {
+  border: 3px;
+  background: inherit;
+  color: white;
+}
+
+select {
+  border: 3px;
+  background: inherit;
+  color: white;
+}
+
+textarea {
+  border: 3px;
+  background: inherit;
+  color: white;
+}
