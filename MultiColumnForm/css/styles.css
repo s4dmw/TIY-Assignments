@@ -5,4 +5,9 @@
 body {
   background-color: #47a3da;
   font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+label {
+  display: block;
 }
