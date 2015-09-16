@@ -33,11 +33,13 @@ h5 {
 /*added the arrow*/
 .cbp-nttrigger::before {
   content: "\21B1  ";
+  color: grey;
 }
 
 /*changed the arrow when hovered over*/
 .cbp-nttrigger:hover::before {
   content: "\21B4  ";
+  color: cornflowerblue;
 }
 
 /*change the arrow the mickey mouse hand when hovering over the nttriggers*/
