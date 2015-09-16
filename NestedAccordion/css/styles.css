@@ -4,4 +4,20 @@
 /*set the font of the body*/
 body {
     font-family: 'Lato', sans-serif;
+    color: grey;
   }
+
+h3 {
+    font-size: 36px;
+    color: cornFlowerBlue;
+}
+
+h4 {
+    font-size: 24px;
+    color: cornFlowerBlue;
+}
+
+h5 {
+    font-size: 18px;
+    color: grey;
+}
