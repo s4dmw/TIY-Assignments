@@ -154,7 +154,6 @@ padding space required on the right side of an element
 [`padding-top`] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top)
 padding space required on the top of an element
 
-
 ### [`border`] (https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 sets the individual border property values in a single place in the style sheet
 ##### Posible Values:
@@ -174,11 +173,18 @@ These properties describe the right border of elements
 [`border-top`] (https://developer.mozilla.org/en-US/docs/Web/CSS/border-top)
 These properties describe the top border of elements
 
+### [`max-height`] (https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
+sets the maximum height of an element
+##### Possible Values:
+* length: A fixed maximum height
+* percentage: relative to the height of the containing block. If the height of the containing block is not specified explicitly, the percentage value is treated as none.
+* none: No limit on the height of the box.
 
-
-### [`max-height`] ()
-
-### [`min-height`] ()
+### [`min-height`] (https://developer.mozilla.org/en-US/docs/Web/CSS/min-height)
+sets the minimum height of a given element
+##### Possible Values:
+* length: The fixed minimum height. Negative values make the declaration invalid.
+* percentage: percentage of containing block's height. Negative values make the declaration invalid.
 
 ### [`max-width`] (https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
 sets the maximum width of an element and prevents the width value from getting larger than the mzx-width
@@ -187,7 +193,12 @@ sets the maximum width of an element and prevents the width value from getting l
 * length: distance for width
 * percentage: percentage of containing block's width
 
-### [`min-width`] ()
+### [`min-width`] (https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
+sets the minimum width of a given element
+##### Possible Values:
+* length: The fixed minimum width
+* percentage: relatvie to the containing block's width. Negative values make the declaration invalid.
+* auto: The default minimum size for flex items, providing a more reasonable default than 0 for other layouts.
 
 ### [`box-sizing`] (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 alters the default CSS box model used to calculate widths and heights of elements
@@ -197,10 +208,8 @@ alters the default CSS box model used to calculate widths and heights of element
 
 
 
-
-
 -----------------------------
-### Future property entries
+## Future property entries
 
 ### [`float`] (https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 
