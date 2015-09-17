@@ -206,32 +206,32 @@ alters the default CSS box model used to calculate widths and heights of element
 * content-box: default style - width and height properties are measured including only the content, but not the padding, border or margin
 * border-box: width and height properties include the padding and border, but not the margin 
 
-### [font] ()
+### [`font`] ()
 
 ##### Possible Values:
 *
 
-### [font-style] ()
+### [`font-style`] ()
 
 ##### Possible Values:
 *
 
-### [font-variant] ()
+### [`font-variant`] ()
 
 ##### Possible Values:
 *
 
-### [font-weight] ()
+### [`font-weight`] ()
 
 ##### Possible Values:
 *
 
-### [font-size] ()
+### [`font-size`] ()
 
 ##### Possible Values:
 *
 
-### [font-family] ()
+### [`font-family`] ()
 
 ##### Possible Values:
 *
@@ -241,27 +241,27 @@ alters the default CSS box model used to calculate widths and heights of element
 ##### Possible Values:
 *
 
-### [text-decoration] ()
+### [`text-decoration`] ()
 
 ##### Possible Values:
 *
 
-### [text-indent] ()
+### [`text-indent`] ()
 
 ##### Possible Values:
 *
 
-### [text-rendering] ()
+### [`text-rendering`] ()
 
 ##### Possible Values:
 *
 
-### [line-break] ()
+### [`line-break`] ()
 
 ##### Possible Values:
 *
 
-### [line-height] ()
+### [`line-height`] ()
 
 ##### Possible Values:
 *
