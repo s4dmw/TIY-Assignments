@@ -22,20 +22,18 @@ label {
   font-size: 18px;
 }
 
-input, select, textarea {
-  border: 2px solid white;
+input, textarea {
+  border: 3px solid white;
   background: inherit;
   color: white;
 }
 
-/*select {
-  border: 3px;
+select {
   background: inherit;
   color: white;
-}*/
+}
 
-/*textarea {
-  border: 3px;
-  background: inherit;
-  color: white;
-}*/
+.cbp-mc-submit {
+  background-color: #10689a;
+  border: none;
+}
