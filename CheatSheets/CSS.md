@@ -275,25 +275,35 @@ sets the text formatting to underline, overline, line-through or blink.
 * blink
 * none
 
-### [`text-indent`] ()
-
+### [`text-indent`] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
+specifies how much horizontal space should be left before the beginning of the first line of the text content of an element
 ##### Possible Values:
-*
+* length - absolute length. Negative values are allowed.
+* percentage - indentation is a percentage of the containing block width
 
-### [`text-rendering`] ()
-
+### [`text-rendering`] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering)
+provides information to the rendering engine about what to optimize for when rendering text
 ##### Possible Values:
-*
+* auto - browser makes educated guesses about when to optimize for speed, legibility, and geometric precision while drawing text.
+* optimizeSpeed - browser emphasizes rendering speed over legibility and geometric precision when drawing text
+* optimizeLegibility - browser emphasizes legibility over rendering speed and geometric precision
+* geometricPrecision - browser emphasizes geometric precision over rendering speed and legibility.
 
-### [`line-break`] ()
-
+### [`line-break`] (https://developer.mozilla.org/en-US/docs/Web/CSS/line-break)
+used to specify how (or if) to break lines
 ##### Possible Values:
-*
+* auto - break text using the default line break rule
+* loose - break text using the line break rule that the line is shorter like a newspaper
+* normal - break text using the common line break rule
+* strict - break text using the stringent line break rule
 
-### [`line-height`] ()
-
+### [`line-height`] (https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+specifies the minimum height of line boxes within the element
 ##### Possible Values:
-*
+* normal - a default value of roughly 1.2, depending on the element's font-family
+* number - unitless number multiplied by the element's font size
+* length - used in the calculation of the line box height
+* percentage - relative to the font size of the element itself
 
 
 -----------------------------
