@@ -5,7 +5,16 @@
 body {
   background-color: #47a3da;
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
   color: white;
+}
+
+.clearfix > span {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 400;
 }
 
 label {
@@ -16,7 +25,7 @@ label {
 input, select, textarea {
   border: 2px solid white;
   background: inherit;
-  color: white;
+  color: gray;
 }
 
 /*select {

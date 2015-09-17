@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+/*set the body margin by trial and error to get it to look centered*/
+body {
+  margin: 12%;
+}
+
+/*centered up the text at the top*/
+.clearfix {
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*more work on the text at the top of the page to get it to look like the ref*/
+h1 {
+  margin-top: auto;
+  font-size: 25pt;
+}
+
+.container > header > span {
+  font-size: 15pt;
+  letter-spacing: 6pt;
+}
+
+/*worked on the input box to get it to look closer to the ref example*/
+input {
+  border: 3px solid white;
+  background: inherit;
+  color: white;
+  line-height: 1.5;
+  font-size: 15pt;
+  padding-left: 14pt;
+}
+
+/* played with the label padding to get the room above and below closer to right */
+label {
+  padding-top: 20pt;
+  padding-bottom: 5pt
+}
+
+/* got the drop down menus to look like the ref example and line up with the input boxes*/
+select {
+  border: 1px solid gray;
+  font-size: 17pt;
+  width: 175pt
+}
+
+/*expanded the text area to more closely match the ref example*/
+textarea {
+  border: 3px solid white;
+  background: inherit;
+  color: white;
+  line-height: 1.5;
+  font-size: 15pt;
+  padding-left: 8pt;
+  padding-bottom: 100pt;
+}
