@@ -1,6 +1,13 @@
  /* import the fonts from google fonts */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 
+.clearfix span { /*change the color of the very top "blueprint" header */
+  color: cornflowerblue;
+}
+.clearfix h1 { /*change the color of the "Nested Accordion" header */
+  color: cornflowerblue;
+}
+
 /*set the font and font color of the body*/
 body {
     font-family: 'Lato', sans-serif;
@@ -21,4 +28,62 @@ h4 {
 h5 {
     font-size: 18px;
     color: grey;
+}
+
+/*added the arrow*/
+.cbp-nttrigger::before {
+  content: "\21B1  ";
+  color: grey;
+}
+
+/*changed the arrow when hovered over*/
+.cbp-nttrigger:hover::before {
+  content: "\21B4  ";
+  color: cornflowerblue;
+}
+
+/*change the arrow the mickey mouse hand when hovering over the nttriggers*/
+.cbp-nttrigger:hover {
+  cursor: pointer;
+}
+
+/*need to turn off the standard bullets for the lists...thanks google */
+ul
+{
+  list-style-type: none;
+}
+
+/* closes the accordion*/
+.cbp-ntaccordion .cbp-ntcontent {
+  height: 0;
+  overflow: hidden
+}
+
+/*got the higher order elements to open/close */
+/* now i need to get the sub elements to open/close */
+.cbp-ntaccordion .cbp-ntopen .cbp-ntcontent {
+  height: auto;
+}
+
+/*closes the sub-accordions when the top level accordion is intially opened*/
+.cbp-ntaccordion .cbp-ntsubaccordion .cbp-ntcontent {
+  height: 0;
+  overflow: hidden;
+}
+
+/*opens the subaccordion when clicked on*/
+.cbp-ntsubaccordion .cbp-ntopen .cbp-ntcontent {
+  height: auto;
+}
+
+/*closes the subaccordion within the last subaccordion*/
+.cbp-ntaccordion .cbp-ntsubaccordion .cbp-ntcontent .cbp-ntsubaccordion .cbp-ntcontent {
+  height: 0;
+  overflow: hidden;
+}
+
+/*opens the subaccordion within the last subaccordion when clicked on*/
+
+.cbp-ntaccordion .cbp-ntsubaccordion .cbp-ntcontent .cbp-ntsubaccordion .cbp-ntopen .cbp-ntcontent {
+  height: auto;
 }

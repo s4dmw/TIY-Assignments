@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+/*It looks like i only need some minor tweaks to duplicate the reference example*/
+
+/* shrinking the margin of the entire body to use up more of the space*/
+body {
+    margin: 5%;
+}
+
+/*widening the input, selet, and textarea elements*/
+input {
+    width: 97%;
+}
+
+select {
+    width: 100%;
+}
+
+textarea {
+    width: 99%
+}
+
+/*the submit button is relatively smaller on the tablet site than the mobile site*/
+.cbp-mc-submit {
+    width: 50%;
+    margin-left: 25%
+}

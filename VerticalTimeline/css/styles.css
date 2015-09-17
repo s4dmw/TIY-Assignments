@@ -1,0 +1,18 @@
+/* header element
+* - text/buttons centered at top page
+* - top line is different size/spacing than the 2nd line
+*/
+
+/*ul contains list items with date, time, recipe title, and recipe*/
+
+
+
+/*time elements are broken down in to date and time and are displayed on the left side. time
+and date have different formats and colors*/
+
+/*div.tmicon goes in between the date/time and the recipe
+the icons are lined by a vertical line*/
+
+/*the recipe boxes contain the title and recipe.
+they alternate shades of blue.
+the have carets connecting them to the veritcal line*/

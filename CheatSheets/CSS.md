@@ -206,6 +206,104 @@ alters the default CSS box model used to calculate widths and heights of element
 * content-box: default style - width and height properties are measured including only the content, but not the padding, border or margin
 * border-box: width and height properties include the padding and border, but not the margin 
 
+### [`font`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+either a shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family, or a way to set the element's font to a system font, using specific keywords
+##### Possible Values:
+* font-style - see below
+* font-variant - see below
+* font-weight - see below
+* font-size - see below
+* line-height - see below
+* font-family - see below
+
+### [`font-style`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
+ lets you select italic or oblique faces within a font-family
+##### Possible Values:
+* normal - Selects a font that is classified as normal within a font-family
+* italic - Selects a font that is labeled italic, if that is not available, one labeled oblique
+* oblique - Selects a font that is labeled oblique
+
+### [`font-variant`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)
+shorthand for the longhand properties: font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian. 
+##### Possible Values:
+* normal - normal font face
+* none 
+
+### [`font-weight`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
+sets the boldness of the font
+##### Possible Values:
+* normal - Same as 400
+* bold - Same as 700
+* lighter - One weight lighter than the parent element
+* bolder - One weight darker than the parent element
+* 100, 200, 300, 400, 500, 600, 700, 800, 900 - for fonts that provide more than just normal and bold.
+
+### [`font-size`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
+specifies the size of the font
+##### Possible Values:
+* xx-small, x-small, small, medium, large, x-large, xx-large
+* larger, smaller - relative to the parent element's font size
+* length - a positive length
+* percentage - a positive percentage of the parent element's font size
+
+### [`font-family`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+prioritized list of font family names 
+##### Possible Values:
+* family-name - name of a font family
+* generic-name - fallback fonts
+* serif - Glyphs have finishing strokes, flared or tapering ends, or have actual serifed endings.
+* sans-serif - Glyphs have stroke endings that are plain.
+* monospace - All glyphs have the same fixed width.
+* cursive - Glyphs in cursive fonts generally have either joining strokes or other cursive characteristics beyond those of italic typefaces
+* fantasy - Fantasy fonts are primarily decorative fonts that contain playful representations of characters.
+
+### [`text-align`] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+describes how inline content like text is aligned in its parent block element
+##### Possible Values:
+* left - aligned to the left edge of the line box
+* right - aligned to the right edge of the line box
+* center - centered within the line box
+* justify - The text is justified.
+* justify-all - forces the last line to be justified in addition to justify
+
+### [`text-decoration`] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
+sets the text formatting to underline, overline, line-through or blink. 
+##### Possible Values:
+* underline
+* overline
+* line-through
+* blink
+* none
+
+### [`text-indent`] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
+specifies how much horizontal space should be left before the beginning of the first line of the text content of an element
+##### Possible Values:
+* length - absolute length. Negative values are allowed.
+* percentage - indentation is a percentage of the containing block width
+
+### [`text-rendering`] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering)
+provides information to the rendering engine about what to optimize for when rendering text
+##### Possible Values:
+* auto - browser makes educated guesses about when to optimize for speed, legibility, and geometric precision while drawing text.
+* optimizeSpeed - browser emphasizes rendering speed over legibility and geometric precision when drawing text
+* optimizeLegibility - browser emphasizes legibility over rendering speed and geometric precision
+* geometricPrecision - browser emphasizes geometric precision over rendering speed and legibility.
+
+### [`line-break`] (https://developer.mozilla.org/en-US/docs/Web/CSS/line-break)
+used to specify how (or if) to break lines
+##### Possible Values:
+* auto - break text using the default line break rule
+* loose - break text using the line break rule that the line is shorter like a newspaper
+* normal - break text using the common line break rule
+* strict - break text using the stringent line break rule
+
+### [`line-height`] (https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+specifies the minimum height of line boxes within the element
+##### Possible Values:
+* normal - a default value of roughly 1.2, depending on the element's font-family
+* number - unitless number multiplied by the element's font size
+* length - used in the calculation of the line box height
+* percentage - relative to the font size of the element itself
 
 
 -----------------------------
