@@ -25,7 +25,7 @@ label {
 input, select, textarea {
   border: 2px solid white;
   background: inherit;
-  color: gray;
+  color: white;
 }
 
 /*select {
