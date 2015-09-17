@@ -206,25 +206,37 @@ alters the default CSS box model used to calculate widths and heights of element
 * content-box: default style - width and height properties are measured including only the content, but not the padding, border or margin
 * border-box: width and height properties include the padding and border, but not the margin 
 
-### [`font`] ()
-
+### [`font`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+either a shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family, or a way to set the element's font to a system font, using specific keywords
 ##### Possible Values:
-*
+* font-style - see below
+* font-variant - see below
+* font-weight - see below
+* font-size - see below
+* line-height - see below
+* font-family - see below
 
-### [`font-style`] ()
-
+### [`font-style`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
+ lets you select italic or oblique faces within a font-family
 ##### Possible Values:
-*
+* normal - Selects a font that is classified as normal within a font-family
+* italic - Selects a font that is labeled italic, if that is not available, one labeled oblique
+* oblique - Selects a font that is labeled oblique
 
-### [`font-variant`] ()
-
+### [`font-variant`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)
+shorthand for the longhand properties: font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian. 
 ##### Possible Values:
-*
+* normal - normal font face
+* none 
 
-### [`font-weight`] ()
-
+### [`font-weight`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
+sets the boldness of the font
 ##### Possible Values:
-*
+* normal - Same as 400
+* bold - Same as 700
+* lighter - One weight lighter than the parent element
+* bolder - One weight darker than the parent element
+* 100, 200, 300, 400, 500, 600, 700, 800, 900 - for fonts that provide more than just normal and bold.
 
 ### [`font-size`] ()
 
@@ -236,7 +248,7 @@ alters the default CSS box model used to calculate widths and heights of element
 ##### Possible Values:
 *
 
-### [text-align] ()
+### [`text-align`] ()
 
 ##### Possible Values:
 *
