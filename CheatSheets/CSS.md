@@ -238,25 +238,42 @@ sets the boldness of the font
 * bolder - One weight darker than the parent element
 * 100, 200, 300, 400, 500, 600, 700, 800, 900 - for fonts that provide more than just normal and bold.
 
-### [`font-size`] ()
-
+### [`font-size`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
+specifies the size of the font
 ##### Possible Values:
-*
+* xx-small, x-small, small, medium, large, x-large, xx-large
+* larger, smaller - relative to the parent element's font size
+* length - a positive length
+* percentage - a positive percentage of the parent element's font size
 
-### [`font-family`] ()
-
+### [`font-family`] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+prioritized list of font family names 
 ##### Possible Values:
-*
+* family-name - name of a font family
+* generic-name - fallback fonts
+* serif - Glyphs have finishing strokes, flared or tapering ends, or have actual serifed endings.
+* sans-serif - Glyphs have stroke endings that are plain.
+* monospace - All glyphs have the same fixed width.
+* cursive - Glyphs in cursive fonts generally have either joining strokes or other cursive characteristics beyond those of italic typefaces
+* fantasy - Fantasy fonts are primarily decorative fonts that contain playful representations of characters.
 
-### [`text-align`] ()
-
+### [`text-align`] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+describes how inline content like text is aligned in its parent block element
 ##### Possible Values:
-*
+* left - aligned to the left edge of the line box
+* right - aligned to the right edge of the line box
+* center - centered within the line box
+* justify - The text is justified.
+* justify-all - forces the last line to be justified in addition to justify
 
-### [`text-decoration`] ()
-
+### [`text-decoration`] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
+sets the text formatting to underline, overline, line-through or blink. 
 ##### Possible Values:
-*
+* underline
+* overline
+* line-through
+* blink
+* none
 
 ### [`text-indent`] ()
 
