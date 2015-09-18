@@ -1,0 +1,38 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+div.container {
+    margin-left: 10%
+    margin-right: 10%;
+}
+
+header {
+    margin-top: 5%;
+}
+
+
+div {
+
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+div.cbp-vm-options {
+    background-color: white;
+    text-align: right;
+}
+
+div.cbp-vm-view-list {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+
+div.cbp-vm-view-grid {
+    background-color: grey;
+    border: 2px solid black;
+}

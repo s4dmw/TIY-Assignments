@@ -1,9 +1,5 @@
 @media(min-width: 30em) {
 
-  body {
-    background-color: black
-  }
-
   header {
       margin-top: 5%;
       margin-left: auto;
