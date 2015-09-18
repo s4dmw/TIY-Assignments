@@ -23,16 +23,39 @@ ul
 }
 
 div.cbp-vm-options {
-    background-color: white;
     text-align: right;
 }
 
 div.cbp-vm-view-list {
-    background-color: cornflowerblue;
-    border: 2px solid black;
+    border: 2px solid cornflowerblue;
+}
+
+div.cbp-vm-view-list li > a.cbp-vm-image  {
+    display: inline;
+}
+
+div.cbp-vm-view-list li > h3.cbp-vm-title {
+    display: inline;
+}
+
+div.cbp-vm-view-list li > div.cbp-vm-price {
+    display: inline;
+}
+
+div.cbp-vm-view-list li > div.cbp-vm-details {
+    display: inline;
+}
+
+div.cbp-vm-view-list li > a.cbp-vm-icon {
+    display: inline;
 }
 
 div.cbp-vm-view-grid {
-    background-color: grey;
     border: 2px solid black;
+}
+
+div.cbp-vm-view-grid li {
+    width: 33%;
+    text-align: center;
+    display: inline-block;
 }
