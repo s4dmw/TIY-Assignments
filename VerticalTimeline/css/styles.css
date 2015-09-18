@@ -16,3 +16,30 @@ the icons are lined by a vertical line*/
 /*the recipe boxes contain the title and recipe.
 they alternate shades of blue.
 the have carets connecting them to the veritcal line*/
+
+
+ul
+{
+  list-style-type: none;
+}
+
+li > time  {
+  background-color: gray;
+  width: 10%;
+  display: inline-block;
+}
+
+li > div {
+  background-color: cornflowerblue;
+  width: 40%;
+  display: inline-block;
+}
+
+
+li > time span:first-child {
+  font-size: 1em;
+}
+
+li > time span:last-child {
+  font-size: 2em;
+}
