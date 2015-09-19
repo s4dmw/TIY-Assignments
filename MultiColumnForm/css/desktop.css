@@ -1,5 +1,41 @@
-@media(min-width: 50em) {
+@media(min-width :55em) {
+  body {
+    background-color: white;
+  }
 
-body {
-  background-color: black;
+}
+
+@media(min-width: 70em) {
+
+  body {
+    background-color: cornflowerblue;
+    /* tracer bullet */
+  }
+
+  header {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    /*background-color: gray;*/
+    text-align: left;
+  }
+
+  .cbp-mc-column {
+    float: left;
+    width: 28.33%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  input, textarea, select {
+    margin-bottom: 1.5em;
+  }
+
+
+  .cbp-mc-submit {
+    background-color: black;
+    margin-left: 15%;
+    width: 70%;
+  }
+
 }
