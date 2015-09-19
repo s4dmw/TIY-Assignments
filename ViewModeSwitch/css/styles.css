@@ -40,14 +40,76 @@ header > nav {
   display: none;
 }
 
+/*create border around display*/
+div.main {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 2px solid;
+  pad
+}
+
+/*setup area for the view switch/buttons*/
 div.cbp-vm-options {
+    padding-bottom: 2%;
+    border-bottom: 2px solid;
     text-align: right;
 }
 
-div.cbp-vm-view-list {
-    border: 2px solid cornflowerblue;
+/*make the view switchers show up as icons*/
+
+
+/* Grid view setup */
+.cbp-vm-view-grid li {
+    /*background-color: gray;*/
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
+/*tweak the properties of the each grid item*/
+.cbp-vm-view-grid li > a.cbp-vm-image > img {
+  /*background-color: cornflowerblue;*/
+}
+
+.cbp-vm-view-grid li > h3.cbp-vm-title {
+  /*background-color: gray;*/
+  font-size: 25pt;
+  margin: 0;
+}
+
+div.cbp-vm-view-grid li > div.cbp-vm-price {
+  /*background-color: gray;*/
+  color: #c0c0c0;
+  font-size: 15pt;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+}
+
+div.cbp-vm-view-grid li > div.cbp-vm-details {
+  /*background-color: gray;*/
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
+div.cbp-vm-view-grid li > a.cbp-vm-icon {
+  background-color: #47a3da;
+  color: white;
+  padding-left: 15pt;
+  padding-right: 15pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+}
+
+
+
+
+/*list view setup*/
 div.cbp-vm-view-list li > a.cbp-vm-image  {
     display: inline;
 }
@@ -66,14 +128,4 @@ div.cbp-vm-view-list li > div.cbp-vm-details {
 
 div.cbp-vm-view-list li > a.cbp-vm-icon {
     display: inline;
-}
-
-div.cbp-vm-view-grid {
-    border: 2px solid black;
-}
-
-div.cbp-vm-view-grid li {
-    width: 32%;
-    text-align: center;
-    display: inline-block;
 }
