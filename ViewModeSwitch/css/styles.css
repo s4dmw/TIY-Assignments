@@ -1,25 +1,43 @@
+/*grab that font*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/*basic settings/styles for page*/
 body {
-    margin-left: 15%;
-    margin-right: 15%;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
 }
 
-div.container {
-    margin-left: 10%
-    margin-right: 10%;
-}
-
-header {
-    margin-top: 5%;
-}
-
-
-div {
-
-}
-
+/*turn off the list bullets*/
 ul
 {
   list-style-type: none;
+}
+
+/*set for margins for header*/
+header {
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+/*tweak size, spacing, position of the header span*/
+header > span {
+  font-size: 120%;
+  font-weight: 400;
+  letter-spacing: .4em;
+}
+
+/*tweak size, space, position of the header h1*/
+header > h1 {
+  font-weight: 400;
+  width: 25%;
+}
+
+/*turn off the nav icons for now*/
+header > nav {
+  display: none;
 }
 
 div.cbp-vm-options {
