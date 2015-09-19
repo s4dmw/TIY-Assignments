@@ -1,14 +1,33 @@
-@media(min-width :55em) {
-  body {
-    background-color: white;
-  }
+@media(min-width:55em) and (max-width: 70em) {
+    body {
+        /*tracer bullet*/
+        /*background-color: cornflowerblue;*/
+    }
+    header {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 5%;
+      /*background-color: gray; */
+      text-align: left;
+    }
 
+    .cbp-mc-column:nth-child(-n+2) {
+      float: left;
+      width: 45%;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+    }
+
+    .cbp-mc-column:nth-child(3) {
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+    }
 }
 
-@media(min-width: 70em) {
 
+@media(min-width: 70em) {
   body {
-    background-color: cornflowerblue;
+    /*background-color: gray;*/
     /* tracer bullet */
   }
 
@@ -31,9 +50,8 @@
     margin-bottom: 1.5em;
   }
 
-
   .cbp-mc-submit {
-    background-color: black;
+    /*background-color: black;*/
     margin-left: 15%;
     width: 70%;
   }
