@@ -1,6 +1,6 @@
-
 /* import the fonts from google fonts */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
 
 /*set the background color to blue and font to lato*/
 body {
@@ -10,19 +10,23 @@ body {
   color: white;
 }
 
-.clearfix > span {
+/*Set the font weights for the heading elements*/
+header > span {
   font-weight: 400;
+  letter-spacing: .3em;
 }
 
 h1 {
   font-weight: 400;
 }
 
+/*settings for the label elements*/
 label {
   display: block;
   font-size: 18px;
 }
 
+/*input, textarea, and select elements - border and background*/
 input, textarea {
   border: 3px solid white;
   background: inherit;
@@ -34,6 +38,7 @@ select {
   color: white;
 }
 
+/*submit-button color*/
 .cbp-mc-submit {
   background-color: #10689a;
   border: none;
