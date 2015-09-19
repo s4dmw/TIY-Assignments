@@ -6,7 +6,6 @@
 /*ul contains list items with date, time, recipe title, and recipe*/
 
 
-
 /*time elements are broken down in to date and time and are displayed on the left side. time
 and date have different formats and colors*/
 
@@ -17,29 +16,78 @@ the icons are lined by a vertical line*/
 they alternate shades of blue.
 the have carets connecting them to the veritcal line*/
 
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+  margin-top: 4%;
+  margin-bottom: 15%;
+}
+
+header > span {
+  font-size: large;
+  letter-spacing: .5em;
+  font-weight: 700;
+}
+
+header > h1 {
+  margin-top: 1%;
+  font-weight: 700;
+  font-weight: 400;
+  /*float: left;*/
+}
+
+nav {
+  display: none;
+  text-align: right;
+}
 
 ul
 {
   list-style-type: none;
 }
 
-li > time  {
-  background-color: gray;
-  width: 10%;
-  display: inline-block;
+time  {
+  /*background-color: gray;*/
+  width: 15%;
+  float: left;
+  text-align: right;
 }
 
-li > div {
-  background-color: cornflowerblue;
-  width: 40%;
-  display: inline-block;
-}
-
-
-li > time span:first-child {
+time span:first-child {
   font-size: 1em;
+  color: gray;
 }
 
-li > time span:last-child {
-  font-size: 2em;
+time span:last-child {
+  font-size: 3em;
+}
+
+div.cbp_tmlabel {
+  background-color: #47a3da;
+  color: white;
+  margin-left: 25%;
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.cbp_tmlabel h2 {
+  padding-bottom: 1%;
+  border-bottom: 1px solid;
+  font-weight: 700;
+  font-size: 200%;
+}
+
+.cbp_tmlabel p {
+  font-size: 120%;
+  font-weight: 300;
 }
