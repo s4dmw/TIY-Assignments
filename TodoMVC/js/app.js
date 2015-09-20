@@ -1,10 +1,23 @@
 // User Stories
 
 // I can add a task to my todo list so that I can remember to do it later.
-function addTask(newTask){
+
+var taskList = [];  //creates empty array for the task list
+
+
+document.querySelector("input.new-todo").addEventListener('change', function(){
 	//takes the 'newTask' input and adds it to the list when `enter` is pressed
 	//sets status of task is incomplete
-};
+	// console.log("change");//tracer bullet
+	console.log(document.querySelector("input.new-todo").value);
+});
+
+
+
+
+
+
+
 
 // I can edit a task on my todo list so that I can correct typos.
 function editTask(task){
