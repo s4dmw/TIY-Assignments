@@ -8,9 +8,9 @@ body {
 }
 
 /*turn off the list bullets*/
-ul
-{
+ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 /*turn off the nav icons for now*/
