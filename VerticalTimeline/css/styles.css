@@ -42,13 +42,19 @@ time span:first-child {
   color: #bdd0db; /*grabbed this color from the ref example*/
 }
 
+
 /*colors of the text boxes*/
 div.cbp_tmlabel {
-  background-color: #6cbfee; /*grabbed this color from the ref example*/
+  background-color: #47a3da;  /*grabbed this color from the ref example*/
   color: white;
 }
 
 /*alternates the colors of the text boxes*/
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-  background-color: #47a3da;
+  background-color: #6cbfee; /*grabbed this color from the ref example*/
+}
+
+/*alternate the color of the time to match the text box*/
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+  color: #6cbfee;
 }
