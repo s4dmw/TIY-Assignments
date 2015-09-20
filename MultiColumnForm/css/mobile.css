@@ -1,69 +1,68 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+ /****settings for the mobile device view****/
 
-/*set the body margin by trial and error to get it to look centered*/
-body {
-  margin: 12%;
+/*settings for the header element (box)*/
+header {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    text-align: center;
 }
 
-/*centered up the text at the top*/
-.clearfix {
-  text-align: center;
-  line-height: 1.5;
+/*set the text properties for the header parts*/
+header > span {
+  font-size: 100%;
+  letter-spacing: .4em;
+}
+header > h1 {
+    margin-top: 5%;
 }
 
-/*more work on the text at the top of the page to get it to look like the ref*/
-h1 {
-  margin-top: auto;
-  font-size: 25pt;
+/* increase the margins for the entire body*/
+div.main {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20%;
 }
 
-.container > header > span {
-  font-size: 15pt;
-  letter-spacing: 6pt;
-}
-
-/*worked on the input box to get it to look closer to the ref example*/
-input {
-  border: 3px solid white;
-  background: inherit;
-  color: white;
-  line-height: 1.5;
-  font-size: 15pt;
-  padding-left: 14pt;
-  width: 85%;
-}
-
-/* played with the label padding to get the room above and below closer to right */
+/* tweak the settings for the label, input, slection, and textarea elements
+      to get them positioned and looking right */
 label {
-  font-size: 18pt;
-  padding-top: 20pt;
-  padding-bottom: 5pt
+  margin-top: 15%;
+  margin-bottom: 2%;
 }
 
-/* got the drop down menus to look like the ref example and line up with the input boxes*/
-select {
-  border: 1px solid gray;
-  font-size: 17pt;
-  width: 91%;
-}
-
-/*expanded the text area to more closely match the ref example*/
-textarea {
-  border: 3px solid white;
-  background: inherit;
-  color: white;
-  line-height: 1.5;
+input {
   font-size: 15pt;
-  width: 89%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 90%;
+}
+
+select {
+  width: 100%;
+  font-size: 15pt;
+  height: 25pt;
+}
+
+textarea {
+  width: 100%;
   height: 150pt;
 }
 
-/*changed the settings of the submit button to look like the ref example */
+/* set position and size of the submit button */
+.cbp-mc-submit-wrap {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 15%;
+}
+
 .cbp-mc-submit {
-  width: 93%;
-  height: 40pt;
-  margin-top: 20pt;
-  margin-bottom: auto;
-  background-color: #10689a;
-  border: none;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

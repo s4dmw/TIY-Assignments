@@ -1,0 +1,87 @@
+/****settings for the desktop view****/
+
+
+@media(max-width: 70em) { /*smaller computer displays*/
+    header {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 5%;
+      /*background-color: gray; */
+      text-align: left;
+    }
+
+    /*set the text properties for the header parts*/
+    header > span {
+      font-size: 120%;
+      letter-spacing: .3em;
+    }
+
+    header > h1 {
+      font-size: 200%;
+    }
+
+    /*set up my 2 colums over 1 column view for smaller computer displays */
+    .cbp-mc-column:nth-child(-n+2) {
+      float: left;
+      width: 45%;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+      padding-bottom: 5%;
+    }
+
+    .cbp-mc-column:nth-child(3) {
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+    }
+
+    /*tweak the submit button settings*/
+    .cbp-mc-submit {
+      /*background-color: black;*/
+      margin-left: 15%;
+      width: 70%;
+    }
+}
+
+
+@media(min-width: 70em) { /*wider computer displays*/
+
+  body {
+    /*background-color: gray;*/
+    /* tracer bullet */
+  }
+
+  header {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    /*background-color: gray;*/
+    text-align: left;
+  }
+  header > span {
+    font-size: 120%;
+    letter-spacing: .3em;
+  }
+
+  header > h1 {
+    font-size: 200%;
+  }
+
+  /*sets up the 3 column view*/
+  .cbp-mc-column {
+    float: left;
+    width: 28.33%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  input, textarea, select {
+    margin-bottom: 1.5em;
+  }
+
+  .cbp-mc-submit {
+    /*background-color: black;*/
+    margin-left: 15%;
+    width: 70%;
+  }
+
+}
