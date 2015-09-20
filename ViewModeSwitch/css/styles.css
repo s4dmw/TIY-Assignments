@@ -46,14 +46,13 @@ div.main {
   padding-right: 2%;
   padding-top: 2%;
   padding-bottom: 2%;
-  border: 2px solid;
-  pad
+  border: 3px solid;
 }
 
 /*setup area for the view switch/buttons*/
 div.cbp-vm-options {
     padding-bottom: 2%;
-    border-bottom: 2px solid;
+    border-bottom: 3px solid;
     text-align: right;
 }
 
@@ -110,22 +109,56 @@ div.cbp-vm-view-grid li > a.cbp-vm-icon {
 
 
 /*list view setup*/
-div.cbp-vm-view-list li > a.cbp-vm-image  {
-    display: inline;
+div.cbp-vm-view-list li {
+  /*background-color: gray;*/
+  margin-bottom: 15pt;
+}
+
+/*tweak the properties of the each list item*/
+
+div.cbp-vm-view-list li > a.cbp-vm-image > img {
+  /*background-color: cornflowerblue;*/
+  display: inline-block;
+  vertical-align: middle;
+  width: 8%;
 }
 
 div.cbp-vm-view-list li > h3.cbp-vm-title {
-    display: inline;
+  display: inline-block;
+  vertical-align: middle;
+  /*background-color: gray;*/
+  width: 15%;
+  margin-left: 20pt;
+  font-size: 15pt;
 }
 
 div.cbp-vm-view-list li > div.cbp-vm-price {
-    display: inline;
+  /*background-color: cornflowerblue;*/
+  display: inline-block;
+  vertical-align: middle;
+  color: #c0c0c0;
+  font-size: 15pt;
+  margin-left: 20pt;
+  padding-right: 20pt;
+  width: 10%;
 }
 
 div.cbp-vm-view-list li > div.cbp-vm-details {
-    display: inline;
+  /*background-color: gray;*/
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
 }
 
 div.cbp-vm-view-list li > a.cbp-vm-icon {
-    display: inline;
+  background-color: #47a3da;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20pt;
+  padding-left: 25pt;
+  padding-right: 25pt;
+  padding-top: 8pt;
+  padding-bottom: 8pt;
+
 }
