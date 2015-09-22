@@ -1,15 +1,14 @@
 body {
-    margin-left: 5%;
-    margin-right: 5%;
-    /*background-color: gray;*/
+  /*background-color: white;*/
 }
 
 /*setup the header "box"*/
 header {
-  margin-top: 4%;
-  padding-left: 5%;
+  margin-top: 5%;
   margin-bottom: 10%;
+  text-align: center;
 }
+
 /*tweak the position and sizing of the spand and h1 within the header*/
 header > span {
   font-size: large;
@@ -18,7 +17,8 @@ header > span {
 }
 
 header > h1 {
-  margin-top: 1%;
+  margin-top: 2%;
+  font-size: 200%;
   font-weight: 400;
   /*float: left;*/
 }
@@ -31,16 +31,15 @@ header > h1 {
   bottom: 0;
   width: 10px;
   background: #afdcf8;
-  left: 25%;
+  left: 23%;
 }
 
-
 /*setup the time and date to look like the reference example*/
-time  {
+time {
   /*background-color: gray;*/
   width: 15%;
   float: left;
-  text-align: right;
+  text-align: center;
 }
 
 time span:first-child {
@@ -48,18 +47,20 @@ time span:first-child {
 }
 
 time span:last-child {
-  font-size: 3em;
+  font-size: 1.7em;
 }
 
 /*poistion the text of each food item correctly in the box*/
 div.cbp_tmlabel {
   margin-left: 25%;
+  margin-right: 10%;
   margin-top: 2%;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  border-radius: 10pt; /*round the corners of the text boxes*/
+  border-radius: 5pt;
+  /*round the corners of the text boxes*/
 }
 
 /*font size and bottom border for each h2 in the tmlabel boxes*/

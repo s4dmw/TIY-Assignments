@@ -1,7 +1,7 @@
 body {
-    margin-left: 5%;
-    margin-right: 5%;
-    /*background-color: gray;*/
+  margin-left: 5%;
+  margin-right: 5%;
+  /*background-color: gray;*/
 }
 
 /*setup the header "box"*/
@@ -10,6 +10,7 @@ header {
   padding-left: 5%;
   margin-bottom: 10%;
 }
+
 /*tweak the position and sizing of the spand and h1 within the header*/
 header > span {
   font-size: large;
@@ -34,9 +35,8 @@ header > h1 {
   left: 25%;
 }
 
-
 /*setup the time and date to look like the reference example*/
-time  {
+time {
   /*background-color: gray;*/
   width: 15%;
   float: left;
@@ -59,7 +59,8 @@ div.cbp_tmlabel {
   padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  border-radius: 10pt; /*round the corners of the text boxes*/
+  border-radius: 10pt;
+  /*round the corners of the text boxes*/
 }
 
 /*font size and bottom border for each h2 in the tmlabel boxes*/
