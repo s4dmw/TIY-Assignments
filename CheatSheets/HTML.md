@@ -111,6 +111,83 @@ generic inline container for phrasing content, which does not inherently represe
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
+## [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
+ represents an unordered/un-numbered list of items. unordered-list items are normally displayed with a bullet
+
+* _parents_: any element that accept flowing content
+* _content_: zero or more `<li>` elements, eventually mixed with `<ol>` and `<ul>` elements
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<ol>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
+represents an ordered list of items normally displayed with a preceding numbering
+
+* _parents_: Any element that accepts flow content
+* _content_: Zero or more <li> elements
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+represents an item in a list contained in an ordered list, an unordered list, or a menu
+
+* _parents_: An `<ul>`, `<ol>`, or `<menu>` element
+* _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<dd>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd)
+indicates the description of a term in a description list `<dl>` element occurring only as a child element of a definition list and it must follow a `<dt>` element
+
+* _parents_: After a `<dt>` or a `<dd>` element, inside a `<dl>`
+* _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<dl>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)
+encloses a list of pairs of terms and descriptions used to implement a glossary or to display metadata
+
+* _parents_: Any element that accepts flow content
+* _content_: zero or more `<dt>` elements, each followed by one or more `<dd>` elements
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<dt>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt)
+identifies a term in a definition list and occurs only as a child element of a `<dl>`
+
+* _parents_: Before a `<dt>` or a `<dd>` element, inside a `<dl>`
+* _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flowing_content)
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<menu>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu)
+experimental element that represents a group of commands that a user can perform or activate
+
+* _parents_: Any element that accepts flow content
+* _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
 -------------------------------
 
 # Entry Template

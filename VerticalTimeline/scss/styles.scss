@@ -50,11 +50,15 @@ div.cbp_tmlabel {
 }
 
 /*alternates the colors of the text boxes*/
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+.cbp_tmtimeline {
+  li:nth-child(odd) .cbp_tmlabel {
   background-color: #6cbfee; /*grabbed this color from the ref example*/
+  }
 }
 
 /*alternate the color of the time to match the text box*/
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-  color: #6cbfee;
+.cbp_tmtimeline {
+  li:nth-child(odd) .cbp_tmtime span:last-child {
+    color: #6cbfee;
+  }
 }

@@ -1,15 +1,14 @@
 body {
-  /*background-color: black;*/
+  /*background-color: gray;*/
   margin-left: 8%;
   margin-right: 8%;
 }
 
 /*set for margins for header*/
 header {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  text-align: left;
-
+  margin-top: 8%;
+  margin-bottom: 10%;
+  text-align: center;
 }
 
 /*tweak size, spacing, position of the header span*/
@@ -21,23 +20,18 @@ header > span {
 
 /*tweak size, space, position of the header h1*/
 header > h1 {
+  font-size: 220%;
   font-weight: 400;
-  /*width: 25%;*/
 }
 
 /* Grid view setup */
 .cbp-vm-view-grid li {
-    /*background-color: gray;*/
-    width: 33%;
-    display: inline-block;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-/*tweak the properties of the each grid item*/
-.cbp-vm-view-grid li > a.cbp-vm-image > img {
-  /*background-color: cornflowerblue;*/
+  /*background-color: gray;*/
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 5%;
 }
 
 .cbp-vm-view-grid li > h3.cbp-vm-title {
@@ -48,7 +42,7 @@ header > h1 {
 
 div.cbp-vm-view-grid li > div.cbp-vm-price {
   /*background-color: gray;*/
-  font-size: 15pt;
+  font-size: 20pt;
   margin-top: 5pt;
   margin-bottom: 5pt;
 }
@@ -65,25 +59,29 @@ div.cbp-vm-view-grid li > div.cbp-vm-details {
 div.cbp-vm-view-grid li > a.cbp-vm-icon {
   padding-left: 15pt;
   padding-right: 15pt;
-  padding-top: 5pt;
-  padding-bottom: 5pt;
+  padding-top: 8pt;
+  padding-bottom: 8pt;
 }
 
 /*tweak the properties of the each list item*/
+.cbp-vm-view-list li {
+  /*background-color: gray;*/
+  padding-bottom: 3%;
+}
 
 div.cbp-vm-view-list li > a.cbp-vm-image > img {
   /*background-color: cornflowerblue;*/
   display: inline-block;
   vertical-align: middle;
-  width: 8%;
+  width: 9%;
 }
 
 div.cbp-vm-view-list li > h3.cbp-vm-title {
   display: inline-block;
   vertical-align: middle;
   /*background-color: gray;*/
-  width: 15%;
-  margin-left: 20pt;
+  width: 18%;
+  margin-left: 10pt;
   font-size: 15pt;
 }
 
@@ -92,7 +90,7 @@ div.cbp-vm-view-list li > div.cbp-vm-price {
   display: inline-block;
   vertical-align: middle;
   font-size: 15pt;
-  margin-left: 20pt;
+  margin-left: 10pt;
   padding-right: 20pt;
   width: 10%;
 }
@@ -112,5 +110,4 @@ div.cbp-vm-view-list li > a.cbp-vm-icon {
   padding-right: 15pt;
   padding-top: 8pt;
   padding-bottom: 8pt;
-
 }
