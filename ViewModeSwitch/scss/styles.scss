@@ -97,14 +97,18 @@ div.cbp-vm-options {
     padding-bottom: 2%;
 }
 
-div.cbp-vm-view-grid li > div.cbp-vm-price {
+div.cbp-vm-view-grid li {
+   div.cbp-vm-price {
   /*background-color: gray;*/
   color: #c0c0c0;
+  }
 }
 
-div.cbp-vm-view-grid li > a.cbp-vm-icon {
-  background-color: #47a3da;
-  color: white;
+div.cbp-vm-view-grid li {
+   a.cbp-vm-icon {
+     background-color: #47a3da;
+     color: white;
+   }
 }
 
 /*list view setup*/
@@ -113,12 +117,16 @@ div.cbp-vm-view-list li {
   margin-bottom: 15pt;
 }
 
-div.cbp-vm-view-list li > div.cbp-vm-price {
-  /*background-color: cornflowerblue;*/
-  color: #c0c0c0;
+div.cbp-vm-view-list li {
+  div.cbp-vm-price {
+    /*background-color: cornflowerblue;*/
+    color: #c0c0c0;
+  }
 }
 
-div.cbp-vm-view-list li > a.cbp-vm-icon {
-  background-color: #47a3da;
-  color: white;
+div.cbp-vm-view-list li{
+   a.cbp-vm-icon {
+     background-color: #47a3da;
+     color: white;
+   }
 }

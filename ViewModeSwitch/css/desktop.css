@@ -45,14 +45,14 @@ header > h1 {
   margin: 0;
 }
 
-div.cbp-vm-view-grid li > div.cbp-vm-price {
+div.cbp-vm-view-grid li div.cbp-vm-price {
   /*background-color: gray;*/
   font-size: 15pt;
   margin-top: 5pt;
   margin-bottom: 5pt;
 }
 
-div.cbp-vm-view-grid li > div.cbp-vm-details {
+div.cbp-vm-view-grid li div.cbp-vm-details {
   /*background-color: gray;*/
   width: 80%;
   min-height: 50pt;
