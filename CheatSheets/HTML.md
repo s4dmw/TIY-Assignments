@@ -110,6 +110,92 @@ generic inline container for phrasing content, which does not inherently represe
 ### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
+----------------------------------------------
+
+## [`<ul>`](element linky)
+description goes here
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+* . . .
+
+
+## [`<ol>`](element linky)
+description goes here
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+* . . .
+
+
+## [`<li>`](element linky)
+description goes here
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+* . . .
+
+
+## [`<dd>`](element linky)
+description goes here
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+* . . .
+
+
+## [`<dl>`](element linky)
+description goes here
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+* . . .
+
+
+## [`<dt>`](element linky)
+description goes here
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+* . . .
+
+
+## [`<menu>`](element linky)
+description goes here
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+* . . .
+
+
 
 -------------------------------
 
