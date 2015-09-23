@@ -187,6 +187,14 @@ experimental element that represents a group of commands that a user can perform
 ### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
+### Flags in the sand
+`<form>`
+`<input>`
+`<label>`
+`<fieldgroup>`
+ `<legend>`
+It's BEAST MODE from yesterday, back to haunt you! Tonight, document all the Interactive Form elements -- <form>, <input>, <label> and the rest -- noting the differences between type attribute values; don't omit <fieldgroup> or <legend>... They'll come up.
+
 
 -------------------------------
 
