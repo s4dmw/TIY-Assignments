@@ -187,21 +187,12 @@ experimental element that represents a group of commands that a user can perform
 ### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-### Flags in the sand
-`<form>`
-`<input>`
-`<label>`
-`<fieldgroup>`
- `<legend>`
-It's BEAST MODE from yesterday, back to haunt you! Tonight, document all the Interactive Form elements -- <form>, <input>, <label> and the rest -- noting the differences between type attribute values; don't omit <fieldgroup> or <legend>... They'll come up.
 
 
--------------------------------
 
-# Entry Template
 
-## [`<element>`](element linky)
-description goes here
+## [`<form>`](link)
+description
 
 * _parents_:
 * _content_:
@@ -209,4 +200,163 @@ description goes here
 
 ### Attributes:
 * attributes go here
-* . . .
+
+
+## [`<input>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<label>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<fieldset>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<legend>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<select>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<textarea>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<datalist>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<keygen>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<meter>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<optgroup>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<option>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<output>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+## [`<progress>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+
+
+
+-------------------------------
+
+# Entry Template
+
+## [`<element>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
