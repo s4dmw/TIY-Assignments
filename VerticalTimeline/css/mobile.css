@@ -1,7 +1,7 @@
 body {
   margin-left: 5%;
   margin-right: 5%;
-  /*background-color: gray;*/
+  background-color: gray;
 }
 
 /*setup the header "box"*/
@@ -26,7 +26,7 @@ header > h1 {
 
 /*the line...still have a long way to go with the icons but the line is there*/
 .cbp_tmtimeline:before {
-  content: '';
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -48,7 +48,7 @@ time span:first-child {
 }
 
 time span:last-child {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 /*poistion the text of each food item correctly in the box*/
