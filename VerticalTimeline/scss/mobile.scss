@@ -1,7 +1,6 @@
 body {
   margin-left: 5%;
   margin-right: 5%;
-  background-color: gray;
 }
 
 /*setup the header "box"*/
@@ -9,57 +8,52 @@ header {
   margin-top: 4%;
   padding-left: 5%;
   margin-bottom: 10%;
-}
+  span {
+    font-size: large;
+    letter-spacing: .5em;
+    font-weight: 700;
+  }
+  h1 {
+   margin-top: 1%;
+   font-weight: 400;
+ }
+} //header end
 
-/*tweak the position and sizing of the spand and h1 within the header*/
-header > span {
-  font-size: large;
-  letter-spacing: .5em;
-  font-weight: 700;
-}
-
-header > h1 {
-  margin-top: 1%;
-  font-weight: 400;
-  /*float: left;*/
-}
 
 /*the line...still have a long way to go with the icons but the line is there*/
 .cbp_tmtimeline:before {
   display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 10px;
-  background: #afdcf8;
-  left: 25%;
 }
 
 /*setup the time and date to look like the reference example*/
 time {
   /*background-color: gray;*/
   width: 15%;
+  display: block;
   float: left;
-  text-align: right;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  span:first-child {
+    font-size: 1em;
+  }
+  span:last-child {
+    font-size: 2em;
+  }
 }
 
-time span:first-child {
-  font-size: 1em;
-}
 
-time span:last-child {
-  font-size: 2em;
-}
 
 /*poistion the text of each food item correctly in the box*/
 div.cbp_tmlabel {
-  margin-left: 25%;
+  float: left;;
+  margin-left: 0;
   margin-top: 2%;
+  margin-bottom: 5%;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  border-radius: 10pt;
+  border-radius: 5pt;
   /*round the corners of the text boxes*/
 }
 
@@ -68,7 +62,7 @@ div.cbp_tmlabel {
   padding-bottom: 1%;
   border-bottom: 1px solid;
   font-weight: 700;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 /*font size for the <p> in the tmlabel boxes */

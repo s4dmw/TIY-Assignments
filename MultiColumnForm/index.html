@@ -17,58 +17,66 @@
     <body>
         <header>
           <h4>BLUEPRINT</h4>
-          <h2>Responsive Multi-Column Form</h2>
-          <a href="placeholder1">link1</a>
-          <a href="placeholder2">link2</a>
-          <a href="placeholder3">link3</a>
-          <a href="placeholder4">link4</a>
+          <h1>Responsive Multi-Column Form</h1>
+          <nav>
+            <a href="placeholder1">link1</a>
+            <a href="placeholder2">link2</a>
+            <a href="placeholder3">link3</a>
+            <a href="placeholder4">link4</a>
+          </nav>
         </header>
         <form>
-          <label>First Name<input type="text" name="first_name"/></label>
-          <label>Last Name<input type="text" name="last_name"/></label>
-          <label>Email Address<input type="text" name="email"/></label>
-          <label>
-            Country
-              <select name="Country">
-                <option value="France">Frace</option>
-                <option value="Italy" selected>Italy</option>
-                <option value="Portugal">Portugal</option>
-              </select>
-          </label>
-          <label>
-            Biography
-              <textarea name="biography"></textarea>
-          </label>
-          <label>Phone Number
-              <input type="text" name="phone"/></label>
-          <label>
-            Affiliations
-              <textarea name="affiliations"></textarea>
-          </label>
-          <label>
-            Occupation
-              <select name="Occupation">
-                <option value="web_designer">Web Designer</option>
-                <option value="web_developer" selected>Web Developer</option>
-                <option value="Hybrid">Hybrid</option>
-              </select>
-          </label>
-          <label>Cat's Name<input type="text" name="cat_name"/></label>
-          <label>Favorite Gadget<input type="text" name="gadget"/></label>
-          <label>
-            Type of Talent
-              <select name="talent">
-                <option value="ninja_silence">Ninja Silence</option>
-                <option value="sumo_power" selected>Sumo Power</option>
-                <option value="samurai_precision">Samurai Precision</option>
-              </select>
-          </label>
-          <label>Favorite Drink<input type="text" name="drink"/></label>
-          <label>Special Power<input type="text" name="power"/></label>
-          <label>Weapon of Choice<input type="text" name="weapon"/></label>
-          <label>Comments
-            <textarea name="comments"></textarea>
-          </label>
+          <section>
+            <label>First Name<input type="text" name="first_name"/></label>
+            <label>Last Name<input type="text" name="last_name"/></label>
+            <label>Email Address<input type="text" name="email"/></label>
+            <label>
+              Country
+                <select name="Country">
+                  <option value="France">Frace</option>
+                  <option value="Italy" selected>Italy</option>
+                  <option value="Portugal">Portugal</option>
+                </select>
+            </label>
+            <label>
+              Biography
+                <textarea name="biography"></textarea>
+            </label>
+          </section>
+          <section>
+            <label>Phone Number
+                <input type="text" name="phone"/></label>
+            <label>
+              Affiliations
+                <textarea name="affiliations"></textarea>
+            </label>
+            <label>
+              Occupation
+                <select name="Occupation">
+                  <option value="web_designer">Web Designer</option>
+                  <option value="web_developer" selected>Web Developer</option>
+                  <option value="Hybrid">Hybrid</option>
+                </select>
+            </label>
+            <label>Cat's Name<input type="text" name="cat_name"/></label>
+            <label>Favorite Gadget<input type="text" name="gadget"/></label>
+          </section>
+          <section>
+            <label>
+              Type of Talent
+                <select name="talent">
+                  <option value="ninja_silence">Ninja Silence</option>
+                  <option value="sumo_power" selected>Sumo Power</option>
+                  <option value="samurai_precision">Samurai Precision</option>
+                </select>
+            </label>
+            <label>Favorite Drink<input type="text" name="drink"/></label>
+            <label>Special Power<input type="text" name="power"/></label>
+            <label>Weapon of Choice<input type="text" name="weapon"/></label>
+            <label>Comments
+              <textarea name="comments"></textarea>
+            </label>
+          </section>
           <button name="submit" type="submit">Send Your Data</button>
         </form>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
