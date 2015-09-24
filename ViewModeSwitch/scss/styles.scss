@@ -14,8 +14,10 @@ ul {
 }
 
 /*turn off the nav icons for now*/
-header > nav {
+header {
+  nav {
   display: none;
+  }
 }
 
 /*create border around display*/
