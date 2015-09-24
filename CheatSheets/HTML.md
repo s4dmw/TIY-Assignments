@@ -188,161 +188,147 @@ experimental element that represents a group of commands that a user can perform
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
+## [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+represents a document section that contains interactive controls to submit information to a web server
 
-
-
-## [`<form>`](link)
-description
-
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: Any element that accepts flow content
+* _content_: Flow content, but not containing <form> elements
+* _display_: block
 
 ### Attributes:
-* attributes go here
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
-## [`<input>`](link)
-description
+## [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+used to create interactive controls for web-based forms in order to accept data from the user
 
-* _parents_:
-* _content_:
-* _display_:
-
-### Attributes:
-* attributes go here
-
-
-## [`<label>`](link)
-description
-
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: Any element that accepts phrasing content
+* _content_: None
+* _display_: block
 
 ### Attributes:
-* attributes go here
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
-## [`<fieldset>`](link)
-description
+## [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
+represents a caption for an item in a user interface
 
-* _parents_:
-* _content_:
-* _display_:
-
-### Attributes:
-* attributes go here
-
-
-## [`<legend>`](link)
-description
-
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: Any element that accepts phrasing content
+* _content_: Phrasing content, but no descendant label elements
+* _display_: block
 
 ### Attributes:
-* attributes go here
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
-## [`<select>`](link)
-description
+## [`<fieldset>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
+sed to group several controls as well as labels (<label>) within a web form
 
-* _parents_:
-* _content_:
-* _display_:
-
-### Attributes:
-* attributes go here
-
-
-## [`<textarea>`](link)
-description
-
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: Any element that accepts flow content
+* _content_: An optional `<legend>` element, followed by flow content
+* _display_: block
 
 ### Attributes:
-* attributes go here
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
-## [`<datalist>`](link)
-description
+## [`<legend>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)
+represents a caption for the content of its parent `<fieldset>`
 
-* _parents_:
-* _content_:
-* _display_:
-
-### Attributes:
-* attributes go here
-
-
-## [`<keygen>`](link)
-description
-
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: A `<fieldset>` whose first child is this `<legend>` element
+* _content_: Phrasing content
+* _display_: inline
 
 ### Attributes:
-* attributes go here
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
-## [`<meter>`](link)
-description
+## [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
+represents a control that presents a menu of options
 
-* _parents_:
-* _content_:
-* _display_:
-
-### Attributes:
-* attributes go here
-
-
-## [`<optgroup>`](link)
-description
-
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: any element that accepts phrasing content
+* _content_: Zero or more `<option>` or `<optgroup>` elements
+* _display_: block
 
 ### Attributes:
-* attributes go here
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
-## [`<option>`](link)
-description
+## [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
+represents a multi-line plain-text editing control
 
-* _parents_:
-* _content_:
-* _display_:
-
-### Attributes:
-* attributes go here
-
-
-## [`<output>`](link)
-description
-
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: any element that accepts phrasing content
+* _content_: Character data
+* _display_: block
 
 ### Attributes:
-* attributes go here
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
-## [`<progress>`](link)
-description
+## [`<datalist>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)
+contains a set of `<option>` elements that represent the values available for other controls
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: Any element that accepts phrasing content
+* _content_: Either phrasing content or zero or more `<option>` elements
+* _display_: block
 
 ### Attributes:
-* attributes go here
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<meter>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter)
+represents either a scalar value within a known range or a fractional value
+
+* _parents_: Any element that accepts phrasing content
+* _content_: Phrasing content, but there must be no `<meter>` element among its descendants
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<optgroup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup)
+creates a grouping of options within a `<select>` element
+
+* _parents_: A `<select>` element
+* _content_: Zero or more <option> elements
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<output>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output)
+ represents the result of a calculation or user action
+
+* _parents_: Any element that accepts phrasing content
+* _content_: Phrasing content.
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<option>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)
+used to create a control representing an item within a `<select>`, an `<optgroup>` or a `<datalist>` element
+
+* _parents_: a `<select>`, an `<optgroup>` or a `<datalist>` element
+* _content_: Text with eventually escaped characters
+* _display_: inline
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+
+## [`<progress>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)
+used to view the completion progress of a task
+
+* _parents_: Any element that accepts phrasing content
+* _content_: Phrasing content, but there must be no `<progress>` element among its descendants
+* _display_: block
+
+### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
 
