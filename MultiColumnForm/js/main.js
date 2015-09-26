@@ -60,17 +60,75 @@ var powerInput = "not provided";
 var weaponInput = "not provided";
 var commentsInput = "not provided";
 
-
-
+//when an input box is changed, that input is assigned to the appropriate variable
 $("input[name='first_name']").change(function(){
   // console.log("first name tracer bullet");
   firstNameInput = this.value; //captures input of first name box
   // console.log(firstNameInput); //tracer
 });
 
+$("input[name='last_name']").change(function(){
+  lastNameInput= this.value;
+});
+
+$("input[name='email']").change(function(){
+  emailInput = this.value;
+});
+
+$("input[name='phone']").change(function(){
+  phoneInput = this.value;
+});
+
+$("input[name='cat_name']").change(function(){
+  catNameInput = this.value;
+});
+
+$("input[name='gadget']").change(function(){
+  gadgetInput = this.value;
+});
+
+$("input[name='drink']").change(function(){
+  drinkInput = this.value;
+});
+
+$("input[name='power']").change(function(){
+  powerInput = this.value;
+});
+
+$("input[name='weapon']").change(function(){
+  weaponInput = this.value;
+});
+
+//when a textarea is changed, that input is assigned to the appropriate variable
+$("textarea[name='biography']").change(function(){
+  bioInput = this.value;
+});
+
+$("textarea[name='affiliations']").change(function(){
+  affiliationsInput = this.value;
+});
+
+$("textarea[name='comments']").change(function(){
+  commentsInput = this.value;
+});
+
+//when a item is selected from a select box it is assigned to the appropriate variable
+$("select[name='country']").change(function(){
+  countryInput = this.value;
+});
+
+$("select[name='occupation']").change(function(){
+  occupationInput = this.value;
+});
+
+$("select[name='talent']").change(function(){
+  talentInput = this.value;
+});
+
+//when the submit button is clicked, the default (reload page) is prevented
+//and all of the inputed data is logged to the console.
 $("button[name='submit']").click(function(){
   event.preventDefault();
-
   console.log("First Name: ", firstNameInput);
   console.log("Last Name: ", lastNameInput);
   console.log("Email Address: ", emailInput);
