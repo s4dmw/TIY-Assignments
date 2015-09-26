@@ -48,12 +48,12 @@ ul{
   }
 } // end ul
 
-//open display
 
+//hide elments with a class of closed
+.closed + p { //p that is a sibling of a header with a class set to closed
+  display: none;
+}
 
-
-
-//closed display
-h3.closed + p{
+.closed ~ ul { //ul (subaccordion) that is a sibling of a header with a class of closed
   display: none;
 }
