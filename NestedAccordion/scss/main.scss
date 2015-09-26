@@ -47,3 +47,13 @@ ul{
     color: gray;
   }
 } // end ul
+
+//open display
+
+
+
+
+//closed display
+h3.closed + p{
+  display: none;
+}
