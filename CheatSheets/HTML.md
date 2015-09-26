@@ -8,7 +8,7 @@ represents the root of an HTML document. All other elements must be descendants 
 * _content_: One `<head>` element, followed by one `<body>` element.
 * _display_: `block`
 
-### Attributes:
+#### Attributes:
 * `class` -- a space-separated list of category names
 
 
@@ -20,7 +20,7 @@ generic container for flow content, which does not inherently represent anything
 * _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#Flow_content)
 * _display_: `block`
 
-### Attributes:
+#### Attributes:
 * `class` - space-separated list of category names
 
 ## [`<!DOCTYPE>`](https://developer.mozilla.org/en-US/docs/Glossary/Doctype)
@@ -31,7 +31,7 @@ informs the browser which version of HTML you used to write the document.
 * _content_: HTML version
 * _display_: n/a
 
-### Attributes:
+#### Attributes:
 * n/a
 
 ## [`<!-- -->`](http://www.w3.org/TR/html5/syntax.html#comments)
@@ -46,7 +46,7 @@ provides general information about the document including its title and links to
 * _content_: `<title>` element
 * _display_: none
 
-### Attributes:
+#### Attributes:
 * [global attirbutes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -57,7 +57,7 @@ represents the content of an HTML document. There can be only one <body> element
 * _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
 * _display_: displays the body/page of the html element
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 ## [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
@@ -67,7 +67,7 @@ represents a clickable button
 * _content_: [phrasing content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Phrasing_content)
 * _display_: yes
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 ## [`<meta>`](element linky)
@@ -77,7 +77,7 @@ represents any metadata information that cannot be represented by one of the oth
 * _content_: none, empty element
 * _display_: none
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 ## [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
@@ -87,7 +87,7 @@ defines the title of the document, shown in a browser's title bar or on the page
 * _content_: metadata, text
 * _display_: displays in the browser's title bar
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 ## [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
@@ -97,7 +97,7 @@ pecifies relationships between the current document and an external resource
 * _content_: none, it's an empty element
 * _display_: none
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 ## [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span)
@@ -107,7 +107,7 @@ generic inline container for phrasing content, which does not inherently represe
 * _content_: [phrasing content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Phrasing_content)
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -118,7 +118,7 @@ generic inline container for phrasing content, which does not inherently represe
 * _content_: zero or more `<li>` elements, eventually mixed with `<ol>` and `<ul>` elements
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -129,7 +129,7 @@ represents an ordered list of items normally displayed with a preceding numberin
 * _content_: Zero or more <li> elements
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -140,7 +140,7 @@ represents an item in a list contained in an ordered list, an unordered list, or
 * _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -151,7 +151,7 @@ indicates the description of a term in a description list `<dl>` element occurri
 * _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -162,7 +162,7 @@ encloses a list of pairs of terms and descriptions used to implement a glossary 
 * _content_: zero or more `<dt>` elements, each followed by one or more `<dd>` elements
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -173,7 +173,7 @@ identifies a term in a definition list and occurs only as a child element of a `
 * _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flowing_content)
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -184,7 +184,7 @@ experimental element that represents a group of commands that a user can perform
 * _content_: [flow content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -195,7 +195,7 @@ represents a document section that contains interactive controls to submit infor
 * _content_: Flow content, but not containing <form> elements
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -206,7 +206,7 @@ used to create interactive controls for web-based forms in order to accept data 
 * _content_: None
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -217,7 +217,7 @@ represents a caption for an item in a user interface
 * _content_: Phrasing content, but no descendant label elements
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -228,7 +228,7 @@ sed to group several controls as well as labels (<label>) within a web form
 * _content_: An optional `<legend>` element, followed by flow content
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -239,7 +239,7 @@ represents a caption for the content of its parent `<fieldset>`
 * _content_: Phrasing content
 * _display_: inline
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -250,7 +250,7 @@ represents a control that presents a menu of options
 * _content_: Zero or more `<option>` or `<optgroup>` elements
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -261,7 +261,7 @@ represents a multi-line plain-text editing control
 * _content_: Character data
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -272,7 +272,7 @@ contains a set of `<option>` elements that represent the values available for ot
 * _content_: Either phrasing content or zero or more `<option>` elements
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -283,7 +283,7 @@ represents either a scalar value within a known range or a fractional value
 * _content_: Phrasing content, but there must be no `<meter>` element among its descendants
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -294,7 +294,7 @@ creates a grouping of options within a `<select>` element
 * _content_: Zero or more <option> elements
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -305,7 +305,7 @@ creates a grouping of options within a `<select>` element
 * _content_: Phrasing content.
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -316,7 +316,7 @@ used to create a control representing an item within a `<select>`, an `<optgroup
 * _content_: Text with eventually escaped characters
 * _display_: inline
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
@@ -327,112 +327,109 @@ used to view the completion progress of a task
 * _content_: Phrasing content, but there must be no `<progress>` element among its descendants
 * _display_: block
 
-### Attributes:
+#### Attributes:
 * [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
+## [`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
+represents data in two dimensions or more
 
+* _parents_: Any element that accepts flow content
+* _content_: caption, colgroup, thead, tfoot, tbody, tr elements
+* _display_: block
 
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<table>`](link)
-description
+## [`<caption>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)
+represents the title of a table
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: `<table>`
+* _content_: Flow content
+* _display_: inline
 
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<caption>`](link)
-description
+## [`<col>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col)
+defines a column within a table and is used for defining common semantics on all common cells
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: '<colgroup>'
+* _content_: none
+* _display_: none
 
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<col>`](link)
-description
+## [`<colgroup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup)
+defines a group of columns within a table
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: `<table>`
+* _content_: If the span attribute is present: none. If the attribute is not present: zero or more `<col>` elements.
+* _display_: none
 
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<colgroup>`](link)
-description
+## [`<tbody>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody)
+defines one or more `<tr>`s to be the body of its parent `<table>` element
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: `<caption>`, `<colgroup>`, `<thead>`, `<tfoot>` elements within a `<table>`
+* _content_: Zero or more <tr> elements
+* _display_: block
 
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<tbody>`](link)
-description
+## [`<thead>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead)
+defines a set of rows defining the head of the columns of the table
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: `<table>`
+* _content_: `<tr>`
+* _display_: block
 
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<thead>`](link)
-description
+## [`<tfoot>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot)
+defines a set of rows summarizing the columns of the table
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: `<table>`
+* _content_: '<tr>'
+* _display_: block
 
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<tfoot>`](link)
-description
+## [`<tr>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr)
+defines a row of cells in a table
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: `<table>` `<thead>` `<tbody>` `<tfoot>`
+* _content_: `<td>` `<th>`
+* _display_: block
 
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<tr>`](link)
-description
+## [`<td>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td)
+defines a cell of a table that contains data
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: `<tr>`
+* _content_: flow content
+* _display_: block
 
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-## [`<td>`](link)
-description
+## [`<th>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th)
+defines a cell that is a header for a group of cells of a table
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: `<tr>`
+* _content_: phrasing content
+* _display_: block
 
-### Attributes:
-* attributes go here
-
-## [`<th>`](link)
-description
-
-* _parents_:
-* _content_:
-* _display_:
-
-### Attributes:
-* attributes go here
+#### Attributes:
+* [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 -------------------------------
 
@@ -445,5 +442,5 @@ description
 * _content_:
 * _display_:
 
-### Attributes:
+#### Attributes:
 * attributes go here
