@@ -333,6 +333,107 @@ used to view the completion progress of a task
 
 
 
+
+## [`<table>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<caption>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<col>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<colgroup>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<tbody>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<thead>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<tfoot>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<tr>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<td>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
+## [`<th>`](link)
+description
+
+* _parents_:
+* _content_:
+* _display_:
+
+### Attributes:
+* attributes go here
+
 -------------------------------
 
 # Entry Template
