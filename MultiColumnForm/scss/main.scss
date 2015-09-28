@@ -33,13 +33,14 @@ label, input, select, textarea {
   height: auto;
   margin-bottom: 5%;
   margin-top: 1%;
-  font-size: 15pt;
+  font-size: 20pt;
   font-weight: 300;
 }
 
 
 textarea {
-  line-height: 40pt;
+  // line-height: 40pt;
+  height: 80pt;
   border: solid white 3px;
 }
 
@@ -70,6 +71,11 @@ button {
 @media(min-width: 55em) {
   body{
     // background: lightgray;
+  }
+  form {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
   header {
     display: block;
