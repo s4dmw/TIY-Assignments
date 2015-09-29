@@ -100,3 +100,16 @@ $ curl 'https://api.github.com/user/repos?page=2&per_page=100'
 > How do I know that there is more data available?
 
 you will see `rel="next"` indicating that there are more pages
+
+
+-----------------
+
+[the `Promise` interface](http://www.html5rocks.com/en/tutorials/es6/promises/)  
+
+[how `XmlHttpRequest` and "Ajax" techniques work](http://teamtreehouse.com/library/ajax-basics)
+
+[`jQuery.ajax`](http://api.jquery.com/jQuery.ajax/)
+
+[official documentation for `Promise` in the MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+[the documentation for Kris Kowal's `Q` library](http://documentup.com/kriskowal/q/)
