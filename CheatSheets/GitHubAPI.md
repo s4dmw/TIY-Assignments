@@ -101,26 +101,115 @@ $ curl 'https://api.github.com/user/repos?page=2&per_page=100'
 
 you will see `rel="next"` indicating that there are more pages
 
-----------------------
 
-Reading APIs: GitHub
+# Endpoints
 
-Tonight, focus on the following questions about the GitHub API, which will be important as you build out your profile:
+## What are the endpoints for:
+-  fetching the profile data for a user?
 
-What are the endpoints for fetching...
-the profile data for a user?
-the organizations a user belongs to?
-the repositories a user has created?
-a filtered list of repositories?
-a sorted list of repositories?
-public events for a user?
-When fetching public events for a user...
-How many results are returned by default?
-What limitations exist on fetching more results?
-What is the basic structure of the results?
-What fields are included in each result?
-What are the data types for each field?
-What are some of the different values for the type field?
+    `https://api.github.com/users/USERNAME
+`
+- the organizations a user belongs to?
+
+    `https://api.github.com/users/USERNAME/orgs
+`
+- the repositories a user has created?
+
+  `https://api.github.com/users/USERNAME/repos
+`
+- a filtered list of repositories?
+
+  `https://api.github.com/users/USERNAME/repos?filter="FILTER-OPTION"
+`
+
+  #### filter-options -
+    - assigned: Issues assigned to you
+    - created: Issues created by you
+    - mentioned: Issues mentioning you
+    - subscribed: Issues you’re subscribed to updates for
+    - all: All issues the authenticated user can see, regardless of participation or creation
+    - Default: assigned
+
+
+- a sorted list of repositories?
+
+  `https://api.github.com/users/USERNAME/repos?sort="SORT-OPTION"
+`
+
+  #### sort options -
+  - created
+  - updated
+  - comments
+  - Default: created
+
+
+- public events for a user?
+
+  `https://api.github.com/users/USERNAME/events
+`
+
+#fetching
+
+## When fetching public events for a user
+- How many results are returned by default?
+
+    30 items
+
+- What limitations exist on fetching more results?
+
+    Fetching up to ten pages is supported, for a total of 300 events.
+
+- What is the basic structure of the results?
+
+    dictionary
+
+- What fields are included in each result?
+```
+Status: 200 OK
+Link: <https://api.github.com/resource?page=2>; rel="next",
+      <https://api.github.com/resource?page=5>; rel="last"
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4999
+[
+  {
+    "type": "Event",
+    "public": true,
+    "payload": {
+    },
+    "repo": {
+      "id": 3,
+      "name": "octocat/Hello-World",
+      "url": "https://api.github.com/repos/octocat/Hello-World"
+    },
+    "actor": {
+      "id": 1,
+      "login": "octocat",
+      "gravatar_id": "",
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+      "url": "https://api.github.com/users/octocat"
+    },
+    "org": {
+      "id": 1,
+      "login": "github",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/github",
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif"
+    },
+    "created_at": "2011-09-06T17:26:27Z",
+    "id": "12345"
+  }
+]
+```
+- What are the data types for each field?
+
+    strings
+
+- What are some of the different values for the type field?
+  - IssueCommentEvent
+  - PushEvent
+  - PullRequestEvent
+  - DeleteEvent
+  
 
 -----------------
 
