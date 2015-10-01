@@ -209,7 +209,27 @@ X-RateLimit-Remaining: 4999
   - PushEvent
   - PullRequestEvent
   - DeleteEvent
-  
+
+  ### Reading APIs
+
+  Here's your next batch of questions for the Github API, which you'll need for the last leg of our Github Revolution:
+
+  * How can I use the Github API to...
+    * get all the comments for a particular issue?
+    * add a comment to an issue?
+
+  And since libraries like jQuery and Lodash have feelings... I mean _APIs_, too, read through some of the documentation to answer these questions:
+
+  * How can I use [the jQuery API](http://api.jquery.com) to...
+      * get the HTML contents of an element?
+      * create a _new_ HTML element?
+      * add an HTML element to the page?
+  * How can I use [the Lodash API](http://lodash.com/docs/) to...
+    * replace placeholders with values from an object?
+    * repeat code for every item of an array?
+
+
+
 
 -----------------
 
