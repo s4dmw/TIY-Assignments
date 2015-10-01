@@ -210,24 +210,62 @@ X-RateLimit-Remaining: 4999
   - PullRequestEvent
   - DeleteEvent
 
-  ### Reading APIs
 
-  Here's your next batch of questions for the Github API, which you'll need for the last leg of our Github Revolution:
+## How can I use the Github API to:
 
-  * How can I use the Github API to...
-    * get all the comments for a particular issue?
-    * add a comment to an issue?
+#### get all the comments for a particular issue?
 
-  And since libraries like jQuery and Lodash have feelings... I mean _APIs_, too, read through some of the documentation to answer these questions:
+`GET /repos/:OWNER/:REPO/issues/:number/comments`
 
-  * How can I use [the jQuery API](http://api.jquery.com) to...
-      * get the HTML contents of an element?
-      * create a _new_ HTML element?
-      * add an HTML element to the page?
-  * How can I use [the Lodash API](http://lodash.com/docs/) to...
-    * replace placeholders with values from an object?
-    * repeat code for every item of an array?
+`$ curl https://api.github.com/repos/:OWNER/:REPO/issues/:number/comments`
+  - Issue Comments are ordered by ascending ID.
+  - Parameters: `since` - only comments updated at/after this time are returned. format: YYYY-MM-DDTHH:MM:SSZ
 
+#### add a comment to an issue?
+`POST /repos/:OWNER/:REPO/issues/:NUMBER/comments`
+where the input is in the form: `{ "body": "COMMENTS" }`
+
+
+# [jQuery API](http://api.jquery.com)
+
+#### get the HTML contents of an element?
+[.html()](http://api.jquery.com/html/)
+
+Gets the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.
+
+  ex: `$.("span.span-class").html()` returns the html contents of the first span element with a class of "span-class"
+- `.html(htmlstring)` - sets the contents of each matched element to the inputed HTML string
+
+  ex: `$.("span.span-class").html("<p>all new content</p>")` will set the content of all span elements with a class of "span-class" to `<p>all new content</p>`
+
+- `.html(function)` - A function returning the HTML content to set. Receives the index position of the element in the set and the old HTML value as arguments.
+
+#### create a _new_ HTML element?
+
+- i could not find a "good" jQ command to do this...yet
+
+[.createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+creates the specified HTML element
+
+#### add an HTML element to the page?
+[.add(elements)](https://api.jquery.com/add/#add-elements)
+One or more elements to add to the set of matched elements.
+
+
+# [Lodash API](http://lodash.com/docs/)
+
+#### replace placeholders with values from an object?
+[_.fill](https://lodash.com/docs/#fill)
+`_.fill(array, value, [start=0], [end=array.length])`
+
+- Fills elements of array with value from start up to, but not including, end.
+
+
+#### repeat code for every item of an array?
+[_.forEach](https://lodash.com/docs/#forEach)
+`_.forEach(collection, [iteratee=_.identity], [thisArg])`
+
+- Iterates over elements of collection invoking iteratee for each element. The iteratee is bound to thisArg and invoked with three arguments: (value, index|key, collection). Iteratee functions may exit iteration early by explicitly returning false.
 
 
 
