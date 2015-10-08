@@ -7,3 +7,8 @@ $("nav a").click(function(data){  //wait for a click on the <a>'s in the <nav>
     // any sibling elements
   $($(this).attr("href")).toggleClass("active").siblings().removeClass();
 });
+
+// close the all menus when the heading area is clicked
+$("heading").click(function(){
+  $(".active").removeClass();
+});
