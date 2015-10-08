@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+section {
+  display: none;
+}
+section.active {
+  display: inherit;
+}
+
+
+
+// .grid {
+//   background-color: gray;
+// }
+// .col-1-12 {
+//   background-color:lightgray;
+//   float: left;
+//   width: 7.3%;
+//   text-align: center;
+//   margin-right: 1%;
+// }
