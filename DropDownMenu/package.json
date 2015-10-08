@@ -1,0 +1,18 @@
+{
+  "name": "dropdownmenu",
+  "version": "0.0.0",
+  "description": "Horizontal Drop Down Menu",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.9.10",
+    "node-sass": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "bs": "browser-sync start --server --files='*.html, js/*.js, css/*.css'",
+    "sass": "node-sass --output-style expanded scss/main.scss css/main.css"
+  },
+  "author": "David White",
+  "license": "ISC"
+}
