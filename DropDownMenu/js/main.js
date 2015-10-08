@@ -9,6 +9,6 @@ $("nav a").click(function(data){  //wait for a click on the <a>'s in the <nav>
 });
 
 // close the all menus when the heading area is clicked
-$("heading").click(function(){
+$("header").click(function(){
   $(".active").removeClass();
 });
