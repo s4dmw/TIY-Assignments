@@ -1,0 +1,45 @@
+header {
+  // background-color: lightblue;
+  // margin-top: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding-left: 10%;
+  padding-bottom: 2ex;
+  border-bottom: 3px solid lightgray;
+}
+
+ul {
+    display: inline-block;
+    width: 33%;
+    list-style-type: none;
+}
+a.active {
+  background-color: lightgray;
+  padding-bottom: 3ex;
+}
+section {
+  display: none;
+  h3 {
+    margin-top: 0;
+  }
+}
+section.active {
+  display: inherit;
+  background-color: lightgray;
+}
+//
+//
+// section.active {
+//   background-color:lightgray;
+//   float: left;
+//   width: 30%;
+//   margin-right: 1%;
+//   margin-bottom: 10%;
+// }
