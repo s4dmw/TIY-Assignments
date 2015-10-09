@@ -94,14 +94,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+  //  @font-face {
+  //  	font-family: 'anyoldicon';
+  //  	src:url('../fonts/anyoldicon/anyoldicon.eot');
+  //  	src:url('../fonts/anyoldicon/anyoldicon.eot?#iefix') format('embedded-opentype'),
+  //  		url('../fonts/anyoldicon/anyoldicon.woff') format('woff'),
+  //  		url('../fonts/anyoldicon/anyoldicon.ttf') format('truetype'),
+  //  		url('../fonts/anyoldicon/anyoldicon.svg#anyoldicon') format('svg');
+  //  	font-weight: normal;
+  //  	font-style: normal;
+  //  }
+
+
 
 @import 'grid';
 @import 'mobile';
 @import 'tablet';
 @import 'desktop';
 
+
 body {
-  color: #47a3da;
+    font-family: 'Lato';
+    color: #47a3da;
 }
 
 a {
@@ -115,6 +132,7 @@ ul {
 }
 
 li:hover {
+  cursor: pointer;
   color: white;
   background-color: #47a3da;
   a {
@@ -122,11 +140,10 @@ li:hover {
   }
 }
 
-.grid {
-  // background-color: gray;
+
+span {
+  font-size: 3em;
 }
-
-
 
 
 
