@@ -1,0 +1,53 @@
+header {
+  color: #47a3da;
+}
+
+header {
+  margin-left: 5%;
+}
+
+a { //remove underline and change default color of anchor tage
+  text-decoration: none;
+}
+
+nav {
+  padding-left: 5%;
+  padding-bottom: 2ex;
+  border-bottom: 3px solid #47a3da;
+  a {
+    color: #999;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  a.active {
+    color: white;
+    background-color: #47a3da;
+    padding-bottom: 3ex;
+  }
+}
+
+
+section {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: none;
+  h3 {
+    margin-top: 0;
+  }
+  li {
+    padding-left: 10%;
+  }
+}
+
+section.active {
+  color: white;
+  display: inherit;
+  background-color: #47a3da;
+  a {
+    color: white;
+  }
+  h3 {
+    color: #afdefa;
+  }
+}
