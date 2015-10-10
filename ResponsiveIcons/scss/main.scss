@@ -126,9 +126,18 @@ a {
   color: #47a3da;
 }
 
+
 ul {
   list-style-type: none;
   padding-left: 0;
+  li {
+    border: solid 1px lightgray;
+    // border-collapse: collapse;
+    // border-spacing: 0;
+    h4 {
+      color: white;
+    }
+  }
 }
 
 li:hover {
@@ -138,11 +147,27 @@ li:hover {
   a {
     color: white;
   }
+  h4 {
+    display: inherit;
+  }
 }
 
+hr.above-title {
+  align-items: center;
+  border-top: 6px solid #47a3da;
+  width: 40%;
+  margin-left: 30%;
+}
+
+hr.below-title {
+  align-items: center;
+  border-top: 6px solid white;
+  width: 40%;
+  margin-left: 30%;
+}
 
 span {
-  font-size: 3em;
+  font-size: 8em;
 }
 
 
