@@ -94,6 +94,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+  //  @font-face {
+  //  	font-family: 'anyoldicon';
+  //  	src:url('../fonts/anyoldicon/anyoldicon.eot');
+  //  	src:url('../fonts/anyoldicon/anyoldicon.eot?#iefix') format('embedded-opentype'),
+  //  		url('../fonts/anyoldicon/anyoldicon.woff') format('woff'),
+  //  		url('../fonts/anyoldicon/anyoldicon.ttf') format('truetype'),
+  //  		url('../fonts/anyoldicon/anyoldicon.svg#anyoldicon') format('svg');
+  //  	font-weight: normal;
+  //  	font-style: normal;
+  //  }
+
+
 
 @import 'grid';
 @import 'mobile';
@@ -101,8 +116,59 @@ textarea {
 @import 'desktop';
 
 
+body {
+    font-family: 'Lato';
+    color: #47a3da;
+}
+
+a {
+  text-decoration: none;
+  color: #47a3da;
+}
 
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    border: solid 1px lightgray;
+    // border-collapse: collapse;
+    // border-spacing: 0;
+    h4 {
+      color: white;
+    }
+  }
+}
+
+li:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #47a3da;
+  a {
+    color: white;
+  }
+  h4 {
+    display: inherit;
+  }
+}
+
+hr.above-title {
+  align-items: center;
+  border-top: 6px solid #47a3da;
+  width: 40%;
+  margin-left: 30%;
+}
+
+hr.below-title {
+  align-items: center;
+  border-top: 6px solid white;
+  width: 40%;
+  margin-left: 30%;
+}
+
+span {
+  font-size: 8em;
+}
 
 
 
