@@ -1,3 +1,37 @@
-body {
-  background-color: black;
+header {
+  padding-bottom: 10%;
+}
+
+li {
+  // margin-left: 5%;
+  width: 90%;
+}
+
+ul li hr.above-title {
+  align-items: center;
+  border-top: 6px solid #47a3da;
+  width: 40%;
+  margin-left: 30%;
+}
+ul li hr.below-title {
+  align-items: center;
+  border-top: 6px solid white;
+  width: 40%;
+  margin-left: 30%;
+}
+
+@media(max-width: 400px){
+  header {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  ul li {
+      h3 {
+        font-size: 1.5em;
+      }
+      span {
+        font-size: 7em;
+      }
+}
 }
