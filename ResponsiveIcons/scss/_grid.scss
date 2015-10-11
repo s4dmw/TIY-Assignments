@@ -1,19 +1,6 @@
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
 
-.grid {
-  background-color: gray;
-}
 li {
-  // background-color:lightgray;
   float: left;
   width: 33%;
   text-align: center;
-  // border: 1px solid black;
-}
-
-li:hover {
-  background-color: lightgray;
 }
