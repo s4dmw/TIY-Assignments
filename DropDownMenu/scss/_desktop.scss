@@ -22,6 +22,10 @@ a { //remove underline and change default color of anchor tage
   text-decoration: none;
 }
 
+a.list {
+  display: none;
+}
+
 nav {
   padding-left: 8%;
   padding-bottom: 2ex;
