@@ -1,6 +1,11 @@
 ul {
     display: inline-block;
-    width: 33%;  //desktop 3 column layout
+    // float: left;
+    width: 20%;  //desktop 3 column layout
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 0;
+    margin-top: 5%;
+    // background-color: lightgray;
 }

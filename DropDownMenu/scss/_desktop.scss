@@ -14,7 +14,6 @@ header {
   h2 {
     letter-spacing: .6em;
     font-size: 1em;
-    // font-weight: 400;
     margin-bottom: 0;
   }
 }
@@ -33,29 +32,39 @@ nav {
     padding-left: 2em;
     padding-right: 2em;
   }
+  a:hover {
+    color: #47a3da;
+  }
   a.active {
     color: white;
     background-color: #47a3da;
     padding-bottom: 3ex;
   }
-}
+} // end nav bar
 
 
 section {
   padding-left: 5%;
   padding-right: 5%;
   display: none;
+  padding-bottom: 5%;
+  // margin-bottom: 10%;
   h3 {
     margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: 300;
   }
   li {
-    padding-left: 10%;
+    margin-top: 5pt;
+    margin-bottom: 0;
+    font-weight: 300;
   }
 }
 
 section.active {
   color: white;
-  display: inherit;
+  display: block;
   background-color: #47a3da;
   a {
     color: white;
