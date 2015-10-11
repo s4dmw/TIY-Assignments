@@ -38,7 +38,7 @@ nav {
   a.active {
     color: white;
     background-color: #47a3da;
-    padding-bottom: 3ex;
+    padding-bottom: 4ex;
   }
 } // end nav bar
 
@@ -71,5 +71,25 @@ section.active {
   }
   h3 {
     color: #afdefa;
+  }
+}
+@media(max-width: 850px) {
+  header {
+    text-align: center;
+  }
+  nav {
+    // margin-bottom: 3ex;
+    a {
+      font-size: .75em;
+    }
+  }
+
+  section {
+    h3 {
+      font-size: 1em;
+    }
+    a {
+      font-size: .75em;
+    }
   }
 }

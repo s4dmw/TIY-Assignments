@@ -97,8 +97,8 @@ textarea {
 
 @import 'grid';
 @import 'desktop';
-@import 'tablet';
-@import 'mobile';
+@media(max-width: 700px){@import 'tablet'};
+@media(max-width: 450px){@import 'mobile'};
 
 
 
