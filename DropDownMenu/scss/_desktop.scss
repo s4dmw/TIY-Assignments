@@ -14,7 +14,6 @@ header {
   h2 {
     letter-spacing: .6em;
     font-size: 1em;
-    // font-weight: 400;
     margin-bottom: 0;
   }
 }
@@ -41,24 +40,30 @@ nav {
     background-color: #47a3da;
     padding-bottom: 3ex;
   }
-}
+} // end nav bar
 
 
 section {
-  padding-left: 5%;
-  padding-right: 5%;
+  // padding-left: 11%;
+  // padding-right: 11%;
   display: none;
+  // margin-bottom: 10%;
   h3 {
-    margin-top: 0;
+    margin-top: 0%;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: 300;
   }
   li {
-    padding-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
   }
 }
 
 section.active {
   color: white;
-  display: inherit;
+  display: block;
   background-color: #47a3da;
   a {
     color: white;
