@@ -1,12 +1,12 @@
 {
   "name": "responsiveicons",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "moca",
     "bs": "browser-sync start --server --files='*.html, js/*.js, css/*.css'",
-    "sass": "node-sass --output-style expanded scss/main.scss css/main.css"
+    "sass": "node-sass --watch --output-style expanded scss/main.scss css/main.css"
   },
   "author": "David White",
   "license": "ISC",
