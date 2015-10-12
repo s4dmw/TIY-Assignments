@@ -18,14 +18,10 @@ header {
   }
 }
 
-section.grid {
-  margin-left: 5%;
-  // margin-right: 5%;
-  // padding-right: 0;
-}
+
 ul {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 5%;
   li {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -61,14 +57,4 @@ li:hover {
     display: inherit;
     font-weight: 400;
   }
-  // hr.above-title {
-  //   display: none;
-  // }
-  // hr.below-title {
-  //   display: inherit;
-  //   align-items: center;
-  //   border-top: 6px solid white;
-  //   width: 50%;
-  //   margin-left: 25%;
-  // }
 }
