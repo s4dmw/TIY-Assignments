@@ -70,4 +70,19 @@ The simplest library for routing URLs to Controller code and loading templates i
    https://docs.angularjs.org/api/ngRoute/service/$routeParams
 
    * ...the controller for a route in the view?
-   
+
+
+ Please answer any of the questions from Monday that you didn't get to and additionally refresh your memory (and notes) on how authentication works with the Github API by answering these questions:
+
+   * What credentials do I need to authenticate with the Github API?
+   username and password or a token
+
+   * How can I provide authentication credentials to Github?
+   by passing the token as a parameter
+
+ [Firebase](http://firebase.io) is a DataBase as a Service (DBaaS) tool that can act as a ReSTful API for our Angular JS front-end applications. It also has a free hosting tier for client-only applications like ours and a JavaScript authentication library to make integrating with OAuth providers -- like Google, Facebook, and GitHub -- _much easier_. We don't need the API parts _yet_, but read up on [Authentication with Firebase](https://www.firebase.com/docs/web/guide/user-auth.html), specifically [authenticating with GitHub](https://www.firebase.com/docs/web/guide/login/github.html).
+
+   * How can I use Firebase to authenticate with GitHub?
+   * What type of information will Firebase require from me to integrate with GitHub?
+   * What credentials will Firebase provide me when I have successfully authenticated?
+   * How and where do I need to use those credentials?
