@@ -55,7 +55,7 @@
   * the `Variations_*` resources?
   * the `Category` resource?
   * the `Shop` resource?
-  
+
 * Identified for each:
   * API endpoint
   * required query params
