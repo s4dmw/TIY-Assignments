@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Multi Column Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+          <h1>Responsive Multi-Column Form</h1>
+          <!-- <nav>
+            <a href="placeholder1">link1</a>
+            <a href="placeholder2">link2</a>
+            <a href="placeholder3">link3</a>
+            <a href="placeholder4">link4</a>
+          </nav> -->
+        </header>
+        <form>
+          <section>
+            <label>First Name<input type="text" name="first_name"/></label>
+            <label>Last Name<input type="text" name="last_name"/></label>
+            <label>Email Address<input type="text" name="email"/></label>
+            <label>
+              Country
+                <select name="country">
+                  <option value="not provided" selected>Choose a country</option>
+                  <option value="France">France</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Portugal">Portugal</option>
+                </select>
+            </label>
+            <label>
+              Biography
+                <textarea name="biography"></textarea>
+            </label>
+          </section>
+          <section>
+            <label>Phone Number
+                <input type="text" name="phone"/></label>
+            <label>
+              Affiliations
+                <textarea name="affiliations"></textarea>
+            </label>
+            <label>
+              Occupation
+                <select name="occupation">
+                  <option value="not provided" selected>Choose an occupation</option>
+                  <option value="web_designer">Web Designer</option>
+                  <option value="web_developer">Web Developer</option>
+                  <option value="Hybrid">Hybrid</option>
+                </select>
+            </label>
+            <label>Cat's Name<input type="text" name="cat_name"/></label>
+            <label>Favorite Gadget<input type="text" name="gadget"/></label>
+          </section>
+          <section>
+            <label>
+              Type of Talent
+                <select name="talent">
+                  <option value="not provided" selected>Choose a talent</option>
+                  <option value="ninja_silence">Ninja Silence</option>
+                  <option value="sumo_power">Sumo Power</option>
+                  <option value="samurai_precision">Samurai Precision</option>
+                </select>
+            </label>
+            <label>Favorite Drink<input type="text" name="drink"/></label>
+            <label>Special Power<input type="text" name="power"/></label>
+            <label>Weapon of Choice<input type="text" name="weapon"/></label>
+            <label>Comments
+              <textarea name="comments"></textarea>
+            </label>
+          </section>
+          <button name="submit" type="submit">Send Your Data</button>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

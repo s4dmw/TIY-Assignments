@@ -1,0 +1,64 @@
+/* header element
+* - text/buttons centered at top page
+* - top line is different size/spacing than the 2nd line
+*/
+
+/*ul contains list items with date, time, recipe title, and recipe*/
+
+
+/*time elements are broken down in to date and time and are displayed on the left side. time
+and date have different formats and colors*/
+
+/*div.tmicon goes in between the date/time and the recipe
+the icons are lined by a vertical line*/
+
+/*the recipe boxes contain the title and recipe.
+they alternate shades of blue.
+the have carets connecting them to the veritcal line*/
+
+/*grab that font*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/*set the font and margins for the main body*/
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+}
+
+/*turn the nav icons off until i can get them displayed correctly*/
+nav {
+  display: none;
+  text-align: right;
+}
+
+/*turn off those pesky bullets*/
+ul {
+  list-style-type: none;
+  position: relative;
+}
+
+/*set the color of the time to grayish*/
+time span:first-child {
+  color: #bdd0db; /*grabbed this color from the ref example*/
+}
+
+
+/*colors of the text boxes*/
+div.cbp_tmlabel {
+  background-color: #47a3da;  /*grabbed this color from the ref example*/
+  color: white;
+}
+
+/*alternates the colors of the text boxes*/
+.cbp_tmtimeline {
+  li:nth-child(odd) .cbp_tmlabel {
+  background-color: #6cbfee; /*grabbed this color from the ref example*/
+  }
+}
+
+/*alternate the color of the time to match the text box*/
+.cbp_tmtimeline {
+  li:nth-child(odd) .cbp_tmtime span:last-child {
+    color: #6cbfee;
+  }
+}

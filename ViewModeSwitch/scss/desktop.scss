@@ -1,0 +1,107 @@
+body {
+  /*background-color: black;*/
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+
+/*tweak size, spacing, position of the header span*/
+header {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: left;
+  span {
+    font-size: 120%;
+    font-weight: 400;
+    letter-spacing: .4em;
+  }
+  h1 {
+    font-weight: 400;
+  }
+}  //end header
+
+
+/* Grid view setup */
+.cbp-vm-view-grid li {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    h3.cbp-vm-title {
+      font-size: 25pt;
+      margin: 0;
+    }
+}
+
+div.cbp-vm-view-grid li {
+  div.cbp-vm-price {
+  font-size: 15pt;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+  }
+  div.cbp-vm-details {
+  width: 80%;
+  min-height: 50pt;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  }
+  a.cbp-vm-icon {
+    padding-left: 15pt;
+    padding-right: 15pt;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+  }
+}
+
+//end grid view setup
+
+/*tweak the properties of the each list item*/
+
+div.cbp-vm-view-list li {
+  a.cbp-vm-image img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8%;
+  }
+  h3.cbp-vm-title {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+    margin-left: 20pt;
+    font-size: 15pt;
+  }
+  div.cbp-vm-price {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15pt;
+    margin-left: 20pt;
+    padding-right: 20pt;
+    width: 10%;
+  }
+  div.cbp-vm-price {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15pt;
+    margin-left: 20pt;
+    padding-right: 20pt;
+    width: 10%;
+  }
+  div.cbp-vm-details {
+    /*background-color: gray;*/
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+  }
+  a.cbp-vm-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20pt;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    padding-top: 8pt;
+    padding-bottom: 8pt;
+
+  }
+} //end list view setup
